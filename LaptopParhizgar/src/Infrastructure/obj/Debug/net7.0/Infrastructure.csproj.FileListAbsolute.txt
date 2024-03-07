@@ -1,0 +1,5 @@
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache

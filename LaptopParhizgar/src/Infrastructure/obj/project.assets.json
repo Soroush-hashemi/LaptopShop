@@ -1,0 +1,207 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "MediatR/11.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Common.Application": "1.0.0",
+          "Common.Domain": "1.0.0",
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Common.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Common.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Application.dll": {}
+        }
+      },
+      "Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MediatR": "11.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Domain.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Common.Application": "1.0.0",
+          "Common.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MediatR/11.0.0": {
+      "sha512": "8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
+      "type": "package",
+      "path": "mediatr/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.11.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/1.0.1": {
+      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "type": "package",
+      "path": "mediatr.contracts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.Contracts.dll",
+        "lib/net461/MediatR.Contracts.xml",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.1.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
+      ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Common.Application/1.0.0": {
+      "type": "project",
+      "path": "../../common/Common.Application/Common.Application.csproj",
+      "msbuildProject": "../../common/Common.Application/Common.Application.csproj"
+    },
+    "Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../common/Common.Domain/Common.Domain.csproj",
+      "msbuildProject": "../../common/Common.Domain/Common.Domain.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\hashe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectName": "Infrastructure",
+      "projectPath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\hashe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\hashe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Application\\Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

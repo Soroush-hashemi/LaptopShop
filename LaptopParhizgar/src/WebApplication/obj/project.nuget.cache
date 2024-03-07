@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gbwIcsOozjOa2ggY5zgQttZobvTC/rAYjXq7LWZFg01hI0zcygv04WXDrCzrJ6q44zobNlOfBpQ7nRBQzfO0bg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\WebApplication\\WebApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hashe\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

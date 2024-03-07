@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VYlTwq36tC02OMqEFTdWrFtAE3k7+APoPPLq/jiNdgaAkVo0B/njw2zaZfFT/jRZwQ/zB483jwS0jg+lHIfisg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\PresentationFacade\\PresentationFacade.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hashe\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

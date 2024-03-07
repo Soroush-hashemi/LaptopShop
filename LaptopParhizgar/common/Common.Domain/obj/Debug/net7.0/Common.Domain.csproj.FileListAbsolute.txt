@@ -1,0 +1,12 @@
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\bin\Debug\net7.0\Common.Domain.deps.json
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\bin\Debug\net7.0\Common.Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\bin\Debug\net7.0\Common.Domain.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.csproj.AssemblyReference.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.AssemblyInfoInputs.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.AssemblyInfo.cs
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\refint\Common.Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\ref\Common.Domain.dll
