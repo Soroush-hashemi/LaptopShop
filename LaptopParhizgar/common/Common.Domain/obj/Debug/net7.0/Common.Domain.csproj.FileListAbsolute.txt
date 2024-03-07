@@ -10,3 +10,4 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\refint\Common.Domain.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\ref\Common.Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Domain\obj\Debug\net7.0\Common.Domain.sourcelink.json

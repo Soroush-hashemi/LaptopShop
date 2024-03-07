@@ -2,3 +2,12 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.AssemblyInfoInputs.cache
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.AssemblyInfo.cs
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.csproj.CoreCompileInputs.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\bin\Debug\net7.0\Common.Application.deps.json
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\bin\Debug\net7.0\Common.Application.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\bin\Debug\net7.0\Common.Application.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.csproj.AssemblyReference.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.sourcelink.json
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\refint\Common.Application.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\Common.Application.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Application\obj\Debug\net7.0\ref\Common.Application.dll

@@ -44,19 +44,15 @@ public class Product : BaseEntity
     public string? Storage { get; private set; }
     public string? TypeOfStorage { get; private set; }
     public string? Graphic { get; private set; }
+    public string? TypeOfGraphic { get; private set; }
     public string? ScreenSize { get; private set; }
     public string? Screen { get; private set; }
-    public string? DeviceCapabilities { get; private set; }
     public string? LapTopPorts { get; private set; }
-    public string? BatteryTypeLapTop { get; private set; }
-    public string? Motherboard { get; private set; }
-    public string? Speaker { get; private set; }
-
 
     //Printer
     public string? CartridgeType { get; private set; }
     public string? PrintType { get; private set; }
-    public string? printSize { get; private set; }
+    public string? PrintSize { get; private set; }
     public string? PrintingTechnology { get; private set; }
     public string? PaperSize { get; private set; }
     public string? PaperInputCapacity { get; private set; }
@@ -116,14 +112,10 @@ public class Product : BaseEntity
         Graphic = graphic;
         ScreenSize = screenSize;
         Screen = screen;
-        DeviceCapabilities = deviceCapabilities;
         LapTopPorts = lapTopPorts;
-        BatteryTypeLapTop = batteryTypeLapTop;
-        Motherboard = motherboard;
-        Speaker = speaker;
         CartridgeType = cartridgeType;
         PrintType = printType;
-        this.printSize = printSize;
+        PrintSize = printSize;
         PrintingTechnology = printingTechnology;
         PaperSize = paperSize;
         PaperInputCapacity = paperInputCapacity;
@@ -181,14 +173,10 @@ public class Product : BaseEntity
         Graphic = graphic;
         ScreenSize = screenSize;
         Screen = screen;
-        DeviceCapabilities = deviceCapabilities;
         LapTopPorts = lapTopPorts;
-        BatteryTypeLapTop = batteryTypeLapTop;
-        Motherboard = motherboard;
-        Speaker = speaker;
         CartridgeType = cartridgeType;
         PrintType = printType;
-        this.printSize = printSize;
+        PrintSize = printSize;
         PrintingTechnology = printingTechnology;
         PaperSize = paperSize;
         PaperInputCapacity = paperInputCapacity;

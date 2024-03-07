@@ -3,3 +3,16 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Domain.deps.json
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Domain.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Common.Application.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Common.Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Common.Application.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\bin\Debug\net7.0\Common.Domain.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.sourcelink.json
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.csproj.CopyComplete
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\refint\Domain.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\Domain.pdb
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Domain\obj\Debug\net7.0\ref\Domain.dll

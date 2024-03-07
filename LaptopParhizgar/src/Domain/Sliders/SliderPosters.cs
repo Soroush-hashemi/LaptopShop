@@ -6,20 +6,22 @@ public class SliderPosters : BaseEntity
 {
     public string ImageName { get; private set; }
     public string Link { get; private set; }
-    public ImageLocation imageLocation { get; private set; }
+    public ImageLocation ImageLocation { get; private set; }
 
-    public SliderPosters(string link, string imageName)
+    public SliderPosters(string link, string imageName , ImageLocation imageLocation)
     {
         Guard(link, imageName);
         Link = link;
         ImageName = imageName;
+        ImageLocation = imageLocation;
     }
 
-    public void Edit(string link, string imageName)
+    public void Edit(string link, string imageName , ImageLocation imageLocation)
     {
         Guard(link, imageName);
         Link = link;
         ImageName = imageName;
+        ImageLocation = imageLocation;
     }
 
     public void Guard(string link, string imageName)

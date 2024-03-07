@@ -7,22 +7,19 @@ public class Slider : BaseEntity
 {
     public string ImageName { get; private set; }
     public string Link { get; private set; }
-    public SeoData SeoData { get; private set; }
 
-    public Slider(string link, string imageName, SeoData seoData)
+    public Slider(string link, string imageName)
     {
         Guard(link, imageName);
         Link = link;
         ImageName = imageName;
-        SeoData = seoData;
     }
 
-    public void Edit(string link, string imageName, SeoData seoData)
+    public void Edit(string link, string imageName)
     {
         Guard(link, imageName);
         Link = link;
         ImageName = imageName;
-        SeoData = seoData;
     }
 
     public void Guard(string link, string imageName)

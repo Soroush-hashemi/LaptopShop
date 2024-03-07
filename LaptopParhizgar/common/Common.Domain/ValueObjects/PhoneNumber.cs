@@ -10,7 +10,7 @@ public class PhoneNumber : BaseValueObject
     public PhoneNumber(string value)
     {
         if (string.IsNullOrWhiteSpace(value) || value.IsText() || value.Length is < 11 or > 11)
-            throw new InvalidDomainDataException("شماره تلفن نامعتبر است");
+            throw new NullOrEmptyException("شماره تلفن نامعتبر است");
         Value = value;
     }
 }
