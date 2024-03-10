@@ -1,9 +1,9 @@
 ﻿using Common.Application;
 using Common.Application.SecurityUtil;
 using Common.Domain.Exceptions;
-using Domain.User;
-using Domain.User.Repository;
-using Domain.User.Service;
+using Domain.Users;
+using Domain.Users.Service;
+using Domain.Users.Repository;
 
 namespace Application.Users.Register;
 public class RegisterUserCommandHandler : IBaseCommandHandler<RegisterUserCommand>

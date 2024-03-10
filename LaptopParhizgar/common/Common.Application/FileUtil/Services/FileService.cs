@@ -97,5 +97,31 @@ namespace Common.Application.FileUtil.Services
 
             return null;
         }
+
+        public async Task<string> SaveFileAndGenerateNameMayNull(IFormFile? file, string directoryPath)
+        {
+            if (file != null)
+            {
+                var fileName = file.FileName;
+
+                fileName = Guid.NewGuid() + DateTime.Now.TimeOfDay.ToString()
+                                              .Replace(":", "")
+                                              .Replace(".", "") + Path.GetExtension(fileName);
+
+                var folderName = Path.Combine(Directory.GetCurrentDirectory(), directoryPath.Replace("/", "\\"));
+                if (!Directory.Exists(folderName))
+                    Directory.CreateDirectory(folderName);
+
+                var path = Path.Combine(folderName, fileName);
+
+                using var stream = new FileStream(path, FileMode.Create);
+                await file.CopyToAsync(stream);
+                return fileName;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

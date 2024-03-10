@@ -10,17 +10,15 @@ public class ProductComment : BaseEntity
 
     public ProductComment(long userId, long productId, string text)
     {
-
+        Guard(text);
         UserId = userId;
         ProductId = productId;
         Text = text;
     }
 
-    public void Edit(long userId, long productId, string text)
+    public void Edit(string text)
     {
         Guard(text);
-        UserId = userId;
-        ProductId = productId;
         Text = text;
     }
 

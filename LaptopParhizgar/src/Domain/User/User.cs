@@ -2,9 +2,9 @@
 using Common.Domain.Exceptions;
 using Common.Domain.Tools;
 using Common.Domain.ValueObjects;
-using Domain.User.Service;
+using Domain.Users.Service;
 
-namespace Domain.User;
+namespace Domain.Users;
 public class User : BaseEntity
 {
     public string UserName { get; private set; }
@@ -16,7 +16,7 @@ public class User : BaseEntity
 
     private User()
     {
-        
+
     }
 
     public User(string userName, string fullName, PhoneNumber phoneNumber, string email,

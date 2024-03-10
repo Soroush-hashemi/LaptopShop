@@ -1,5 +1,6 @@
 ﻿using Common.Domain.Bases;
 using Common.Domain.Exceptions;
+using Common.Domain.Tools;
 using Common.Domain.ValueObjects;
 using Domain.Products.Service;
 
@@ -22,7 +23,7 @@ public class Product : BaseEntity
     public string? ImageNameFifth { get; private set; }
     public string Color { get; private set; }
     public bool IsSpecial { get; private set; }
-    public bool ProductIsExist { get; private set; }
+    public bool ProductNotExist { get; private set; }
     public bool AdminSuggestion { get; private set; }
     public string Brand { get; private set; }
     public string Weight { get; private set; }
@@ -65,21 +66,26 @@ public class Product : BaseEntity
     public string? MonthlyWorkCapacity { get; private set; }
     #endregion
 
-
-    public Product(long categoryId, long subCategoryId, string title, string slug, string description, int visit,
-        long price, long? discountedPrice, string imageName, string imageNameSecond, string? imageNameThird, string? imageNameFourth, string? imageNameFifth,
-        string color, bool isSpecial, bool productIsExist, bool adminSuggestion, string brand, string weight, string dimensions, bool nonOriginal, string? includedItems,
-        string? classification, string? situation, string? specialFeatures, SeoData seoData, bool bigTable, string? cpu, string? processorSpeed,
-        string? ram, string? typeOfRam, string? storage, string? typeOfStorage, string? graphic, string? screenSize, string? screen, string? deviceCapabilities,
-        string? lapTopPorts, string? batteryTypeLapTop, string? motherboard, string? speaker, string? cartridgeType, string? printType,
-        string? printSize, string? printingTechnology, string? paperSize, string? paperInputCapacity, string? printResolution, string? printerMemory,
-        string? copySpeed, string? faxResolution, string? scannerResolution, string? scannerDepth, string? monthlyWorkCapacity, IProductDomainService domainService)
+    public Product(long categoryId, long subCategoryId, string title, string slug, string description,
+        long price, long? discountedPrice, string imageName, string imageNameSecond,
+        string? imageNameThird, string? imageNameFourth, string? imageNameFifth,
+        string color, bool isSpecial, bool productIsExist, bool adminSuggestion,
+        string brand, string weight, string dimensions, bool nonOriginal, string? includedItems,
+        string? classification, string? situation, string? specialFeatures,
+        SeoData seoData, bool bigTable, string? cpu, string? processorSpeed,
+        string? ram, string? typeOfRam, string? storage, string? typeOfStorage,
+        string? graphic, string? typeOfGraphic, string? screenSize, string? screen,
+        string? lapTopPorts, string? cartridgeType, string? printType,
+        string? printSize, string? printingTechnology, string? paperSize,
+        string? paperInputCapacity, string? printResolution, string? printerMemory,
+        string? copySpeed, string? faxResolution, string? scannerResolution,
+        string? scannerDepth, string? monthlyWorkCapacity, IProductDomainService domainService)
     {
         Guard(title, slug, description, brand, color, domainService);
         CategoryId = categoryId;
         SubCategoryId = subCategoryId;
         Title = title;
-        Slug = slug;
+        Slug = slug.ToSlug();
         Description = description;
         Visit = 0;
         Price = price;
@@ -91,7 +97,7 @@ public class Product : BaseEntity
         ImageNameFifth = imageNameFifth;
         Color = color;
         IsSpecial = isSpecial;
-        ProductIsExist = productIsExist;
+        ProductNotExist = productIsExist;
         AdminSuggestion = adminSuggestion;
         Brand = brand;
         Weight = weight;
@@ -110,6 +116,7 @@ public class Product : BaseEntity
         Storage = storage;
         TypeOfStorage = typeOfStorage;
         Graphic = graphic;
+        TypeOfGraphic = typeOfGraphic;
         ScreenSize = screenSize;
         Screen = screen;
         LapTopPorts = lapTopPorts;
@@ -128,20 +135,26 @@ public class Product : BaseEntity
         MonthlyWorkCapacity = monthlyWorkCapacity;
     }
 
-    public void Edit(long categoryId, long subCategoryId, string title, string slug, string description, int visit,
-         long price, long? discountedPrice, string imageName, string imageNameSecond, string? imageNameThird, string? imageNameFourth, string? imageNameFifth,
-         string color, bool isSpecial, bool productIsExist, bool adminSuggestion, string brand, string weight, string dimensions, bool nonOriginal, string? includedItems,
-         string? classification, string? situation, string? specialFeatures, SeoData seoData, bool bigTable, string? cpu, string? processorSpeed,
-         string? ram, string? typeOfRam, string? storage, string? typeOfStorage, string? graphic, string? screenSize, string? screen, string? deviceCapabilities,
-         string? lapTopPorts, string? batteryTypeLapTop, string? motherboard, string? speaker, string? cartridgeType, string? printType,
-         string? printSize, string? printingTechnology, string? paperSize, string? paperInputCapacity, string? printResolution, string? printerMemory,
-         string? copySpeed, string? faxResolution, string? scannerResolution, string? scannerDepth, string? monthlyWorkCapacity, IProductDomainService domainService)
+    public void Edit(long categoryId, long subCategoryId, string title, string slug, string description,
+         long price, long? discountedPrice, string imageName, string imageNameSecond,
+         string? imageNameThird, string? imageNameFourth, string? imageNameFifth,
+         string color, bool isSpecial, bool productIsExist, bool adminSuggestion,
+         string brand, string weight, string dimensions, bool nonOriginal, string? includedItems,
+         string? classification, string? situation, string? specialFeatures, SeoData seoData,
+         bool bigTable, string? cpu, string? processorSpeed,
+         string? ram, string? typeOfRam, string? storage, string? typeOfStorage,
+         string? graphic, string? screenSize, string? screen,
+         string? lapTopPorts, string? speaker, string? cartridgeType, string? printType,
+         string? printSize, string? printingTechnology, string? paperSize, string? paperInputCapacity,
+         string? printResolution, string? printerMemory,
+         string? copySpeed, string? faxResolution, string? scannerResolution, string? scannerDepth,
+         string? monthlyWorkCapacity, IProductDomainService domainService)
     {
         Guard(title, slug, description, brand, color, domainService);
         CategoryId = categoryId;
         SubCategoryId = subCategoryId;
         Title = title;
-        Slug = slug;
+        Slug = slug.ToSlug();
         Description = description;
         Price = price;
         DiscountedPrice = discountedPrice;
@@ -152,7 +165,7 @@ public class Product : BaseEntity
         ImageNameFifth = imageNameFifth;
         Color = color;
         IsSpecial = isSpecial;
-        ProductIsExist = productIsExist;
+        ProductNotExist = productIsExist;
         AdminSuggestion = adminSuggestion;
         Brand = brand;
         Weight = weight;
@@ -196,7 +209,6 @@ public class Product : BaseEntity
         NullOrEmptyException.CheckString(slug, nameof(slug));
         NullOrEmptyException.CheckString(Brand, nameof(Brand));
         NullOrEmptyException.CheckString(Color, nameof(Color));
-
 
         if (Slug != slug)
         {

@@ -1,7 +1,7 @@
 ﻿using Common.Application;
 using Common.Domain.ValueObjects;
-using Domain.User.Repository;
-using Domain.User.Service;
+using Domain.Users.Repository;
+using Domain.Users.Service;
 
 namespace Application.Users;
 public class UserDomainService : IUserDomainService

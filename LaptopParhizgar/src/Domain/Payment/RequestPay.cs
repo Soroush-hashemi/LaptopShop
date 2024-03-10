@@ -10,4 +10,10 @@ public class RequestPay : BaseEntity
     public bool IsPay { get; private set; }
     public string? Authority { get; private set; }
     public long RefId { get; private set; } = 0;
+
+    public void IsPaid()
+    {
+        IsPay = true;
+        CreationDate = DateTime.Now;
+    }
 }

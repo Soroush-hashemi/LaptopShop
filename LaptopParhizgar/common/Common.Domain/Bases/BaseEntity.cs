@@ -5,7 +5,7 @@ namespace Common.Domain.Bases;
 public class BaseEntity
 {
     public long Id { get; set; }
-    public DateTime CreationDate { get; } = DateTime.Now;
+    public DateTime CreationDate { get; set; } = DateTime.Now;
 
     private readonly List<BaseDomainEvent> _domainEvents = new List<BaseDomainEvent>();
     [NotMapped]

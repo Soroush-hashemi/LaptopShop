@@ -1,6 +1,6 @@
 ﻿using Common.Application;
 using Common.Domain.Exceptions;
-using Domain.User.Repository;
+using Domain.Users.Repository;
 
 namespace Application.Users.Delete;
 public class DeleteUserCommandHandler : IBaseCommandHandler<DeleteUserCommand>
