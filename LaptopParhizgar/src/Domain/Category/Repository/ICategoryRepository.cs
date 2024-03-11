@@ -3,5 +3,5 @@
 namespace Domain.Category.Repository;
 public interface ICategoryRepository : IBaseRepository<Category>
 {
-    bool DeleteCategory(long categoryId);
+    public Task<bool> DeleteCategory(long categoryId);
 }

@@ -14,5 +14,4 @@ public interface IBaseRepository<T> where T : BaseEntity
     Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);
     bool Exists(Expression<Func<T, bool>> expression);
     T? Get(long id);
-    T? Get(long? id);
 }

@@ -7,7 +7,6 @@ public class Order : BaseEntity
     public long RequestPayId { get; private set; }
     public long AddressId { get; private set; }
     public OrderState OrderState { get; private set; }
-    public ICollection<OrderDetail> OrderDetails { get; set; }
 
     public Order(long userId, long requestPayId, long addressId)
     {
