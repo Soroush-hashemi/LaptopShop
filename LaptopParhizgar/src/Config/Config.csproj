@@ -1,13 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\PresentationFacade\PresentationFacade.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\PresentationFacade\PresentationFacade.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	</ItemGroup>
 
 </Project>

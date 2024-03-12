@@ -21,8 +21,8 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\bi
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\bin\Debug\net7.0\Domain.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\bin\Debug\net7.0\Infrastructure.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\PresentationFacade.sourcelink.json
-C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\PresentationFacade.csproj.CopyComplete
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\PresentationFacade.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\refint\PresentationFacade.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\PresentationFacade.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\ref\PresentationFacade.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\PresentationFacade\obj\Debug\net7.0\Presenta.7C5F9F55.Up2Date

@@ -10,6 +10,11 @@ public class CartItem : BaseEntity
     public int Count { get; private set; }
     public long Price { get; set; }
 
+    private CartItem()
+    {
+        
+    }
+
     public CartItem(long cartId, long productId, int count, long price)
     {
         CartId = cartId;

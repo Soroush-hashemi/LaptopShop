@@ -8,6 +8,11 @@ public class ProductComment : BaseEntity
     public long ProductId { get; private set; }
     public string Text { get; private set; }
 
+    private ProductComment()
+    {
+        
+    }
+
     public ProductComment(long userId, long productId, string text)
     {
         Guard(text);

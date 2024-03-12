@@ -6,6 +6,11 @@ public class Cart : BaseEntity
     public long UserId { get; private set; }
     public bool IsFinaly { get; private set; }
 
+    private Cart()
+    {
+
+    }
+
     public Cart(long userId, bool isFinaly)
     {
         UserId = userId;

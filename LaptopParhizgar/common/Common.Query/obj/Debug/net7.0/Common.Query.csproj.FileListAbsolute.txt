@@ -10,3 +10,4 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\D
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\refint\Common.Query.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\ref\Common.Query.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.sourcelink.json

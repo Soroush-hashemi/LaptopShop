@@ -8,6 +8,11 @@ public class SliderPosters : BaseEntity
     public string Link { get; private set; }
     public ImageLocation ImageLocation { get; private set; }
 
+    private SliderPosters()
+    {
+        
+    }
+
     public SliderPosters(string link, string imageName , ImageLocation imageLocation)
     {
         Guard(link, imageName);

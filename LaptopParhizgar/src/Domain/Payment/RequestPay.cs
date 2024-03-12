@@ -11,6 +11,11 @@ public class RequestPay : BaseEntity
     public string? Authority { get; private set; }
     public long RefId { get; private set; } = 0;
 
+    private RequestPay()
+    {
+        
+    }
+
     public void IsPaid()
     {
         IsPay = true;

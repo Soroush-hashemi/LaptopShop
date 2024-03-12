@@ -8,6 +8,11 @@ public class OrderDetail : BaseEntity
     public long Price { get; private set; }
     public int Count { get; private set; }
 
+    private OrderDetail() 
+    {
+        
+    }
+
     public OrderDetail(long orderId, long productId, long price, int count)
     {
         OrderId = orderId;

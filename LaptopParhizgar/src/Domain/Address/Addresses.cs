@@ -13,6 +13,11 @@ public class Addresses : BaseEntity
     public string Address { get; private set; }
     public PhoneNumber PhoneNumberForAddress { get; private set; }
 
+    private Addresses()
+    {
+        
+    }
+
     public Addresses(long userId, string nameOfRecipient, string province, string city,
         string postalCode, string address, PhoneNumber phoneNumberForAddress)
     {

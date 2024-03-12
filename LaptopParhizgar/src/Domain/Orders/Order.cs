@@ -8,6 +8,11 @@ public class Order : BaseEntity
     public long AddressId { get; private set; }
     public OrderState OrderState { get; private set; }
 
+    private Order()
+    {
+        
+    }
+
     public Order(long userId, long requestPayId, long addressId)
     {
         UserId = userId;

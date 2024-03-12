@@ -19,8 +19,8 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\bin\Debug\net7.
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\bin\Debug\net7.0\Common.Domain.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\bin\Debug\net7.0\Domain.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\Query.sourcelink.json
-C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\Query.csproj.CopyComplete
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\Query.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\refint\Query.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\Query.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\ref\Query.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\Query\obj\Debug\net7.0\Query.csproj.Up2Date

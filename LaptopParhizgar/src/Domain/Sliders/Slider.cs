@@ -8,6 +8,11 @@ public class Slider : BaseEntity
     public string ImageName { get; private set; }
     public string Link { get; private set; }
 
+    private Slider()
+    {
+        
+    }
+
     public Slider(string link, string imageName)
     {
         Guard(link, imageName);

@@ -66,6 +66,11 @@ public class Product : BaseEntity
     public string? MonthlyWorkCapacity { get; private set; }
     #endregion
 
+    private Product()
+    {
+        
+    }
+
     public Product(long categoryId, long subCategoryId, string title, string slug, string description,
         long price, long? discountedPrice, string imageName, string imageNameSecond,
         string? imageNameThird, string? imageNameFourth, string? imageNameFifth,

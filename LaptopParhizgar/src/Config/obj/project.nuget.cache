@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TqHn2X8yilJcGpDKBuVZGW7Drymy+nnfHEKZbhkDzrC23eAzWwE5j36YPMTMp0hCIOjPAEiVXEfU+57RKE8eww==",
+  "dgSpecHash": "OqV4O3HtZ1pw0QtxRZmzMJCKkVK6QSDY+t/lcxkKsvCjryXct4TQ2gCWLfslm2F07605NCioviJlgD1ClTGqFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Config\\Config.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\hashe\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.7.1\\fluentvalidation.dependencyinjectionextensions.11.7.1.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\htmlsanitizer\\8.0.811\\htmlsanitizer.8.0.811.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
