@@ -9,7 +9,6 @@ internal static class CategoryMapper
     {
         return new CategoryDto()
         {
-            ParentId = category.ParentId,
             Id = category.Id,
             Title = category.Title,
             Slug = category.Slug,
@@ -27,7 +26,6 @@ internal static class CategoryMapper
         {
             model.Add(new CategoryDto()
             {
-                ParentId = category.ParentId,
                 Id = category.Id,
                 Title = category.Title,
                 Slug = category.Slug,

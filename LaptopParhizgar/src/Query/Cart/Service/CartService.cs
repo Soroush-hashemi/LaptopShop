@@ -3,13 +3,13 @@ using MediatR;
 using Query.Cart.DTOs;
 using Query.Cart.GetMyCart;
 
-namespace Query.Service.Cart;
+namespace Query.Cart.Service;
 public class CartService : ICartService
 {
     private readonly LaptopParhizgerContext _context;
     private readonly IMediator _mediator;
 
-    public CartService(LaptopParhizgerContext context , IMediator mediator)
+    public CartService(LaptopParhizgerContext context, IMediator mediator)
     {
         _context = context;
     }

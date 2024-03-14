@@ -3,7 +3,6 @@
 namespace Query.Cart.DTOs;
 public class CartItemDto : BaseDto
 {
-    public long CartItemId { get; set; }
     public long CartId { get; set; }
     public long ProductId { get; set; }
     public string ProductName { get; set; }

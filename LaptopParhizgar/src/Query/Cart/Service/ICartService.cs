@@ -1,4 +1,4 @@
-﻿namespace Query.Service.Cart;
+﻿namespace Query.Cart.Service;
 public interface ICartService
 {
     public Task<long> GetTotalPrice(long userId);

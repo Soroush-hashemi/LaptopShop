@@ -40,7 +40,7 @@ public class GetMyCartItemByCartQueryHandler : IQueryHandler<GetMyCartItemByCart
                     Price = item.Price,
                     Sum = item.Price * item.Count,
                     ProductName = product.Title,
-                    CartItemId = item.Id,
+                    Id = item.Id,
                     Color = product.Color,
                     ProductId = product.Id,
                     Images = product.ImageName,
