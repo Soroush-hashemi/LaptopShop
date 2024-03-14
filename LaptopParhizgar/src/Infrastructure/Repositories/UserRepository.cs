@@ -1,4 +1,4 @@
-﻿using Domain.Address;
+﻿using Domain.Addresses;
 using Domain.Carts;
 using Domain.Payment;
 using Domain.Products;
@@ -15,7 +15,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
 
     }
 
-    public void DeleteAddress(Addresses addresses)
+    public void DeleteAddress(Address addresses)
     {
         _context.Addresses.Remove(addresses);
     }
@@ -45,7 +45,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context.Users.Remove(User);
     }
 
-    public Addresses GetAddressByUserId(long UserId)
+    public Address GetAddressByUserId(long UserId)
     {
         return _context.Addresses.FirstOrDefault(a => a.UserId == UserId);
     }

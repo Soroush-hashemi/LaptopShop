@@ -1,11 +1,11 @@
-﻿using Domain.Address;
+﻿using Domain.Addresses;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Persistence.Configurations;
-public class AddressConfiguration : IEntityTypeConfiguration<Addresses>
+public class AddressConfiguration : IEntityTypeConfiguration<Address>
 {
-    public void Configure(EntityTypeBuilder<Addresses> builder)
+    public void Configure(EntityTypeBuilder<Address> builder)
     {
         builder.ToTable("Address", "dbo");
 
@@ -14,7 +14,7 @@ public class AddressConfiguration : IEntityTypeConfiguration<Addresses>
         builder.Property(b => b.Province).IsRequired();
         builder.Property(b => b.City).IsRequired();
         builder.Property(b => b.PostalCode).IsRequired();
-        builder.Property(b => b.Address).IsRequired();
+        builder.Property(b => b.AddressDetail).IsRequired();
 
         builder.OwnsOne(c => c.PhoneNumberForAddress, config =>
         {

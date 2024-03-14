@@ -22,7 +22,7 @@ namespace Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Address.Addresses", b =>
+            modelBuilder.Entity("Domain.Addresses.Address", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,7 +30,7 @@ namespace Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("Address")
+                    b.Property<string>("AddressDetail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -557,11 +557,11 @@ namespace Infrastructure.Migrations
                     b.ToTable("Users", "dbo");
                 });
 
-            modelBuilder.Entity("Domain.Address.Addresses", b =>
+            modelBuilder.Entity("Domain.Addresses.Address", b =>
                 {
                     b.OwnsOne("Common.Domain.ValueObjects.PhoneNumber", "PhoneNumberForAddress", b1 =>
                         {
-                            b1.Property<long>("AddressesId")
+                            b1.Property<long>("AddressId")
                                 .HasColumnType("bigint");
 
                             b1.Property<string>("Value")
@@ -570,12 +570,12 @@ namespace Infrastructure.Migrations
                                 .HasColumnType("nvarchar(11)")
                                 .HasColumnName("PhoneNumber");
 
-                            b1.HasKey("AddressesId");
+                            b1.HasKey("AddressId");
 
                             b1.ToTable("Address", "dbo");
 
                             b1.WithOwner()
-                                .HasForeignKey("AddressesId");
+                                .HasForeignKey("AddressId");
                         });
 
                     b.Navigation("PhoneNumberForAddress")

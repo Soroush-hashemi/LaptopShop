@@ -11,6 +11,7 @@ using Domain.Users.Service;
 using Infrastructure;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Query.Addresses.GetById;
 
 namespace Config;
 public static class Bootstrapper
@@ -23,6 +24,8 @@ public static class Bootstrapper
         services.AddMediatR(typeof(CreateCategoryCommand).Assembly);
         services.AddMediatR(typeof(CreateCategoryCommandValidator).Assembly);
         services.AddMediatR(typeof(CreateCategoryCommandHandler).Assembly);
+        services.AddMediatR(typeof(GetAdderssByIdQuery).Assembly);
+        services.AddMediatR(typeof(GetAdderssByIdQueryHandler).Assembly);
 
         services.AddTransient<IProductDomainService, ProductDomainService>();
         services.AddTransient<IUserDomainService, UserDomainService>();

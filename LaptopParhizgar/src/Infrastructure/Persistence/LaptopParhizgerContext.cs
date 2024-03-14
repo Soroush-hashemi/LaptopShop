@@ -1,5 +1,5 @@
 ﻿using Common.Domain.Bases;
-using Domain.Address;
+using Domain.Addresses;
 using Domain.Carts;
 using Domain.Category;
 using Domain.Orders;
@@ -26,7 +26,7 @@ public class LaptopParhizgerContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductComment> ProductComments { get; set; }
     public DbSet<User> Users { get; set; }
-    public DbSet<Addresses> Addresses { get; set; }
+    public DbSet<Address> Addresses { get; set; }
     public DbSet<Cart> Carts { get; set; }
     public DbSet<CartItem> CartItem { get; set; }
     public DbSet<Order> Orders { get; set; }

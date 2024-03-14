@@ -1,6 +1,6 @@
 ﻿using Common.Application.FileUtil.Interfaces;
 using Common.Application.FileUtil.Services;
-using Domain.Address.Repository;
+using Domain.Addresses.Repository;
 using Domain.Carts.Repository;
 using Domain.Category.Repository;
 using Domain.Orders.Repository;
