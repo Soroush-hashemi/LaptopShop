@@ -2,7 +2,7 @@
 using Query.Sliders.DTO;
 
 namespace Query.Sliders.GetList;
-public class GetSliderListQuery : IQuery<List<SliderDto>>
+public class GetSlidersQuery : IQuery<List<SliderDto>>
 {
 
 }

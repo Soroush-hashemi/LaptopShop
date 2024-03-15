@@ -6,7 +6,7 @@ namespace Query.SliderPosters.DTO;
 public class SliderPostersDto : BaseDto
 {
     public string Image { get; set; }
-    public IFormFile ImageFile { get; set; }
     public string Link { get; set; }
-    public ImageLocation ImageLocation { get; set; }
+    public IFormFile ImageFile { get; set; }
+    public ImageLocation ImageLocationDto { get; set; }
 }

@@ -8,7 +8,6 @@ public class CartService : ICartService
 {
     private readonly LaptopParhizgerContext _context;
     private readonly IMediator _mediator;
-
     public CartService(LaptopParhizgerContext context, IMediator mediator)
     {
         _context = context;

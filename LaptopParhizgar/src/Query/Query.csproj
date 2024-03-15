@@ -13,8 +13,12 @@
 
   <ItemGroup>
     <Folder Include="Index\" />
-    <Folder Include="Payment\Service\" />
-    <Folder Include="ProductComment\Service\" />
+    <Folder Include="Products\DTOs\" />
+    <Folder Include="Products\GetById\" />
+    <Folder Include="Products\GetBySlug\" />
+    <Folder Include="Products\GetByFilter\" />
+    <Folder Include="Products\GetPopularProduct\" />
+    <Folder Include="Products\GetLastesProduct\" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Query.Sliders.DTO;
 
 namespace Query.Sliders.GetList;
-public class GetSliderListQueryHandler : IQueryHandler<GetSliderListQuery, List<SliderDto>>
+public class GetSliderListQueryHandler : IQueryHandler<GetSlidersQuery, List<SliderDto>>
 {
     private readonly LaptopParhizgerContext _context;
     public GetSliderListQueryHandler(LaptopParhizgerContext context)
@@ -12,7 +12,7 @@ public class GetSliderListQueryHandler : IQueryHandler<GetSliderListQuery, List<
         _context = context;
     }
 
-    public async Task<List<SliderDto>> Handle(GetSliderListQuery request, CancellationToken cancellationToken)
+    public async Task<List<SliderDto>> Handle(GetSlidersQuery request, CancellationToken cancellationToken)
     {
         return await _context.Slider.OrderByDescending(d => d.CreationDate)
             .Select(slider => new SliderDto()
