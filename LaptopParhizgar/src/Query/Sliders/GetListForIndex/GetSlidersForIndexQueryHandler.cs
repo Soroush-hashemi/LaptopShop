@@ -2,9 +2,8 @@
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Query.Sliders.DTO;
-using Query.Sliders.GetSliders;
 
-namespace Query.Sliders.GetSlidersForIndex;
+namespace Query.Sliders.GetListForIndex;
 public class GetSlidersForIndexQueryHandler : IQueryHandler<GetSlidersForIndexQuery, List<SliderDto>>
 {
     private readonly LaptopParhizgerContext _context;

@@ -2,7 +2,7 @@
 using Query.Addresses.DTO;
 
 namespace Query.Addresses;
-public static class AddressMapper
+internal static class AddressMapper
 {
     public static AddressDto Map(this Address address)
     {
