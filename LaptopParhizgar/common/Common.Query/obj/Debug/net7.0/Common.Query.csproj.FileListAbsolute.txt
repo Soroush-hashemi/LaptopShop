@@ -11,3 +11,16 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\D
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.pdb
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\ref\Common.Query.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.sourcelink.json
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Debug\net7.0\Common.Query.deps.json
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Debug\net7.0\Common.Query.dll
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Debug\net7.0\Common.Query.pdb
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.csproj.AssemblyReference.cache
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.AssemblyInfoInputs.cache
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.AssemblyInfo.cs
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.csproj.CoreCompileInputs.cache
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.sourcelink.json
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.dll
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\refint\Common.Query.dll
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\Common.Query.pdb
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Debug\net7.0\ref\Common.Query.dll

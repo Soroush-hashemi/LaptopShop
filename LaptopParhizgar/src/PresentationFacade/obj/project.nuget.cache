@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KzFU5X7X8Bq1rjp9SWz8NDdYO4M+taM7Ur90Apq/xpiFe950sGCD3ck/2+EMt7kyQ/XsVg+4uGLU1lpqwjuNjQ==",
+  "dgSpecHash": "Qys/mx5Mwil0YFQFsXgqRZ2TJ5FiBmjupctmb5XkjObgW9Alj4Z8sGM7dIpBKBWi/s1VdtRGgOvVdgD/SEcEKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\PresentationFacade\\PresentationFacade.csproj",
+  "projectFilePath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\PresentationFacade\\PresentationFacade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hashe\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
@@ -74,7 +74,10 @@
     "C:\\Users\\hashe\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512"
+    "C:\\Users\\hashe\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }

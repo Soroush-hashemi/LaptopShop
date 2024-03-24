@@ -63,7 +63,7 @@ public class EditProductCommand : IBaseCommand
     public string? MonthlyWorkCapacity { get; set; }
     #endregion
 
-    public EditProductCommand(long categoryId, long subCategoryId, string title, string slug, string description,
+    public EditProductCommand(long productId, long categoryId, long subCategoryId, string title, string slug, string description,
         long price, long? discountedPrice, IFormFile imageFile, IFormFile imageFileSecond, IFormFile? imageFileThird,
         IFormFile? imageFileFourth, IFormFile? imageFileFifth, string color, bool isSpecial, bool productNotExist,
         bool adminSuggestion, string brand, string weight, string dimensions, bool nonOriginal, string? includedItems,
@@ -73,6 +73,7 @@ public class EditProductCommand : IBaseCommand
         string? printSize, string? printingTechnology, string? paperSize, string? paperInputCapacity, string? printResolution,
         string? printerMemory, string? copySpeed, string? faxResolution, string? scannerResolution, string? scannerDepth, string? monthlyWorkCapacity)
     {
+        ProductId = productId;
         CategoryId = categoryId;
         SubCategoryId = subCategoryId;
         Title = title;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xFwLDIOQfu66KARD/mwFAGOj9HiY+SIUTsPEka8+JpNPzwqvXcgUeTqCqFlIfYHjuAFoZPJDyyd1BrsrdBUnNw==",
+  "dgSpecHash": "Ewbnx7dlZgQeMMrTwIw4/DQF1dpTKqapcMDIoY9wWQl6Zc6WM2SejSo2VEsiRNMIfnlOjWKBF+q/ZEv2T5f99g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hashe\\Desktop\\LaptopParhizgar\\LaptopParhizgar\\src\\Query\\Query.csproj",
+  "projectFilePath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\Query\\Query.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hashe\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
@@ -74,7 +74,10 @@
     "C:\\Users\\hashe\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512"
+    "C:\\Users\\hashe\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": []
 }

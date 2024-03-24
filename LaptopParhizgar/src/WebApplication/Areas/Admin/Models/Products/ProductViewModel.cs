@@ -80,11 +80,11 @@ public class ProductViewModel
 
     [Display(Name = "وزن")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-    public string? Weight { get; set; }
+    public string Weight { get; set; }
 
     [Display(Name = "ابعاد")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-    public string? Dimensions { get; set; }
+    public string Dimensions { get; set; }
 
     [Display(Name = "غیراصل")]
     public bool nonOriginal { get; set; }

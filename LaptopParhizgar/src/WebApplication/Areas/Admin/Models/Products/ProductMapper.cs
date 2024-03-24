@@ -1,4 +1,7 @@
 ﻿using Application.Products.Create;
+using Application.Products.Delete;
+using Application.Products.Edit;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Query.Products.DTOs;
 using Query.SeoData;
 using WebApplication.Areas.Admin.Models.Shared;
@@ -6,10 +9,41 @@ using WebApplication.Areas.Admin.Models.Shared;
 namespace WebApplication.Areas.Admin.Models.Product;
 public static class ProductMapper
 {
-    public static CreateProductCommand MapToCreate(this ProductViewModel command)
+    public static CreateProductCommand MapToCreate(this ProductViewModel ViewModel)
     {
-        return new CreateProductCommand();
+        return new CreateProductCommand(ViewModel.CategoryId, ViewModel.SubCategoryId, ViewModel.Title,
+        ViewModel.Slug, ViewModel.Description, ViewModel.Price, ViewModel.DiscountedPrice, ViewModel.ImageFile,
+        ViewModel.ImageFileSecond, ViewModel.ImageFileThird, ViewModel.ImageFileFourth, ViewModel.ImageFileFifth,
+        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductIsExist, ViewModel.AdminSuggestion, ViewModel.Brand,
+        ViewModel.Weight, ViewModel.Dimensions, ViewModel.nonOriginal, ViewModel.IncludedItems, ViewModel.Classification,
+        ViewModel.Situation, ViewModel.SpecialFeatures, ViewModel.seoDataViewModel.MapSeoData(), ViewModel.BigTable,
+        ViewModel.Cpu, ViewModel.ProcessorSpeed, ViewModel.Ram, ViewModel.TypeOfRam, ViewModel.Storage, ViewModel.TypeOfStorage,
+        ViewModel.Graphic, ViewModel.TypeOfGraphic, ViewModel.ScreenSize, ViewModel.Screen, ViewModel.LapTopPorts, ViewModel.CartridgeType,
+        ViewModel.PrintType, ViewModel.PrintSize, ViewModel.PrintingTechnology, ViewModel.PaperSize, ViewModel.PaperInputCapacity,
+        ViewModel.PrintResolution, ViewModel.PrinterMemory, ViewModel.CopySpeed, ViewModel.FaxResolution, ViewModel.ScannerResolution,
+        ViewModel.ScannerDepth, ViewModel.MonthlyWorkCapacity);
     }
+
+    public static EditProductCommand MapToEdit(this ProductViewModel ViewModel)
+    {
+        return new EditProductCommand(ViewModel.Id, ViewModel.CategoryId, ViewModel.SubCategoryId, ViewModel.Title,
+        ViewModel.Slug, ViewModel.Description, ViewModel.Price, ViewModel.DiscountedPrice, ViewModel.ImageFile,
+        ViewModel.ImageFileSecond, ViewModel.ImageFileThird, ViewModel.ImageFileFourth, ViewModel.ImageFileFifth,
+        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductIsExist, ViewModel.AdminSuggestion, ViewModel.Brand,
+        ViewModel.Weight, ViewModel.Dimensions, ViewModel.nonOriginal, ViewModel.IncludedItems, ViewModel.Classification,
+        ViewModel.Situation, ViewModel.SpecialFeatures, ViewModel.seoDataViewModel.MapSeoData(), ViewModel.BigTable,
+        ViewModel.Cpu, ViewModel.ProcessorSpeed, ViewModel.Ram, ViewModel.TypeOfRam, ViewModel.Storage, ViewModel.TypeOfStorage,
+        ViewModel.Graphic, ViewModel.TypeOfGraphic, ViewModel.ScreenSize, ViewModel.Screen, ViewModel.LapTopPorts, ViewModel.CartridgeType,
+        ViewModel.PrintType, ViewModel.PrintSize, ViewModel.PrintingTechnology, ViewModel.PaperSize, ViewModel.PaperInputCapacity,
+        ViewModel.PrintResolution, ViewModel.PrinterMemory, ViewModel.CopySpeed, ViewModel.FaxResolution, ViewModel.ScannerResolution,
+        ViewModel.ScannerDepth, ViewModel.MonthlyWorkCapacity);
+    }
+
+    public static DeleteProductCommand MapToDelete(this ProductViewModel ViewModel)
+    {
+        return new DeleteProductCommand(ViewModel.Id);
+    }
+
 
     public static ProductViewModel Map(this ProductDto dto)
     {
