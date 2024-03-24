@@ -1,0 +1,60 @@
+﻿@using Microsoft.AspNetCore.Razor.TagHelpers;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>داشبرد | کنترل پنل مدیریت</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="~/Admin/dist/css/bootstrap-theme.css">
+    <link rel="icon" type="image/png" href="~/assets/images/favicon.ico">
+    <link rel="stylesheet" href="~/Admin/dist/css/rtl.css">
+    <link rel="stylesheet" href="~/Admin/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Admin/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/Admin/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="~/Admin/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="~/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="~/Admin/dist/css/customize-adminlte.css">
+</head>
+<script src="~/Admin/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="~/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/Admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="~/Admin/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="~/Admin/dist/js/adminlte.min.js"></script>
+<script src="~/Admin/dist/js/demo.js"></script>
+<script src="~/js/custom.js"></script>
+<script src="~/js/global.js"></script>
+<script src="~/cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <partial name="_Header" />
+        <partial name="_SideBar" />
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        <partial name="_AsideBar" />
+        <div class="control-sidebar-bg"></div>
+        <partial name="_AsideBar" />
+    </div>
+    <script src="~/Admin/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/Admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Admin/bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="~/Admin/dist/js/adminlte.min.js"></script>
+    <script src="~/Admin/dist/js/demo.js"></script>
+    <script src="~/js/custom.js"></script>
+    <script src="~/js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/ckeditor4/ckeditor/ckeditor.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            <partial name="_ValidationScriptsPartial" />
+                <script>
+                $(document).ready(function () {
+                    $('.sidebar-menu').tree();
+                })
+    </script>
+    @await RenderSectionAsync("Scripts", false)
+</body>
+</html>

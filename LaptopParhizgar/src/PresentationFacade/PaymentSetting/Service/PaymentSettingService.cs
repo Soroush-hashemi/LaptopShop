@@ -1,4 +1,5 @@
-﻿using Infrastructure.Persistence;
+﻿using Common.Application;
+using Infrastructure.Persistence;
 using PresentationFacade.PaymentSetting.Service.DTO;
 
 namespace PresentationFacade.PaymentSetting.Service;
@@ -15,8 +16,28 @@ public class PaymentSettingService : IPaymentSettingService
         var PaymentSetting = _context.PaymentSettings.FirstOrDefault();
         var Payment = new PaymentSettingDto()
         {
-            PaymentStatus = PaymentSetting.PaymentSetting,
+            PaymentStatus = PaymentSetting.PaymentStatus,
         };
         return Payment;
+    }
+
+    public OperationResult SetPaymentToDisable()
+    {
+        var payment = _context.PaymentSettings.FirstOrDefault();
+        payment.Disable();
+
+        _context.PaymentSettings.Update(payment);
+        _context.SaveChanges();
+        return OperationResult.Success();
+    }
+
+    public OperationResult SetPaymentToEnable()
+    {
+        var payment = _context.PaymentSettings.FirstOrDefault();
+        payment.Enable();
+
+        _context.PaymentSettings.Update(payment);
+        _context.SaveChanges();
+        return OperationResult.Success();
     }
 }

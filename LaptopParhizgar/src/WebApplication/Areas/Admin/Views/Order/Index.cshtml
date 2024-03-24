@@ -1,0 +1,61 @@
+﻿@using Common.Application
+@using WebApplication.Areas.Admin.Models.Order
+@model List<WebApplication.Areas.Admin.Models.Order.OrderViewModel>
+@{
+    ViewData["title"] = "سفارشات";
+    ViewData["selected"] = "Order";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>شماره سفارش</th>
+                        <th>کاربر</th>
+                        <th>مبلغ پرداخت شده</th>
+                        <th>وضعیت سفارش</th>
+                        <th>زمان سفارش</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.UserName</td>
+                            <td>@item.TotalPrice.ToString("n0")</td>
+
+                            @if (item.OrderState == OrderStateViewModel.Processing)
+                            {
+                                <td class="Waiting text">در حال انجام</td>
+                            }
+                            @if (item.OrderState == OrderStateViewModel.Canceled)
+                            {
+                                <td class="Waiting text-danger">لغو شد</td>
+                            }
+                            @if (item.OrderState == OrderStateViewModel.Delivered)
+                            {
+                                <td class="Waiting text-success">ارسال شده</td>
+                            }
+                            <td>@item.CreationDate</td>
+                            <td>@item.CreationDate.ToPersianDate()</td>
+                            <td><a asp-area="admin" asp-controller="Order" asp-action="check" asp-route-OrderId="@item.Id" class="btn btn-info btn-sm">بررسی</a></td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

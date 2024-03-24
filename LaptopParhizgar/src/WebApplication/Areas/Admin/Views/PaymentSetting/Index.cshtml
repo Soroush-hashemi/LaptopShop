@@ -1,0 +1,51 @@
+﻿@using WebApplication.Areas.Admin.Models.PaymentSetting
+@model PaymentSettingViewModel
+@{
+    ViewData["title"] = "مدیریت درگاه";
+    ViewData["selected"] = "مدیریت درگاه";
+}
+
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <tbody>
+                    @if (Model != null)
+                    {
+                        <tr>
+                            <td>
+                                @if (Model.PaymentStatus == true)
+                                {
+                                    <a class="btn btn-success btn-sm">
+                                        درگاه فعال است
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-danger btn-sm">
+                                        درگاه غیر فعال است
+                                    </a>
+                                }
+                            </td>
+                            <td>
+                                <a asp-area="admin" asp-controller="PaymentSetting" asp-action="Enable" class="btn btn-info btn-sm">فعال کردن</a>
+                            </td>
+                            <td>
+                                <a asp-area="admin" asp-controller="PaymentSetting" asp-action="Disable" class="btn btn-info btn-sm">غیر فعال کردن</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

@@ -23,14 +23,14 @@ public class OrderFacade : IOrderFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<OperationResult> SetOrderStateOnCanceled(SetOrderStateOnCanceledCommand command)
+    public async Task<OperationResult> SetOrderStateOnCanceled(long OrderId)
     {
-        return await _mediator.Send(command);
+        return await _mediator.Send(new SetOrderStateOnCanceledCommand(OrderId));
     }
 
-    public async Task<OperationResult> SetOrderStateOnDelivered(SetOrderStateOnDeliveredCommand command)
+    public async Task<OperationResult> SetOrderStateOnDelivered(long OrderId)
     {
-        return await _mediator.Send(command);
+        return await _mediator.Send(new SetOrderStateOnDeliveredCommand(OrderId));
     }
 
     public async Task<List<OrderDto>> GetAllOrders()
@@ -43,8 +43,8 @@ public class OrderFacade : IOrderFacade
         return await _mediator.Send(query);
     }
 
-    public async Task<List<OrderDetailsDto>> GetByOrderId(GetOrderDetailsByOrderIdQuery query)
+    public async Task<List<OrderDetailsDto>> GetByOrderId(long OrderId)
     {
-        return await _mediator.Send(query);
+        return await _mediator.Send(new GetOrderDetailsByOrderIdQuery(OrderId));
     }
 }

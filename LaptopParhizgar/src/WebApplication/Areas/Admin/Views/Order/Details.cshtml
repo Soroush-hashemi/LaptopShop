@@ -1,0 +1,74 @@
+﻿@model List<WebApplication.Areas.Admin.Models.Order.OrderDetailsViewModel>
+@{
+    ViewData["title"] = "جزئیات سفارش";
+    ViewData["selected"] = "Details";
+    bool LoopRun = true;
+}
+
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin/Order"><i class="fa fa-dashboard"></i>خانه</a></li>
+        <li><a href="~/Admin/Order">سفارش</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="invoice">
+    <div class="row invoice-info">
+        <div class="col-sm-4 invoice-col">
+            @foreach (var item in Model)
+            {
+                @if (LoopRun == true)
+                {
+                    <address>
+                        <strong>آدرس خریدار</strong><br>
+                        @item.Province , @item.City<br>
+                        @item.AddressDetail<br>
+                        تلفن: @item.PhoneNumberForAddress<br>
+                        کد پستی: @item.PostalCode<br>
+                        نام خریدار: @item.NameOfRecipient<br>
+                    </address>
+                    <br />
+                    <a asp-area="admin" asp-controller="Order" asp-action="Delivered" asp-route-OrderId="@item.Id" class="btn btn-success btn-sm">ارسال شد</a>
+                    <a asp-area="admin" asp-controller="Order" asp-action="Canceled" asp-route-OrderId="@item.Id" class="btn btn-danger btn-sm">لغو شد</a>
+                }
+                LoopRun = false;
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>تعداد سفارش</th>
+                        <th>محصول</th>
+                        <th>قیمت محصول</th>
+                        <th>وضعیت شفارش</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Count
+                            </td>
+                            <td>
+                                <a href="~/Product/@item.ProductSlug" class="order-review-heading">@item.ProductName</a>
+                            </td>
+                            <td>
+                                @item.Price.ToString("n0")
+                            </td>
+                            <td>
+                                @item.OrderState
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

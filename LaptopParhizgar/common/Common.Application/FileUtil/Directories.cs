@@ -7,7 +7,7 @@ public class Directories
     public const string SliderPosterImage = "wwwroot/images/SilderPoster";
 
     public static string GetProductImage(string imageName) => $"{productImage.Replace("wwwroot", "")}/{imageName}";
-    public static string GetProductContentImage(string imageName) => $"{productContentImage.Replace("wwwroot", "")}/{imageName}";
+    public static string GetProductContentImage(Task<string> imageName) => $"{productContentImage.Replace("wwwroot", "")}/{imageName}";
     public static string GetSliderImage(string imageName) => $"{SliderImage.Replace("wwwroot", "")}/{imageName}";
     public static string GetSliderPosterImage(string imageName) => $"{SliderPosterImage.Replace("wwwroot", "")}/{imageName}";
 }

@@ -49,9 +49,11 @@ public class Category : BaseEntity
     {
         NullOrEmptyException.CheckString(title, nameof(title));
         NullOrEmptyException.CheckString(slug, nameof(slug));
-
-        var result = domainService.IsSlugExist(slug);
-        if (result.Status != Common.Application.OperationResultStatus.Success)
-            throw new NullOrEmptyException(result.Message);
+        if (Slug != slug)
+        {
+            var result = domainService.IsSlugExist(slug);
+            if (result.Status != Common.Application.OperationResultStatus.Success)
+                throw new NullOrEmptyException(result.Message);
+        }
     }
 }

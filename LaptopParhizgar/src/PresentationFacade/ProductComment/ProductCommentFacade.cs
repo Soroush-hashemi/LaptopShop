@@ -1,6 +1,5 @@
 ﻿using Application.ProductComment.Create;
 using Application.ProductComment.Delete;
-using Application.ProductComment.Edit;
 using Common.Application;
 using MediatR;
 
@@ -18,13 +17,8 @@ public class ProductCommentFacade : IProductCommentFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<OperationResult> Delete(DeleteCommentCommand command)
+    public async Task<OperationResult> Delete(long commentId)
     {
-        return await _mediator.Send(command);
-    }
-
-    public async Task<OperationResult> Edit(EditCommentCommand command)
-    {
-        return await _mediator.Send(command);
+        return await _mediator.Send(new DeleteCommentCommand(commentId));
     }
 }

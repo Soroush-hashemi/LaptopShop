@@ -1,0 +1,75 @@
+﻿@using Common.Application
+@using WebApplication.Areas.Admin.Models.Users
+@model List<UserViewModel>
+@{
+    ViewData["title"] = "کاربران";
+    ViewData["selected"] = "Users";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>نام کاربری</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>شماره تلفن</th>
+                        <th>ایمیل</th>
+                        <th>نقش</th>
+                        <th>زمان عضویت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.Id
+                                </td>
+                                <td>
+                                    @item.UserName
+                                </td>
+                                <td>
+                                    @item.FullName
+                                </td>
+                                <td>
+                                    @item.PhoneNumber.Value
+                                </td>
+                                <td>
+                                    @item.Email
+                                </td>
+                                <td>
+                                    @item.Roles
+                                </td>
+                                <td>
+                                    @item.CreationDate.ToPersianDate()
+                                </td>
+                                @if (item.Roles != Query.Users.DTOs.UserRoleDto.admin)
+                                {
+                                    <td>
+                                        <a asp-area="Admin" asp-controller="User" asp-action="Delete" asp-route-UserId="@item.Id" class="btn btn-danger btn-sm">حذف</a>
+                                    </td>
+                                }
+                            </tr>
+                            counter += 1;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

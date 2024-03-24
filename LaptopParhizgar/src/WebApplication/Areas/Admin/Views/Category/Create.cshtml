@@ -1,0 +1,49 @@
+﻿@model WebApplication.Areas.Admin.Models.Categories.CategoryViewModel
+@{
+    ViewData["title"] = "افزودن دسته بندی";
+    ViewData["selected"] = "category";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li><a href="~/Admin/Category">دسته بندی ها</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <form class="box box-danger" method="post" href="~/Admin/Category/Create">
+        <input type="hidden" asp-for="ParentId" />
+        <div class="box-body row">
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.Title)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.Slug)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.MetaTitle)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.MetaDescription)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.MetaKeyWords)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.Canonical)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.Schema)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.SeoDataViewModel.IndexPage)
+            </div>
+        </div>
+        <div class="box-footer">
+            <button class="btn btn-success" type="submit">ثبت اطلاعات</button>
+        </div>
+    </form>
+</section>

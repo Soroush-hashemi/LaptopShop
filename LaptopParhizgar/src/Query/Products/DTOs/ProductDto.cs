@@ -10,7 +10,7 @@ public class ProductDto : BaseDto
     public readonly IFormFile? ImageFileThird;
     public readonly IFormFile? ImageFileFourth;
     public readonly IFormFile? ImageFileFifth;
-    public long CategoryId { get; set; }
+    public long CategoryId { get; set; } 
     public long SubCategoryId { get; set; }
     public string Title { get; set; }
     public string Slug { get; set; }

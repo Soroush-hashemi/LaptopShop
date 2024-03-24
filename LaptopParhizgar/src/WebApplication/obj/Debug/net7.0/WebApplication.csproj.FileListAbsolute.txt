@@ -101,3 +101,4 @@ C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\WebApplication\bin\De
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\WebApplication\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\WebApplication\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\WebApplication\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\hashe\Desktop\LaptopParhizgar\LaptopParhizgar\src\WebApplication\bin\Debug\net7.0\Newtonsoft.Json.dll

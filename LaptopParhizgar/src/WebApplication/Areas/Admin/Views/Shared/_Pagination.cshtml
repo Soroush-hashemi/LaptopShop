@@ -1,0 +1,16 @@
+﻿@model WebApplication.Areas.Admin.Models.Shared.BasePaginationViewModel
+@if (Model.PageCount > 1)
+{
+    <div class="box-footer">
+        <div style="padding:10px">
+            <ul class="pagination" style="display: inline-block">              
+                @for (var i = Model.StartPage; i <= Model.EndPage; i++)
+                {
+                    <li class="paginate_button @(i == Model.CurrentPage ? "active" : null)">
+                        <a  onclick="changePage(@i)"href="?pageId=@i">@i</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}

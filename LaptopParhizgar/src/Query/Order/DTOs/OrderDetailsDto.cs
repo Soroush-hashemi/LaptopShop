@@ -17,4 +17,5 @@ public class OrderDetailsDto : BaseDto
     public string PostalCode { get; set; }
     public string AddressDetail { get; set; }
     public string PhoneNumberForAddress { get; set; }
+    public DateTime CreationDate { get; set; }
 }

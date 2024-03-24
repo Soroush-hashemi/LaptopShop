@@ -1,0 +1,57 @@
+﻿@model List<WebApplication.Areas.Admin.Models.Comment.CommentViewModel>
+@{
+    ViewData["title"] = "نظرات";
+    ViewData["selected"] = "Comment";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>محصول</th>
+                        <th>کامنت</th>
+                        <th>نام کاربر</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@counter</td>
+                                <td>
+                                    <a href="~/product/@item.ProductSlug"> @item.ProductTitle </a>
+                                </td>
+                                <td>
+                                    @item.Text
+                                </td>
+                                <td>
+                                    @item.UserFullName
+                                </td>
+                                <td>
+                                    <a asp-area="admin" asp-controller="Comment" asp-action="Delete" asp-route-CommentId="@item.Id" class="btn btn-danger btn-sm">حذف</a>
+                                </td>
+                            </tr>
+                            counter += 1;
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

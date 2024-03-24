@@ -21,12 +21,6 @@ public class ProductComment : BaseEntity
         Text = text;
     }
 
-    public void Edit(string text)
-    {
-        Guard(text);
-        Text = text;
-    }
-
     public void Guard(string text)
     {
         NullOrEmptyException.CheckString(text, nameof(text));

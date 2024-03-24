@@ -10,6 +10,7 @@ internal static class CategoryMapper
         return new CategoryDto()
         {
             Id = category.Id,
+            ParentId = category.ParentId,
             Title = category.Title,
             Slug = category.Slug,
             seoDataDto = category.SeoData.MapSeo(),
@@ -27,6 +28,7 @@ internal static class CategoryMapper
             model.Add(new CategoryDto()
             {
                 Id = category.Id,
+                ParentId = category.ParentId,
                 Title = category.Title,
                 Slug = category.Slug,
                 seoDataDto = category.SeoData.MapSeo(),

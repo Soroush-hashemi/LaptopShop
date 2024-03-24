@@ -12,11 +12,13 @@ public class CartItemRepository : BaseRepository<CartItem>, ICartItemRepository
 
     public CartItem FindByProductIdandCartId(long ProductId, long cartId)
     {
-        throw new NotImplementedException();
+        var cartItem = _context.CartItem.Where(p => p.ProductId == ProductId && p.CartId == cartId).FirstOrDefault();
+        return cartItem;
     }
 
     public void Remove(long cartItemId)
     {
-        throw new NotImplementedException();
+        var orderItem = _context.CartItem.FirstOrDefault(o => o.Id == cartItemId);
+        _context.Remove(orderItem);
     }
 }

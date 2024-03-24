@@ -3,15 +3,20 @@
 namespace Domain.Payment;
 public class PaymentSettings : BaseEntity
 {
-    public bool PaymentSetting { get; private set; }
+    public bool PaymentStatus { get; private set; }
+
+    private PaymentSettings()
+    {
+        
+    }
 
     public void Enable()
     {
-        PaymentSetting = true;
+        PaymentStatus = true;
     }
 
     public void Disable()
     {
-        PaymentSetting = false;
+        PaymentStatus = false;
     }
 }

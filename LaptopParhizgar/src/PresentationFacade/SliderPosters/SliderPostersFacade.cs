@@ -10,8 +10,8 @@ using Query.SliderPosters.GetList;
 namespace PresentationFacade.SliderPosters;
 public class SliderPostersFacade : ISliderPostersFacade
 {
-    private readonly Mediator _mediator;
-    public SliderPostersFacade(Mediator mediator)
+    private readonly IMediator _mediator;
+    public SliderPostersFacade(IMediator mediator)
     {
         _mediator = mediator;
     }

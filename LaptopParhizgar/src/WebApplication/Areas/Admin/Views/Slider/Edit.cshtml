@@ -1,0 +1,31 @@
+﻿@using WebApplication.Areas.Admin.Models.Sliders
+@model SliderViewModel
+@{
+    ViewData["title"] = "ویرایش اسلایدر";
+    ViewData["selected"] = "Slider";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li><a href="~/Admin/Slider">@ViewData["selected"]</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <form class="box box-danger" method="post" asp-area="Admin" asp-controller="Slider" asp-action="Edit" enctype="multipart/form-data">
+        <div class="box-body row">
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.Link)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.ImageFile)
+            </div>
+        </div>
+        <div class="box-footer">
+            <button class="btn btn-success" type="submit">ثبت اطلاعات</button>
+        </div>
+    </form>
+</section>
