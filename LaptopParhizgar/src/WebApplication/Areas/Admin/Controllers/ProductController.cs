@@ -2,9 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using PresentationFacade.Products;
 using PresentationFacade.Products.Serivce;
-using Query.Products.DTOs;
 using Query.Products.GetById;
-using WebApplication.Areas.Admin.Models.Product;
+using WebApplication.Areas.Admin.Models.Products;
 
 namespace WebApplication.Areas.Admin.Controllers;
 public class ProductController : AdminControllerBase
@@ -19,15 +18,16 @@ public class ProductController : AdminControllerBase
 
     public IActionResult Index(int pageId = 1, string title = "", string categorySlug = "")
     {
-        var param = new ProductFilterParams()
+        var param = new ProductFilterParamsViewModel()
         {
             CategorySlug = categorySlug,
             PageId = pageId,
             Take = 10,
             Title = title
         };
-        var Model = _service.GetProductByFilter(param);
-        return View(Model);
+
+        var Model = _service.GetProductByFilter(param.MapParamViewModel());
+        return View(Model.MapFilter());
     }
 
     [Route("/Admin/Product/Create/{Id?}")]

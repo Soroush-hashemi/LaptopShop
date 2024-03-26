@@ -1,0 +1,55 @@
+﻿@using Common.Application
+@using WebApplication.Areas.Admin.Models.RequestPayment
+@model RequestPayFilterViewModel
+@{
+    ViewData["title"] = "درخواست پرداخت ها";
+    ViewData["selected"] = "RequestPay";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>شماره درخواست پرداخت</th>
+                        <th>مبلغ</th>
+                        <th>زمان</th>
+                        <th>عملیات پرداخت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.RequestPay != null)
+                    {
+                        @foreach (var item in Model.RequestPay)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Amount.ToString("n0")</td>
+                                <td>@item.CreationDate.ToPersianDate()</td>
+                                @if (item.IsPay == true)
+                                {
+                                    <td>پرداخت شده</td>
+                                }
+                                else
+                                {
+                                    <td>پرداخت ناموفق</td>
+                                }
+                                <td><a asp-area="admin" asp-controller="RequestPay" asp-action="check" asp-route-RequestPayId="@item.Id" class="btn btn-info btn-sm">بررسی</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <partial name="_Pagination" model="Model" />
+    </div>
+</section>

@@ -53,8 +53,8 @@ C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.AssemblyInfo.cs
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.csproj.CoreCompileInputs.cache
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.sourcelink.json
-C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.csproj.CopyComplete
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.dll
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\refint\Config.dll
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.pdb
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\ref\Config.dll
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\Config\obj\Debug\net7.0\Config.csproj.Up2Date

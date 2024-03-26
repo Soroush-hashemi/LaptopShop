@@ -2,11 +2,13 @@
 using Application.Products.Delete;
 using Application.Products.Edit;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PresentationFacade.RequestPayment.Service.DTO;
 using Query.Products.DTOs;
 using Query.SeoData;
+using WebApplication.Areas.Admin.Models.RequestPayment;
 using WebApplication.Areas.Admin.Models.Shared;
 
-namespace WebApplication.Areas.Admin.Models.Product;
+namespace WebApplication.Areas.Admin.Models.Products;
 public static class ProductMapper
 {
     public static CreateProductCommand MapToCreate(this ProductViewModel ViewModel)
@@ -14,7 +16,7 @@ public static class ProductMapper
         return new CreateProductCommand(ViewModel.CategoryId, ViewModel.SubCategoryId, ViewModel.Title,
         ViewModel.Slug, ViewModel.Description, ViewModel.Price, ViewModel.DiscountedPrice, ViewModel.ImageFile,
         ViewModel.ImageFileSecond, ViewModel.ImageFileThird, ViewModel.ImageFileFourth, ViewModel.ImageFileFifth,
-        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductIsExist, ViewModel.AdminSuggestion, ViewModel.Brand,
+        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductNotExist, ViewModel.AdminSuggestion, ViewModel.Brand,
         ViewModel.Weight, ViewModel.Dimensions, ViewModel.nonOriginal, ViewModel.IncludedItems, ViewModel.Classification,
         ViewModel.Situation, ViewModel.SpecialFeatures, ViewModel.seoDataViewModel.MapSeoData(), ViewModel.BigTable,
         ViewModel.Cpu, ViewModel.ProcessorSpeed, ViewModel.Ram, ViewModel.TypeOfRam, ViewModel.Storage, ViewModel.TypeOfStorage,
@@ -29,7 +31,7 @@ public static class ProductMapper
         return new EditProductCommand(ViewModel.Id, ViewModel.CategoryId, ViewModel.SubCategoryId, ViewModel.Title,
         ViewModel.Slug, ViewModel.Description, ViewModel.Price, ViewModel.DiscountedPrice, ViewModel.ImageFile,
         ViewModel.ImageFileSecond, ViewModel.ImageFileThird, ViewModel.ImageFileFourth, ViewModel.ImageFileFifth,
-        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductIsExist, ViewModel.AdminSuggestion, ViewModel.Brand,
+        ViewModel.Color, ViewModel.IsSpecial, ViewModel.ProductNotExist, ViewModel.AdminSuggestion, ViewModel.Brand,
         ViewModel.Weight, ViewModel.Dimensions, ViewModel.nonOriginal, ViewModel.IncludedItems, ViewModel.Classification,
         ViewModel.Situation, ViewModel.SpecialFeatures, ViewModel.seoDataViewModel.MapSeoData(), ViewModel.BigTable,
         ViewModel.Cpu, ViewModel.ProcessorSpeed, ViewModel.Ram, ViewModel.TypeOfRam, ViewModel.Storage, ViewModel.TypeOfStorage,
@@ -71,7 +73,7 @@ public static class ProductMapper
             ImageNameFifth = dto.ImageNameFifth,
             Color = dto.Color,
             IsSpecial = dto.IsSpecial,
-            ProductIsExist = dto.ProductNotExist,
+            ProductNotExist = dto.ProductNotExist,
             AdminSuggestion = dto.AdminSuggestion,
             Brand = dto.Brand,
             Weight = dto.Weight,
@@ -107,6 +109,43 @@ public static class ProductMapper
             ScannerResolution = dto.ScannerResolution,
             ScannerDepth = dto.ScannerDepth,
             MonthlyWorkCapacity = dto.MonthlyWorkCapacity,
+        };
+    }
+
+    public static ProductFilterParamsViewModel MapParamDto(this ProductFilterParams model)
+    {
+        return new ProductFilterParamsViewModel()
+        {
+            PageId = model.PageId,
+            CategorySlug = model.CategorySlug,
+            Take = model.Take,
+            Title = model.Title,
+        };
+    }
+
+    public static ProductFilterParams MapParamViewModel(this ProductFilterParamsViewModel viewmodel)
+    {
+        return new ProductFilterParams()
+        {
+            PageId = viewmodel.PageId,
+            CategorySlug = viewmodel.CategorySlug,
+            Take = viewmodel.Take,
+            Title = viewmodel.Title,
+        };
+    }
+
+    public static ProductFilterViewModel MapFilter(this ProductFilterDto dto)
+    {
+        return new ProductFilterViewModel()
+        {
+            EntityCount = dto.EntityCount,
+            EndPage = dto.EndPage,
+            StartPage = dto.StartPage,
+            Take = dto.Take,
+            CurrentPage = dto.CurrentPage,
+            FilterParams = dto.FilterParams.MapParamDto(),
+            Product = dto.Product.MapList(),
+            PageCount = dto.PageCount,
         };
     }
 

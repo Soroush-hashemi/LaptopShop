@@ -1,6 +1,4 @@
-﻿using Query.Products.DTOs;
-using WebApplication.Areas.Admin.Models.Product;
-using WebApplication.Areas.Admin.Models.Shared;
+﻿using WebApplication.Areas.Admin.Models.Shared;
 
 namespace WebApplication.Areas.Admin.Models.Products;
 public class ProductFilterViewModel : BasePaginationViewModel

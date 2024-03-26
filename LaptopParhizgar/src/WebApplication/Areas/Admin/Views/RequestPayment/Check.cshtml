@@ -1,0 +1,56 @@
+﻿@using WebApplication.Areas.Admin.Models.RequestPayment
+@model RequestPayViewModel
+@{
+    ViewData["title"] = "بررسی درخواست پرداخت";
+    ViewData["selected"] = "RequestPay";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li><a href="~/Admin/RequestPay"><i class="fa fa-dashboard"></i> درخواست پرداخت ها</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="invoice">
+    <div class="row invoice-info">
+        <div class="col-sm-4 invoice-col">
+            <address>
+                <strong>مشخصات کاربر</strong><br>
+                نام‌ونام خانوادگی کاربر :@Model.Fullname<br>
+                نام کاربری: @Model.Username<br>
+                تلفن: @Model.PhoneNumber<br>
+                ایمیل: @Model.Email<br>
+            </address>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>(Guid)ایدی درخواست پرداخت</th>
+                        <th>عملیات پرداخت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Model.guid
+                        </td>
+                        @if (Model.IsPay == true)
+                        {
+                            <td>پرداخت شده</td>
+                        }
+                        else
+                        {
+                            <td>پرداخت ناموفق</td>
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

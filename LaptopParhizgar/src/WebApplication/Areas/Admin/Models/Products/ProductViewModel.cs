@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using WebApplication.Areas.Admin.Models.Shared;
 
-namespace WebApplication.Areas.Admin.Models.Product;
+namespace WebApplication.Areas.Admin.Models.Products;
 public class ProductViewModel
 {
     public long Id { get; set; }
@@ -65,7 +65,7 @@ public class ProductViewModel
     public bool IsSpecial { get; set; }
 
     [Display(Name = "کالا موجود نیست ؟")]
-    public bool ProductIsExist { get; set; }
+    public bool ProductNotExist { get; set; }
 
     [Display(Name = "جدول بزرگ ؟")]
     public bool BigTable { get; set; }

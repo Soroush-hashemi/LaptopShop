@@ -203,6 +203,6 @@ C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\scopedcss\bundle\WebApplication.styles.css
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\scopedcss\projectbundle\WebApplication.bundle.scp.css
-C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\WebApplication.csproj.CopyComplete
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\WebApplication.genruntimeconfig.cache
 C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\ref\WebApplication.dll
+C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\obj\Debug\net7.0\WebAppli.11721D13.Up2Date

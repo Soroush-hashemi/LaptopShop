@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aVqCTWNIyhaT76Ni/+RArOh6mNN+jC2P2g0TAsQiGR/yoZoFEN9cYMjzsLOSRvJkvmnrYe1ghZfm6r2/HJ6VDQ==",
+  "dgSpecHash": "XBzJKJ/AmGG3/MMuFHJmlEbxdb3pzz7W4iG9RY6o/ETioZNT5I6qu59G9pNfvNAjXzHzhLNUihbrHvMuLbr9+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
@@ -25,8 +25,8 @@
     "C:\\Users\\hashe\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": []

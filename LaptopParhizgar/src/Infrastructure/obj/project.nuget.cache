@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E/uZ+bAR5qs1ti/KP9kWVXwCnT80ss9XE/TCX2A8ikBmVOrjx5PejEUBS+s6UVF3dPiS/0prwXHmLzLKskXIfA==",
+  "dgSpecHash": "wtYaHEHoarmIIohBRCzkK7JIoxCA7UaQ9uhFHLEk+y2EkoFB2Tv30HGjm77U62aC0RvQy3CZYuVGenYF712S2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -81,8 +81,8 @@
     "C:\\Users\\hashe\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\hashe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": []

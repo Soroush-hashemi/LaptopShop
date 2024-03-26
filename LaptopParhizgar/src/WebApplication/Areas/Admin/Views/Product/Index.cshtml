@@ -1,0 +1,139 @@
+﻿@using Common.Application.FileUtil
+@using WebApplication.Areas.Admin.Models.Products
+@model ProductFilterViewModel
+@{
+    ViewData["title"] = "مدیریت محصولات";
+    ViewData["selected"] = "Product";
+    var counter = 1;
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <div class="box box-danger">
+        <div class="box-body">
+            <form>
+                <div class="box-header">
+                    <button type="submit" class="btn btn-info pull-left">فیلتر </button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" type="text" value="@Model.FilterParams.Title" placeholder="عنوان" name="title" />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input class="form-control" type="text" value="@Model.FilterParams.CategorySlug" placeholder="Slug Category" name="categorySlug" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a class="btn btn-success" style="margin-bottom: 5px" asp-area="Admin" asp-controller="Product" asp-action="AddProduct">افزودن محصول جدید</a>
+    <div class="box box-primary ">
+        <div class="box-body p-0">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>عکس</th>
+                        <th>عنوان</th>
+                        <th>slug</th>
+                        <th>موجود نیست</th>
+                        <th>پیشنهاد لحظه ای</th>
+                        <th>پیشنهاد ادمین</th>
+                        <th>جدول بزرگ</th>
+                        <th>بازدید </th>
+                        <th>قیمت </th>
+                        <th>عملیات</th>
+                        <th>ویرایش</th>
+                        <th>حذف</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Product)
+                    {
+                        <tr>
+                            <td>@counter</td>
+                            <td>
+                                <img style="max-width: 150px" src="@Directories.GetProductImage(item.ImageName)" />
+                            </td>
+                            <td>
+                                @item.Title
+                            </td>
+                            <td>
+                                @item.Slug
+                            </td>
+                            <td>
+                                @if (item.ProductNotExist)
+                                {
+                                    <i class="fa fa-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa fa-close text-danger"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (item.IsSpecial)
+                                {
+                                    <i class="fa fa-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa fa-close text-danger"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (item.AdminSuggestion)
+                                {
+                                    <i class="fa fa-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa fa-close text-danger"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (item.BigTable)
+                                {
+                                    <i class="fa fa-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa fa-close text-danger"></i>
+                                }
+                            </td>
+                            <td>
+                                @item.Visit
+                            </td>
+                            <td>
+                                @item.Price.ToString("n0")
+                                @if (item.DiscountedPrice != null)
+                                {
+                                    @item.DiscountedPrice?.ToString("n0")
+                                }
+                            </td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info btn-sm">ویرایش </a>
+                            </td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"> حذف</a>
+                            </td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Product" asp-action="" asp-route-id="@item.Id" class="btn btn-danger btn-sm"> کالا موجود نیست</a>
+                            </td>
+
+                        </tr>
+                        counter += 1;
+                    }
+                </tbody>
+            </table>
+        </div>
+        <partial name="_Pagination" model="Model" />
+    </div>
+</section>
