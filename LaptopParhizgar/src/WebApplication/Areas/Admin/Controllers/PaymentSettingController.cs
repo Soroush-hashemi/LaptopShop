@@ -20,14 +20,28 @@ public class PaymentSettingController : AdminControllerBase
     [Route("Admin/PaymentSetting/Disable")]
     public IActionResult Disable()
     {
-        _service.SetPaymentToDisable();
-        return Redirect("/Admin/PaymentSetting");
+        var result = _service.SetPaymentToDisable();
+        if (result.Status != Common.Application.OperationResultStatus.Success)
+        {
+            ErrorAlert($"{result.Message}");
+            return RedirectToAction();
+        }
+
+        SuccessAlert();
+        return RedirectToAction("Index");
     }
 
     [Route("Admin/PaymentSetting/Enable")]
     public IActionResult Enable()
     {
-        _service.SetPaymentToEnable();
-        return Redirect("/Admin/PaymentSetting");
+        var result = _service.SetPaymentToEnable();
+        if (result.Status != Common.Application.OperationResultStatus.Success)
+        {
+            ErrorAlert($"{result.Message}");
+            return RedirectToAction();
+        }
+
+        SuccessAlert();
+        return RedirectToAction("Index");
     }
 }

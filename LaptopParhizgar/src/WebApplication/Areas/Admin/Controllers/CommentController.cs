@@ -24,7 +24,15 @@ public class CommentController : AdminControllerBase
     [Route("/Admin/Comment/Delete/{CommentId?}")]
     public IActionResult Delete(long CommentId)
     {
-        _commentFacade.Delete(CommentId);
-        return Redirect("/Admin/Comment");
+        var result = _commentFacade.Delete(CommentId);
+
+        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        {
+            ErrorAlert($"{result.Result.Message}");
+            return RedirectToAction();
+        }
+
+        SuccessAlert();
+        return RedirectToAction("Index");
     }
 }

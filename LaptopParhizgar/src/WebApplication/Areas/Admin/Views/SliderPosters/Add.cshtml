@@ -1,0 +1,35 @@
+﻿@using Domain.Sliders
+@using WebApplication.Areas.Admin.Models.SliderPosters
+@model SliderPosterViewModel
+@{
+    ViewData["title"] = "افزودن اسلایدر_پوستر جدید";
+    ViewData["selected"] = "اسلایدر_پوستر";
+}
+<section class="content-header">
+    <h1>
+        @ViewData["title"]
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="~/Admin"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li><a href="~/Admin/SliderPoster">@ViewData["selected"]</a></li>
+        <li class="active">@ViewData["title"]</li>
+    </ol>
+</section>
+<section class="content">
+    <form class="box box-danger" method="post" asp-area="Admin" asp-controller="SliderPoster" asp-action="Add" enctype="multipart/form-data">
+        <div class="box-body row">
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.Link)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.ImageFile)
+            </div>
+            <div class="col-md-6">
+                <select name="ImageLocation" asp-items="@Html.GetEnumSelectList<ImageLocation>()"></select>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button class="btn btn-success" type="submit">ثبت اطلاعات</button>
+        </div>
+    </form>
+</section>

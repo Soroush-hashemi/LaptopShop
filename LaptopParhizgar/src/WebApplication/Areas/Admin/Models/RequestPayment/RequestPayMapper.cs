@@ -1,6 +1,4 @@
-﻿using Domain.Users;
-using PresentationFacade.RequestPayment.Service.DTO;
-using WebApplication.Areas.Admin.Models.Product;
+﻿using PresentationFacade.RequestPayment.Service.DTO;
 
 namespace WebApplication.Areas.Admin.Models.RequestPayment;
 public static class RequestPayMapper

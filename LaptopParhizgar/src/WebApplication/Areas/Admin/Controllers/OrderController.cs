@@ -29,15 +29,31 @@ public class OrderController : AdminControllerBase
     [Route("/Admin/Order/Delivered/{OrderId}")]
     public IActionResult Delivered(int OrderId)
     {
-        _orderFacade.SetOrderStateOnDelivered(OrderId);
-        return Redirect("/Admin/Order");
+        var result = _orderFacade.SetOrderStateOnDelivered(OrderId);
+
+        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        {
+            ErrorAlert($"{result.Result.Message}");
+            return RedirectToAction();
+        }
+
+        SuccessAlert();
+        return RedirectToAction("Index");
     }
 
     [Route("/Admin/Order/Canceled/{OrderId}")]
     public IActionResult Canceled(int OrderId)
     {
-        _orderFacade.SetOrderStateOnCanceled(OrderId);
-        return Redirect("/Admin/Order");
+        var result =  _orderFacade.SetOrderStateOnCanceled(OrderId);
+
+        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        {
+            ErrorAlert($"{result.Result.Message}");
+            return RedirectToAction();
+        }
+
+        SuccessAlert();
+        return RedirectToAction("Index");
     }
 
 }

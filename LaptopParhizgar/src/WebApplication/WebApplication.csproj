@@ -38,9 +38,4 @@
 	  <None Include="wwwroot\Admin\plugins\input-mask\.DS_Store" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Areas\Admin\Models\SliderPosters\" />
-	  <Folder Include="Areas\Admin\Views\SliderPosters\" />
-	</ItemGroup>
-
 </Project>
