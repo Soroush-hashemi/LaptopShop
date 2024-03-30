@@ -41,12 +41,6 @@ public static class ProductMapper
         ViewModel.ScannerDepth, ViewModel.MonthlyWorkCapacity);
     }
 
-    public static DeleteProductCommand MapToDelete(this ProductViewModel ViewModel)
-    {
-        return new DeleteProductCommand(ViewModel.Id);
-    }
-
-
     public static ProductViewModel Map(this ProductDto dto)
     {
         return new ProductViewModel()

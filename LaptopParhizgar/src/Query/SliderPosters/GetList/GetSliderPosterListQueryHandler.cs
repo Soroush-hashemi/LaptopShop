@@ -1,5 +1,6 @@
 ﻿using Common.Query;
 using Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Query.SliderPosters.DTO;
 
 namespace Query.SliderPosters.GetList;
@@ -13,14 +14,16 @@ public class GetSliderPosterListQueryHandler : IQueryHandler<GetSliderPosterList
 
     public async Task<List<SliderPostersDto>> Handle(GetSliderPosterListQuery request, CancellationToken cancellationToken)
     {
-        return _context.SliderPosters
-            .OrderByDescending(x => x.CreationDate)
+        var result = await _context.SliderPosters
+            .OrderByDescending(x => x.Id)
             .Select(command => new SliderPostersDto()
             {
                 Id = command.Id,
                 Link = command.Link,
                 Image = command.ImageName,
                 ImageLocationDto = command.ImageLocation,
-            }).ToList();
+            }).ToListAsync();
+
+        return result;
     }
 }

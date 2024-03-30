@@ -9,6 +9,7 @@ public static class ProductMapper
     {
         return new ProductDto()
         {
+            Id = product.Id,
             CategoryId = product.CategoryId,
             SubCategoryId = product.SubCategoryId,
             Title = product.Title,

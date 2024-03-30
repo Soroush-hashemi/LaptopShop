@@ -21,7 +21,7 @@ public interface IFileService
     Task<string> SaveFileAndGenerateNameMayNull(IFormFile? file, string directoryPath);
     Task<string> SaveFileAndGenerateNameForPdf(IFormFile? file, string directoryPath);
     void DeleteFile(string path, string fileName);
-    void DeletePdfFile(string? path, string? fileName);
+    void DeleteFileMayNull(string? path, string? fileName);
     void DeleteFile(string filePath);
     void DeleteDirectory(string directoryPath);
 }

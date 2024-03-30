@@ -37,14 +37,14 @@ public class ProductController : AdminControllerBase
     }
 
     [HttpPost("/Admin/Product/Create")]
-    public IActionResult Create(ProductViewModel createViewModel)
+    public async Task<IActionResult> Create(ProductViewModel createViewModel)
     {
         var productCommand = createViewModel.MapToCreate();
-        var result = _productsFacade.Create(productCommand);
+        var result = await _productsFacade.Create(productCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 
@@ -55,20 +55,22 @@ public class ProductController : AdminControllerBase
     [Route("/Admin/Product/Edit/{Id?}")]
     public async Task<IActionResult> Edit(long Id)
     {
-        var result = await _productsFacade.GetById(new GetProductByIdQuery(Id));
-        return View(result.Map());
+        var product = await _productsFacade.GetById(new GetProductByIdQuery(Id));
+        var result = product.Map();
+        return View(result);
     }
 
-    [HttpPost("/Admin/Product/Edit/{Id}")]
-    public IActionResult Edit(long Id, ProductViewModel ViewModel)
+    [HttpPost("/Admin/Product/Edit/{Id?}")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(long Id, ProductViewModel ViewModel)
     {
         ViewModel.Id = Id;
         var productCommand = ViewModel.MapToEdit();
-        var result = _productsFacade.Edit(productCommand);
+        var result = await _productsFacade.Edit(productCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 
@@ -77,13 +79,13 @@ public class ProductController : AdminControllerBase
     }
 
     [Route("/Admin/Product/Delete/{Id}")]
-    public IActionResult Delete(long Id)
+    public async Task<IActionResult> Delete(long Id)
     {
-        var result = _productsFacade.Delete(new DeleteProductCommand(Id));
+        var result = await _productsFacade.Delete(Id);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 

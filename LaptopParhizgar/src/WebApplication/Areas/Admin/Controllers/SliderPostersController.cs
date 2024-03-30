@@ -5,8 +5,8 @@ using WebApplication.Areas.Admin.Models.SliderPosters;
 namespace WebApplication.Areas.Admin.Controllers;
 public class SliderPostersController : AdminControllerBase
 {
-    private readonly ISliderPostersFacade _sliderPostersFacade;
-    public SliderPostersController(SliderPostersFacade sliderPostersFacade)
+    private readonly ISlidersPostersFacade _sliderPostersFacade;
+    public SliderPostersController(ISlidersPostersFacade sliderPostersFacade)
     {
         _sliderPostersFacade = sliderPostersFacade;
     }
@@ -17,13 +17,13 @@ public class SliderPostersController : AdminControllerBase
         return View(sliderPoster.MapList());
     }
 
-    [HttpGet("/Admin/SliderPoster/Add")]
+    [HttpGet("/Admin/SliderPosters/Add")]
     public IActionResult Add()
     {
         return View();
     }
 
-    [HttpPost("/Admin/SliderPoster/Add")]
+    [HttpPost("/Admin/SliderPosters/Add")]
     public async Task<IActionResult> Add(SliderPosterViewModel viewModel)
     {
         var result = await _sliderPostersFacade.Create(viewModel.MapCreate());
@@ -38,20 +38,21 @@ public class SliderPostersController : AdminControllerBase
         return RedirectToAction("Index");
     }
 
-    [HttpGet("/Admin/SliderPoster/Edit")]
-    public IActionResult Edit()
+    [Route("/Admin/SliderPosters/Edit/{Id}")]
+    public async Task<IActionResult> Edit(long Id)
     {
-        return View();
+        var result = await _sliderPostersFacade.GetById(Id);
+        return View(result.Map());
     }
 
-    [HttpPost("/Admin/SliderPoster/Edit")]
-    public async Task<IActionResult> Edit(SliderPosterViewModel viewModel)
+    [HttpPost("/Admin/SliderPosters/Edit/{Id}")]
+    public IActionResult Edit(SliderPosterViewModel viewModel)
     {
-        var result = await _sliderPostersFacade.Edit(viewModel.MapEdit());
+        var result = _sliderPostersFacade.Edit(viewModel.MapEdit());
 
-        if (result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Message}");
+            ErrorAlert($"{result.Result.Message}");
             return RedirectToAction();
         }
 
@@ -59,7 +60,7 @@ public class SliderPostersController : AdminControllerBase
         return RedirectToAction("Index");
     }
 
-    [Route("/Admin/SliderPoster/Delete/{Id?}")]
+    [Route("/Admin/SliderPosters/Delete/{Id?}")]
     public async Task<IActionResult> Delete(long Id)
     {
         var result = await _sliderPostersFacade.Delete(Id.MapDelete());

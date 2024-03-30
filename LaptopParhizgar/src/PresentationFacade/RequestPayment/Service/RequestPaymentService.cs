@@ -54,7 +54,7 @@ public class RequestPaymentService : IRequestPaymentService
         return new RequestPayFilterDto();
     }
 
-    public RequestPayDto GetRequestPayDetail(int RequestPayId)
+    public RequestPayDto GetRequestPayDetail(long RequestPayId)
     {
         var RequestPay = _context.RequestPay.Where(p => p.Id == RequestPayId).FirstOrDefault();
         var User = _context.Users.Where(p => p.Id == RequestPay.UserId).FirstOrDefault();

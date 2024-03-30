@@ -15,7 +15,7 @@ public class DeleteCategoryCommandHandler : IBaseCommandHandler<DeleteCategoryCo
         var result = _categoryRepository.DeleteCategory(request.CategoryId);
         if (result == true)
         {
-            _categoryRepository.Save();
+            await _categoryRepository.Save();
             return OperationResult.Success();
         }
         return OperationResult.Error("امکان حذف این دسته بندی وجود ندارد");

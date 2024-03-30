@@ -12,7 +12,7 @@ public interface IProductsFacade
 {
     Task<OperationResult> Create(CreateProductCommand command);
     Task<OperationResult> Edit(EditProductCommand command);
-    Task<OperationResult> Delete(DeleteProductCommand command);
+    Task<OperationResult> Delete(long Id);
 
     Task<ProductFilterDto> GetByFilter(GetProductsByFilterQuery query);
     Task<ProductDto> GetById(GetProductByIdQuery query);

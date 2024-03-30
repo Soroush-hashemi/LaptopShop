@@ -8,9 +8,9 @@ using Common.Domain.Exceptions;
 namespace Application.Sliders.DeleteSliderPoster;
 public class DeleteSliderPostersCommandHandler : IBaseCommandHandler<DeleteSliderPostersCommand>
 {
-    private readonly ISliderRepository _repository;
+    private readonly ISliderPostersRepository _repository;
     private readonly IFileService _fileService;
-    public DeleteSliderPostersCommandHandler(ISliderRepository repository, IFileService fileService)
+    public DeleteSliderPostersCommandHandler(ISliderPostersRepository repository, IFileService fileService)
     {
         _repository = repository;
         _fileService = fileService;
@@ -24,7 +24,7 @@ public class DeleteSliderPostersCommandHandler : IBaseCommandHandler<DeleteSlide
             if (sliderPoster == null)
                 return OperationResult.NotFound();
 
-            _repository.DeleteSlider(sliderPoster);
+            _repository.DeleteSliderPosters(sliderPoster);
             await _repository.Save();
 
             _fileService.DeleteFile(Directories.SliderPosterImage, sliderPoster.ImageName);

@@ -51,9 +51,9 @@ public class DeleteProductCommandHandler : IBaseCommandHandler<DeleteProductComm
         var ImageFourth = product?.ImageNameFourth;
         var ImageFifth = product?.ImageNameFifth;
 
-        _fileService.DeleteFile(Directories.productImage, ImageThird);
-        _fileService.DeleteFile(Directories.productImage, ImageFourth);
-        _fileService.DeleteFile(Directories.productImage, ImageFifth);
+        _fileService.DeleteFileMayNull(Directories.productImage, ImageThird);
+        _fileService.DeleteFileMayNull(Directories.productImage, ImageFourth);
+        _fileService.DeleteFileMayNull(Directories.productImage, ImageFifth);
 
         _repository.DeleteProduct(product);
         await _repository.Save();

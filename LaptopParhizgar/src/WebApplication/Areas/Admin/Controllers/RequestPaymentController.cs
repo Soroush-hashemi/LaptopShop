@@ -14,12 +14,12 @@ public class RequestPaymentController : AdminControllerBase
 
     public IActionResult Index(int pageId = 1)
     {
-        var param = new RequestPayFilterParams()
+        var param = new RequestPayFilterParamsViewModel()
         {
             PageId = pageId,
             Take = 10,
         };
-        var Model = _service.GetRequestPayByFilter(param);
+        var Model = _service.GetRequestPayByFilter(param.MapParam());
         return View(Model.Map());
     }
 

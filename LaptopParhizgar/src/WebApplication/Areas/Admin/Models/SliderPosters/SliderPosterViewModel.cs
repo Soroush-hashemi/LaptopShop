@@ -11,19 +11,19 @@ public class SliderPosterViewModel
     public string Image { get; set; }
     public string Link { get; set; }
     public IFormFile ImageFile { get; set; }
-    public ImageLocation ImageLocationDto { get; set; }
+    public ImageLocation ImageLocation { get; set; }
 }
 
 public static class SliderPosterMapper
 {
     public static CreateSliderPostersCommand MapCreate(this SliderPosterViewModel viewModel)
     {
-        return new CreateSliderPostersCommand(viewModel.Link, viewModel.ImageLocationDto, viewModel.ImageFile);
+        return new CreateSliderPostersCommand(viewModel.Link, viewModel.ImageLocation, viewModel.ImageFile);
     }
 
     public static EditSliderPostersCommand MapEdit(this SliderPosterViewModel viewModel)
     {
-        return new EditSliderPostersCommand(viewModel.Id, viewModel.Link, viewModel.ImageFile, viewModel.ImageLocationDto);
+        return new EditSliderPostersCommand(viewModel.Id, viewModel.Link, viewModel.ImageFile, viewModel.ImageLocation);
     }
 
     public static DeleteSliderPostersCommand MapDelete(this long Id)
@@ -39,7 +39,7 @@ public static class SliderPosterMapper
             Image = dto.Image,
             Link = dto.Link,
             ImageFile = dto.ImageFile,
-            ImageLocationDto = dto.ImageLocationDto,
+            ImageLocation = dto.ImageLocationDto,
         };
     }
 

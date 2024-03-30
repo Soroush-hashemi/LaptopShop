@@ -22,9 +22,9 @@ public class ProductsFacade : IProductsFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<OperationResult> Delete(DeleteProductCommand command)
+    public async Task<OperationResult> Delete(long Id)
     {
-        return await _mediator.Send(command);
+        return await _mediator.Send(new DeleteProductCommand(Id));
     }
 
     public async Task<OperationResult> Edit(EditProductCommand command)

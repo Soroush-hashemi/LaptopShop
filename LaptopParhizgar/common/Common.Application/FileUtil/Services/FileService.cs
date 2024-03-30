@@ -25,7 +25,7 @@ namespace Common.Application.FileUtil.Services
                 File.Delete(filePath);
         }
 
-        public void DeletePdfFile(string? path, string? fileName)
+        public void DeleteFileMayNull(string? path, string? fileName)
         {
             if (fileName != null)
             {

@@ -4,6 +4,6 @@ namespace PresentationFacade.RequestPayment.Service;
 public interface IRequestPaymentService
 {
     RequestPayDto GetRequestPay(Guid guid);
-    RequestPayDto GetRequestPayDetail(int RequestPayId);
+    RequestPayDto GetRequestPayDetail(long RequestPayId);
     RequestPayFilterDto GetRequestPayByFilter(RequestPayFilterParams filterParams);
 }

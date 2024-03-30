@@ -24,14 +24,14 @@ public class CategoryController : AdminControllerBase
     }
 
     [HttpPost("/Admin/category/Create")]
-    public IActionResult Create(CategoryViewModel createViewModel)
+    public async Task<IActionResult> Create(CategoryViewModel createViewModel)
     {
         var categoryCommand = createViewModel.MapToCreateCommand();
-        var result = _categoryFacade.Create(categoryCommand);
+        var result = await _categoryFacade.Create(categoryCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 
@@ -48,15 +48,15 @@ public class CategoryController : AdminControllerBase
     }
 
     [HttpPost("/Admin/category/Edit/{Id}")]
-    public IActionResult Edit(long Id, CategoryViewModel ViewModel)
+    public async Task<IActionResult> Edit(long Id, CategoryViewModel ViewModel)
     {
         ViewModel.Id = Id;
         var categoryCommand = ViewModel.MapToEditCommand();
-        var result = _categoryFacade.Edit(categoryCommand);
+        var result = await _categoryFacade.Edit(categoryCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return View();
         }
 
@@ -65,14 +65,14 @@ public class CategoryController : AdminControllerBase
     }
 
     [Route("/Admin/category/Delete/{Id}")]
-    public IActionResult Delete(long Id)
+    public async Task<IActionResult> Delete(long Id)
     {
         var categoryCommand = Id;
-        var result = _categoryFacade.Delete(categoryCommand);
+        var result = await _categoryFacade.Delete(categoryCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 
@@ -87,15 +87,15 @@ public class CategoryController : AdminControllerBase
     }
 
     [HttpPost("/Admin/category/AddChild/{parentId}")]
-    public IActionResult AddChild(int parentId, ChildCategoryViewModel createViewModel)
+    public async Task<IActionResult> AddChild(int parentId, ChildCategoryViewModel createViewModel)
     {
         createViewModel.ParentId = parentId;
         var categoryCommand = createViewModel.MapToAddChildCommand();
-        var result = _categoryFacade.AddChild(categoryCommand);
+        var result = await _categoryFacade.AddChild(categoryCommand);
 
-        if (result.Result.Status != Common.Application.OperationResultStatus.Success)
+        if (result.Status != Common.Application.OperationResultStatus.Success)
         {
-            ErrorAlert($"{result.Result.Message}");
+            ErrorAlert($"{result.Message}");
             return RedirectToAction();
         }
 

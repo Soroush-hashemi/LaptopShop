@@ -16,7 +16,7 @@
     </ol>
 </section>
 <section class="content">
-    <a class="btn btn-success" style="margin-bottom: 5px" asp-area="Admin" asp-controller="SliderPoster" asp-action="Add">افزودن اسلایدر_پوستر جدید</a>
+    <a class="btn btn-success" style="margin-bottom: 5px" asp-area="Admin" asp-controller="SliderPosters" asp-action="Add">افزودن اسلایدر_پوستر جدید</a>
     <div class="box box-primary ">
         <div class="box-body p-0">
             <table class="table table-bordered table-hover">
@@ -39,11 +39,11 @@
                                     <img style="max-width: 150px" src="@Directories.GetSliderPosterImage(item.Image)" />
                                 </td>
                                 <td>
-                                    @item.ImageLocationDto
+                                    @item.ImageLocation                            
                                 </td>
                                 <td>
-                                    <a asp-area="admin" asp-controller="SliderPosters" asp-action="Edit" asp-route-Id="@item.Id" class="btn btn-info btn-sm">ویرایش</a>
-                                    <a asp-area="admin" asp-controller="SliderPosters" asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger btn-sm">حذف</a>
+                                    <a asp-area="Admin" asp-controller="SliderPosters" asp-action="Edit" asp-route-Id="@item.Id" class="btn btn-info btn-sm">ویرایش</a>
+                                    <a asp-area="Admin" asp-controller="SliderPosters" asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger btn-sm">حذف</a>
                                 </td>
                             </tr>
                             counter += 1;

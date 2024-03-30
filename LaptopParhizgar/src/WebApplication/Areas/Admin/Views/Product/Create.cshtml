@@ -55,16 +55,15 @@
                     <span asp-validation-for="SubCategoryId"></span>
                 </div>
             </div>
-
             <div class="col-md-6">
-                @Html.EditorFor(m => m.Description)
-            </div>
-            <div class="col-md-6">
+                <label>قیمت به تومان</label>
                 @Html.EditorFor(m => m.Price)
             </div>
             <div class="col-md-6">
+                <label>قیمت بعد از تخفیف به تومان</label>
                 @Html.EditorFor(m => m.DiscountedPrice)
             </div>
+
             <div class="col-md-6">
                 @Html.EditorFor(m => m.ImageFile)
             </div>
@@ -78,7 +77,7 @@
                 @Html.EditorFor(m => m.ImageFileFourth)
             </div>
             <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageNameFifth)
+                @Html.EditorFor(m => m.ImageFileFifth)
             </div>
             <div class="col-md-6">
                 @Html.EditorFor(m => m.Color)
@@ -117,27 +116,28 @@
                 @Html.EditorFor(m => m.SpecialFeatures)
             </div>
             <br />
-            <div class="box-body row">
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.MetaTitle)
-                </div>
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.MetaDescription)
-                </div>
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.MetaKeyWords)
-                </div>
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.Canonical)
-                </div>
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.Schema)
-                </div>
-                <div class="col-md-6">
-                    @Html.EditorFor(m => m.seoDataViewModel.IndexPage)
-                </div>
+
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.MetaTitle)
             </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.MetaDescription)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.MetaKeyWords)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.Canonical)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.Schema)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(m => m.seoDataViewModel.IndexPage)
+            </div>
+
             <br />
+
             <div class="col-md-6">
                 @Html.EditorFor(m => m.BigTable)
             </div>
@@ -174,7 +174,9 @@
             <div class="col-md-6">
                 @Html.EditorFor(m => m.LapTopPorts)
             </div>
+
             <br />
+
             <div class="col-md-6">
                 @Html.EditorFor(m => m.CartridgeType)
             </div>
@@ -214,6 +216,7 @@
             <div class="col-md-6">
                 @Html.EditorFor(m => m.MonthlyWorkCapacity)
             </div>
+
             <div class="col-md-6 ">
                 <script>
                     CKEDITOR.replace('ckEditor4');
@@ -231,11 +234,10 @@
         $("#CategoryId").change(function () {
             var categoryId = $(this).val();
             $.ajax({
-                url: "/admin/category/GetChildCategories?parentId=" + categoryId,
+                url: "/Admin/category/GetChildCategories?parentId=" + categoryId,
                 type: "get"
             }).done(function (data) {
                 $("#SubCategoryId").html(`<option value='0'>انتخاب کنید</option>`);
-
                 for (var i in data) {
                     var category = data[i];
                     $("#SubCategoryId").append(`<option value='${category.id}'>${category.title}</option>`);
@@ -243,5 +245,4 @@
             });
         })
     </script>
-    <CKEditor:CKEditorControl ID="CKEditor1" runat="server"> </CKEditor:CKEditorControl>
 }
