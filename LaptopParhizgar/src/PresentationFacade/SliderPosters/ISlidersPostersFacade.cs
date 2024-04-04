@@ -12,5 +12,8 @@ public interface ISlidersPostersFacade
     Task<OperationResult> Delete(DeleteSliderPostersCommand command);
     
     Task<SliderPostersDto> GetById(long Id);
+    Task<SliderPostersDto> GetSmallPoster();
+    Task<SliderPostersDto> GetCenterPoster();
+    Task<SliderPostersDto> GetBigPoster();
     Task<List<SliderPostersDto>> GetList();
 }
