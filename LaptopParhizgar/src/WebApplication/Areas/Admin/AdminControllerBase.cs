@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace WebApplication.Areas.Admin;
 [Area("Admin")]
-//[Authorize(Policy = "AdminPolicy")]
+// [Authorize(Policy = "AdminPolicy")]
 public class AdminControllerBase : Controller
 {
     protected IActionResult RedirectAndShowAlert(OperationResult result, IActionResult redirectPath)

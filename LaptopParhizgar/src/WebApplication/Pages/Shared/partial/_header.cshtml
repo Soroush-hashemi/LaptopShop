@@ -1,0 +1,195 @@
+﻿@using Query.Categories.DTOs;
+@model List<CategoryDto>
+
+<header class="header-main">
+    <div class="container-main">
+        <div class="d-block">
+            <partial name="partial/_search" />
+            <nav class="header-main-nav">
+                <div class="d-block">
+                    <div class="align-items-center">
+                        <ul class="menu-ul mega-menu-level-one">
+                            @foreach (var category in Model.Where(p => p.ParentId == null))
+                            {
+                                var hasChild = Model.Any(p => p.ParentId == category.Id);
+                                if (hasChild)
+                                {
+                                    <li id="nav-menu-item" class="menu-item nav-overlay">
+                                        <a href="~/search?categorySlug=@category.Slug" class="current-link-menu">
+                                            @category.Title
+                                        </a>
+                                        <ul class="sub-menu is-mega-menu mega-menu-level-two">
+                                            <li class="menu-mega-item menu-item-type-mega-menu">
+                                                <ul class="sub-menu mega-menu-level-three">
+                                                    محصولات
+                                                    @foreach (var child in Model.Where(p => p.ParentId == category.Id))
+                                                    {
+                                                        <li class="menu-mega-item-three">
+                                                            <a href="~/search?categorySlug=@child.Slug">
+                                                                @child.Title
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                }
+                            }
+                            <li id="nav-menu-item" class="menu-item nav-overlay">
+                                <a href="~/search?" class="current-link-menu">
+                                    دیدن تمام محصولات
+                                </a>
+                            </li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @await Component.InvokeAsync("Cart")
+                            }
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!--    responsive-megamenu-mobile----------------->
+            <nav class="sidebar">
+                <div class="nav-header">
+                    <div class="header-cover"></div>
+                    <div class="logo-wrap">
+                        <a class="logo-icon">
+                            <img alt="logo-icon" src="~/assets/images/logo.png" width="40">
+                        </a>
+                    </div>
+                </div>
+                <br />
+                <div class="socials sidenav__socials">
+                    <a style="color : lawngreen;right:20px" class="social social-whatsapp" href="https://wa.me/+989180548096" target="_blank" aria-label="whatsapp">
+                        <big><big><i class="fa fa-whatsapp"></i></big></big>
+                    </a>
+                    <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
+                    <a style="color : indianred;right:20px" class="social social-instagram" href="https://www.instagram.com/laptope_parhizgar/" target="_blank" aria-label="instagram">
+                        <big><big><i class="fa fa-instagram"></i></big></big>
+                    </a>
+                    <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
+                    <a style="color : darkblue;right:20px" class="social social-telegram" href="https://t.me/laptope_parhizgar/" target="_blank" aria-label="Telegram">
+                        <big><big><i class="fa fa-telegram"></i></big></big>
+                    </a>
+                </div>
+
+                <ul class="nav-categories ul-base">
+                    @foreach (var category in Model.Where(p => p.ParentId == null))
+                    {
+                        <li>
+                            <a a href="~/search?categorySlug=@category.Slug" class="collapsed" type="button" aria-expanded="true">
+                                @category.Title
+                            </a>
+                            @{
+                                var hasChild = Model.Any(p => p.ParentId == category.Id);
+                            }
+                            @if (hasChild)
+                            {
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <ul>
+                                        <li class="has-sub">
+                                            <a class="category-level-2">محصولات</a>
+                                            @foreach (var child in Model.Where(p => p.ParentId == category.Id))
+                                            {
+                                                <ul>
+                                                    <li><a href="~/search?categorySlug=@child.Slug" class="category-level-3">@child.Title</a></li>
+                                                </ul>
+                                            }
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                    }
+                    <li>
+                        <a href="~/Repairs">‌تعمیرات</a>
+                    </li>
+                    <li>
+                        <a href="~/About">درباره‌ی ما</a>
+                    </li>
+                    <li>
+                        <a href="~/ContactUs">تماس‌ با ما</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-btn nav-slider">
+                <span class="linee1"></span>
+                <span class="linee2"></span>
+                <span class="linee3"></span>
+            </div>
+            <div class="overlay"></div>
+            <!-- bottom-menu-joomy -->
+            <div class="bottom-menu-joomy">
+                <ul class="mb-0">
+                    <li>
+                        <a href="~/">
+                            <i class="fa fa-home"></i>
+                            صفحه اصلی
+                        </a>
+                    </li>
+                    <li>
+                        <a style="color : ghostwhite">
+                            <div class="nav-btn nav-slider">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                            دسته بندی ها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Cart/Index">
+                            <i class="fa fa-shopping-cart"></i>
+                            سبد خرید
+                            <div class="shopping-bag-item">2</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-toggle="modal" data-target="#exampleModalCenter">
+                            <i class="fa fa-search"></i>
+                            جستجو
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/UserPanel">
+                            <i class="fa fa-user"></i>
+                            حساب کاربری
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- responsive-megamenu-mobile----------------->
+        </div>
+    </div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">جستجو</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="header-search text-right">
+                    <div class="header-search-box">
+                        <form action="~/Search" class="form-search">
+                            <input type="search" name="q" class="header-search-input" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                            <div class="action-btns">
+                                <button class="btn btn-search" type="submit">
+                                    <img src="~/assets/images/search.png" alt="search">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav-categories-overlay"></div>
+<div class="overlay-search-box"></div>

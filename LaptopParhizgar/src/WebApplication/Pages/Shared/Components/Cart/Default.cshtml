@@ -1,0 +1,75 @@
+﻿@* @model List<CartItemDto>
+@{
+    
+}
+
+
+<li class="divider-space-card d-block">
+    <div class="header-cart-basket">
+        <a href="~/Cart" class="cart-basket-box">
+            <span class="icon-cart">
+                <i class="mdi mdi-shopping"></i>
+            </span>
+            <span class="title-cart">سبد خرید</span>
+            @if (Model.Count > 0)
+            {
+                <span class="price-cart">
+                    @TotalPrice.ToString("n0")
+                    <span>تومان</span>
+                </span>
+            }
+            <span class="count-cart">@Model.Count</span>
+        </a>
+        @if (Model.Count > 0)
+        {
+            <div class="widget-shopping-cart">
+                <div class="widget-shopping-cart-content">
+                    <div class="wrapper">
+                        <div class="scrollbar" id="style-1">
+                            <div class="force-overflow">
+                                <ul class="product-list-widget">
+                                    @foreach (var item in Model)
+                                    {
+                                        <li class="mini-cart-item">
+                                            <div class="mini-cart-item-content">
+                                                <a href="~/Cart/RemoveFromCart/@item.ProductId" class="mini-cart-item-close">
+                                                    <i class="mdi mdi-close"></i>
+                                                </a>
+                                                <a class="mini-cart-item-image d-block">
+                                                    <img src="@Directories.GetProductImage(item.Images)">
+                                                </a>
+                                                <a href="~/Product/@item.ProductSlug" class="product-name-card">
+                                                    @item.ProductName
+                                                </a>
+                                                <div class="quantity">
+                                                    <span class="quantity-Price-amount">
+                                                        @item.Price
+                                                        <span>تومان</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    @if (Model.Count > 0)
+                    {
+                        <div class="mini-card-total">
+                            <strong>قیمت کل : </strong>
+                            <span class="price-total">
+                                @TotalPrice.ToString("n0")
+                                <span>تومان</span>
+                            </span>
+                        </div>
+                    }
+                    <div class="mini-card-button">
+                        <a href="~/cart" class="view-card">مشاهده سبد خرید</a>
+                        <a href="~/RequestPay/checkout" class="card-checkout"> ادامه خرید</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</li> *@

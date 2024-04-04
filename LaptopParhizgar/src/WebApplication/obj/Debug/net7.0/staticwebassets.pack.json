@@ -1469,28 +1469,552 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\fonts\\ui-icons.eot",
-      "PackagePath": "staticwebassets\\assets\\fonts\\ui-icons.eot"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\401.png",
+      "PackagePath": "staticwebassets\\assets\\images\\401.png"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\fonts\\ui-icons.svg",
-      "PackagePath": "staticwebassets\\assets\\fonts\\ui-icons.svg"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\404.png",
+      "PackagePath": "staticwebassets\\assets\\images\\404.png"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\fonts\\ui-icons.ttf",
-      "PackagePath": "staticwebassets\\assets\\fonts\\ui-icons.ttf"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\500.jpg"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\fonts\\ui-icons.woff",
-      "PackagePath": "staticwebassets\\assets\\fonts\\ui-icons.woff"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\Logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Logo.png"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\fonts\\ui-icons.woff2",
-      "PackagePath": "staticwebassets\\assets\\fonts\\ui-icons.woff2"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-1.jpg"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\js\\custom.js",
-      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\adplacement\\a-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\adplacement\\a-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\2017 Home Selling Results.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\2017 Home Selling Results.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\fortnite-battle-royale-iphone.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\fortnite-battle-royale-iphone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\fortnite-battle-royale-money-revenue-earnings-2018-how-much.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\fortnite-battle-royale-money-revenue-earnings-2018-how-much.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\inRqLEr.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\inRqLEr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\iphone-7-plus-water-damage-repair-.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\iphone-7-plus-water-damage-repair-.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\shutterstock.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\shutterstock.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\blog\\women-calligrapher-in-cozy-home-working.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\women-calligrapher-in-cozy-home-working.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\adata.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\adata.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\huawei.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\huawei.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\nokia.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\nokia.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\panasonic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\panasonic.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\parskhazar.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\parskhazar.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\samsung.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\samsung.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\shahab.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\shahab.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\brand\\xvison.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brand\\xvison.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\cover\\4k-vs-1080p-laptops-scaled.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cover\\4k-vs-1080p-laptops-scaled.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\eNAMAD.png",
+      "PackagePath": "staticwebassets\\assets\\images\\eNAMAD.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\elementor\\Photography-Camera-HD-Wallpaper2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\elementor\\Photography-Camera-HD-Wallpaper2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\elementor\\samsung-galaxy-tab-s6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\elementor\\samsung-galaxy-tab-s6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\features\\24-hours-support.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\features\\24-hours-support.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\features\\delivery-truck.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\features\\delivery-truck.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\features\\easy-return.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\features\\easy-return.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\features\\income.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\features\\income.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\features\\original.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\features\\original.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\license\\L-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\license\\L-1.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\footer\\license\\L-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer\\license\\L-2.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\man.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\child.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\child.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\cup.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\cup.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\edit.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\edit.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\home.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\makeup.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\makeup.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\print.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\print.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\smartphone.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\smartphone.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\category\\suit.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\category\\suit.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\cosmetic.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\cosmetic.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\digital.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\digital.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\img-card-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\img-card-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\img-card.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\img-card.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\menu-main\\kitchen.png",
+      "PackagePath": "staticwebassets\\assets\\images\\menu-main\\kitchen.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\100000040.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\100000040.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\add-group.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\add-group.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\gift.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\gift.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\market.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\market.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\open-box.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\open-box.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\other.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\other.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\other.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\other.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\return.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\return.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\sport-team.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\sport-team.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\tracking.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\tracking.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-faq\\transparency.png",
+      "PackagePath": "staticwebassets\\assets\\images\\page-faq\\transparency.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\contact-us.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\contact-us.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\delivery.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\delivery.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\origin-guarantee.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\origin-guarantee.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\payment-terms.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\payment-terms.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10-big-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\product-img\\product-img-note10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\product-img\\product-img-note10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\return-policy.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\return-policy.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\page-single-product\\tab-content\\note10-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\page-single-product\\tab-content\\note10-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\search.png",
+      "PackagePath": "staticwebassets\\assets\\images\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\shopping-cart.png",
+      "PackagePath": "staticwebassets\\assets\\images\\shopping-cart.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\as-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\as-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\as-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\as-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\as-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\as-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\as-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\as-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\as-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\as-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-amazing\\shopping-cart.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-amazing\\shopping-cart.svg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\h-4\\Huawei-P20-Pro.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\h-4\\Huawei-P20-Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\h-4\\iphone-12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\h-4\\iphone-12.png"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\h-4\\samsung_galaxy_note_20-ultra.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\h-4\\samsung_galaxy_note_20-ultra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\sm-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\sm-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\sm-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\sm-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\sm-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\sm-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\sm-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\sm-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-main\\sm-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-main\\sm-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-moment\\sm-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-moment\\sm-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-moment\\sm-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-moment\\sm-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-moment\\sm-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-moment\\sm-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-moment\\sm-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-moment\\sm-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-moment\\sm-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-moment\\sm-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\Avocado.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\Avocado.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\DNR 290T-366T.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\DNR 290T-366T.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\ECM2013.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\ECM2013.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\Galaxy-S10-SM-G973F.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\Galaxy-S10-SM-G973F.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\P-Smart-2019.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\P-Smart-2019.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\SL1200_-300x300.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\SL1200_-300x300.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\SWF-40R.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\SWF-40R.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\Samsung-S10Plus.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\Samsung-S10Plus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\Stove-lopez.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\Stove-lopez.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\asus-laptop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\asus-laptop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\boxing.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\boxing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\btt.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\btt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\camera-canon-4000D.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\camera-canon-4000D.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\camera-instax-mini-70.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\camera-instax-mini-70.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\camera-nikon-3500D.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\camera-nikon-3500D.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\camera-nikon.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\camera-nikon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\camera-samsung.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\camera-samsung.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\computer-appel.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\computer-appel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\honer.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\honer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\huawei-p-smart.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\huawei-p-smart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\huawei.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\huawei.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\iphone-11-pro-max.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\iphone-11-pro-max.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\iphone-xs-max-space.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\iphone-xs-max-space.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\mitbook.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\mitbook.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\t-shirt-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\t-shirt-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\t-shirt-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\t-shirt-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\t-shirt-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\t-shirt-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\slider-product\\zenbook.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-product\\zenbook.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\images\\three-dots.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\three-dots.svg"
     },
     {
       "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\assets\\js\\main.js",
@@ -3669,10 +4193,6 @@
       "PackagePath": "staticwebassets\\ckeditor4\\ckeditor\\vendor\\promise.js"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\custom.js",
       "PackagePath": "staticwebassets\\js\\custom.js"
     },
@@ -3681,68 +4201,8 @@
       "PackagePath": "staticwebassets\\js\\global.js"
     },
     {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\main.js",
-      "PackagePath": "staticwebassets\\js\\main.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\ResizeSensor.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\ResizeSensor.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\bootstrap-slider.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\bootstrap-slider.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\bootstrap.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\bootstrap.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\countdown.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\countdown.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\jquery-3.2.1.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\jquery-3.2.1.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\jquery.countdown.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\jquery.countdown.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\jquery.ez-plus.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\jquery.ez-plus.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\jquery.jqZoom.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\jquery.jqZoom.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\jquery.nice-select.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\jquery.nice-select.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\lightgallery-all.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\lightgallery-all.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\nouislider.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\nouislider.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\owl.carousel.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\owl.carousel.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\sweetalert2.all.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\sweetalert2.all.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\theia-sticky-sidebar.min.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\theia-sticky-sidebar.min.js"
-    },
-    {
-      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\vendor\\wNumb.js",
-      "PackagePath": "staticwebassets\\js\\vendor\\wNumb.js"
+      "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\wwwroot\\lib\\bootstrap\\LICENSE",

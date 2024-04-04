@@ -1,6 +1,11 @@
 ﻿$(document).ready(function () {
-    console.log("Ready")
     LoadCkEditor4();
+    $.ajax({
+        url: "/index/PopularPost",
+        type: "get"
+    }).done(function (data) {
+        $("#popular_posts").html(data);
+    });
 });
 
 
@@ -18,7 +23,6 @@ function LoadCkEditor4() {
             customConfig: '/ckeditor4/ckeditor/config.js'
         });
 }
-
 function changePage(pageId) {
     var url = new URL(window.location.href);
     var search_params = url.searchParams;

@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Index\" />
+    <Folder Include="SliderPosters\BigPoster\" />
+    <Folder Include="SliderPosters\CenterPoster\" />
+    <Folder Include="SliderPosters\SmallPoster\" />
   </ItemGroup>
 
 </Project>

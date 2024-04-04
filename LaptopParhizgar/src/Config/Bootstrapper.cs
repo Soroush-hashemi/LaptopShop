@@ -15,6 +15,7 @@ using PresentationFacade.Addresses;
 using PresentationFacade.Cart;
 using PresentationFacade.Cart.Service;
 using PresentationFacade.Categories;
+using PresentationFacade.MainPage;
 using PresentationFacade.Order;
 using PresentationFacade.Order.Service;
 using PresentationFacade.PaymentSetting;
@@ -64,5 +65,6 @@ public static class Bootstrapper
         services.AddTransient<IPaymentSettingService, PaymentSettingService>();
         services.AddTransient<ICommentService, CommentService>();
         services.AddTransient<IProductSerivce, ProductSerivce>();
+        services.AddTransient<IMainPageService, MainPageService>();
     }
 }

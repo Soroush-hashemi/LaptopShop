@@ -5,27 +5,27 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A68ECEFA-BFFA-4A7A-BDCA-1330EEEEC0D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "src\WebApplication\WebApplication.csproj", "{59B4DFAA-411B-4C4E-985C-3FAD42808873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "src\WebApplication\WebApplication.csproj", "{59B4DFAA-411B-4C4E-985C-3FAD42808873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{033D7A00-A041-4701-A11D-DCB95B82E0AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{033D7A00-A041-4701-A11D-DCB95B82E0AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{7BA02B9A-E1FD-40ED-A798-C5B42BBFA64A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{7BA02B9A-E1FD-40ED-A798-C5B42BBFA64A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{36BE0AFF-8105-483B-A7A9-4AE3399F4486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{36BE0AFF-8105-483B-A7A9-4AE3399F4486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "src\Config\Config.csproj", "{33561976-5556-48B4-B753-A9A69D1AA020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Config", "src\Config\Config.csproj", "{33561976-5556-48B4-B753-A9A69D1AA020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationFacade", "src\PresentationFacade\PresentationFacade.csproj", "{61EB6EC9-E517-4D7E-B2F1-C933C65C286B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationFacade", "src\PresentationFacade\PresentationFacade.csproj", "{61EB6EC9-E517-4D7E-B2F1-C933C65C286B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Query", "src\Query\Query.csproj", "{5E1164D8-ED5A-47CD-817F-F34D71417983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Query", "src\Query\Query.csproj", "{5E1164D8-ED5A-47CD-817F-F34D71417983}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{50609CE7-44AB-47D5-8460-99653E405553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Application", "common\Common.Application\Common.Application.csproj", "{2C9E22B7-AE2F-4F6F-9239-7665C0C2E1B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Application", "common\Common.Application\Common.Application.csproj", "{2C9E22B7-AE2F-4F6F-9239-7665C0C2E1B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Domain", "common\Common.Domain\Common.Domain.csproj", "{022BB1F0-5DB0-4271-A8A0-47053942668A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Domain", "common\Common.Domain\Common.Domain.csproj", "{022BB1F0-5DB0-4271-A8A0-47053942668A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Query", "common\Common.Query\Common.Query.csproj", "{3C9C60F6-3ADB-4C46-8245-E800EE15C2D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Query", "common\Common.Query\Common.Query.csproj", "{3C9C60F6-3ADB-4C46-8245-E800EE15C2D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

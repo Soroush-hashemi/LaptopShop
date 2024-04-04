@@ -1,0 +1,65 @@
+﻿<section class="h-main-row">
+    <div class="col-lg-9 col-md-12 col-xs-12 pr">
+        <div class="header-right">
+            <div class="header-right">
+                <div class="col-lg-3 pr">
+                    <div class="header-logo row text-right">
+                        <a href="~/">
+                            <img src="~/assets/images/Logo.png" alt="فروشگاه لپ‌تاپ پرهیزگار">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 pr">
+                    <div class="header-search row text-right">
+                        <div class="header-search-box">
+                            <form action="~/Search" class="form-search">
+                                <input type="search" name="q" class="header-search-input" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                                <div class="action-btns">
+                                    <button class="btn btn-search" type="submit">
+                                        <img src="~/assets/images/search.png" alt="search">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-0 col-xs-12 pl">
+        <div class="header-left">
+            <div class="header-account text-left">
+                <div class="d-block">
+                    <div class="account-box">
+                        <div class="nav-account d-block pl">
+                            <span class="icon-account">
+                                <img src="~/assets/images/man.png" class="avator">
+                            </span>
+                            <span class="title-account">حساب کاربری</span>
+                            <div class="dropdown-menu">
+                                <ul class="account-uls mb-0">
+                                    <li class="account-item">
+                                        <a href="~/authorize/register" class="account-link"> ورود یا ثبت نام </a>
+                                    </li>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li class="account-item">
+                                            <a href="~/UserPanel" class="account-link">پنل کاربری</a>
+                                        </li>
+                                        <li class="account-item">
+                                            <a href="~/UserPanel/Orders" class="account-link">سفارشات من</a>
+                                        </li>
+                                        <li class="account-item">
+                                            <a asp-controller="Authorize" asp-action="Logout" class="account-link">خروج</a>
+                                        </li>
+                                    }
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

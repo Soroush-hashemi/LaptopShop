@@ -13,13 +13,13 @@ if (ConnectionString is null)
 Bootstrapper.ConfigBootstrapper(services, ConnectionString);
 ValidationBootstrapper.Init(services);
 
-//builder.Services.AddAuthorization(option =>
-//{
-//    option.AddPolicy("AdminPolicy", builder =>
-//    {
-//        builder.RequireRole("admin");
-//    });
-//});
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("AdminPolicy", builder =>
+    {
+        builder.RequireRole("admin");
+    });
+});
 
 //builder.Services.AddAuthentication(option =>
 //{
@@ -57,7 +57,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.MapControllerRoute(
-    name: "MyArea",
+    name: "Admin",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
