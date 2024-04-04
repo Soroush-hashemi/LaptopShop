@@ -9,15 +9,6 @@
     var DiscountedPrice = Model?.MainPageData.DiscountedPrice.Where(r => r.Id != 0);
     var BigTable = Model?.MainPageData.BigTable.Where(r => r.Id != 0);
 
-    // var BigPoster = Model.SliderPosters.OrderByDescending(T => T.CreationDate)
-    //         .Where(p => p.ImageLocationDto == Domain.Sliders.ImageLocation.BigPoster)?.FirstOrDefault();
-
-    // var CenterPoster = Model.SliderPosters.OrderByDescending(T => T.CreationDate)
-    //         .Where(p => p.ImageLocationDto == Domain.Sliders.ImageLocation.CenterPoster)?.FirstOrDefault();
-
-    // var SmallPoster = Model.SliderPosters
-    //         .Where(p => p.ImageLocationDto == Domain.Sliders.ImageLocation.SmallPoster)?.ToList();
-
     int _sliderCount = 1;
 }
 
@@ -30,7 +21,7 @@
 <!-- adplacement------------------------------->
 <div class="container-main">
 
-<partial name="partial/_slider" />
+<partial name="partial/_slider" model=""/>
 
 <partial name="partial/_sliderPoster" />
 </div>

@@ -11,10 +11,4 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="SliderPosters\BigPoster\" />
-    <Folder Include="SliderPosters\CenterPoster\" />
-    <Folder Include="SliderPosters\SmallPoster\" />
-  </ItemGroup>
-
 </Project>
