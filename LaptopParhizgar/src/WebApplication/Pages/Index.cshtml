@@ -5,56 +5,277 @@
     ViewData["Title"] = "Home page";
 
     var SpecialProduct = Model?.MainPageData.SpecialProducts.Where(r => r.Id != 0);
-    var AdminSuggestion = Model?.MainPageData.AdminSuggestion.Where(r => r.Id != 0);
-    var DiscountedPrice = Model?.MainPageData.DiscountedPrice.Where(r => r.Id != 0);
+    // var DiscountedPrice = Model?.MainPageData.DiscountedPrice.Where(r => r.Id != 0);
     var BigTable = Model?.MainPageData.BigTable.Where(r => r.Id != 0);
-
-    int _sliderCount = 1;
 }
 
 <!--Top header-------------------------------->
 <partial name="partial/_topHeader" />
 
 <!-- header-------------------------------->
-<partial name="partial/_header" model="Model?.Categories"/>
+<partial name="partial/_header" model="Model.Categories" />
 
-<!-- adplacement------------------------------->
+<!-- content-site--------------------------->
 <div class="container-main">
+    <div class="col-lg-3 col-md-3 col-xs-12 pr">
+        <!-- BigPoster--------------------------->
+        @if (Model.BigPoster != null)
+        {
+            <div class="adplacement-container-column mt-4">
+                <a href="@Model.BigPoster.Link" class="adplacement-item img-banner">
+                    <div class="adplacement-sponsored-box">
+                        <img src="@Directories.GetSliderPosterImage(Model.BigPoster.Image)">
+                    </div>
+                </a>
+            </div>
+        }
 
-<partial name="partial/_slider" model=""/>
-
-<partial name="partial/_sliderPoster" />
+        <!-- SpecialProduct--------------------------->
+        @if (Model.MainPageData.SpecialProducts.Any())
+        {
+            <div class="slider-moments mt-4">
+                <div class="widget-suggestion widget card mb-0">
+                    <header class="card-header promo-single-headline">
+                        <h3 class="card-title float-none">پیشنهاد لحظه‌ای</h3>
+                    </header>
+                    <div id="suggestion-slider" class="owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(1369px, 0px, 0px); transition: all 0.25s ease 0s; width: 2190px;">
+                                @foreach (var item in SpecialProduct)
+                                {
+                                    <div class="owl-item cloned" style="width: 273.75px;">
+                                        <div class="item">
+                                            <a asp-page="Product" asp-route-slug="@item.Slug">
+                                                <img src="@Directories.GetProductImage(item.ImageName)" class="w-100 mt-5" alt="">
+                                            </a>
+                                            <h3 class="product-title">
+                                                <a asp-page="Product" asp-route-slug="@item.Slug"> @item.Title </a>
+                                            </h3>
+                                            @if (item.ProductNotExist == false)
+                                            {
+                                                <div class="price mt-1">
+                                                    <span class="amount">
+                                                        @if (item.DiscountedPrice != null)
+                                                        {
+                                                            <span>@item.DiscountedPrice?.ToString("n0")</span>
+                                                            <span>تومان</span>
+                                                            <br />
+                                                            <del><span style="color:dimgray">@item.Price.ToString("n0")</span></del>
+                                                            <span style="color:dimgray">تومان</span>
+                                                        }
+                                                        @if (item.DiscountedPrice == null)
+                                                        {
+                                                            @item.Price.ToString("n0")
+                                                            <span>تومان</span>
+                                                        }
+                                                    </span>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="price mt-1">
+                                                    <span class="amount">
+                                                        <span>ناموجود</span>
+                                                    </span>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div id="progressBar">
+                        <div class="slide-progress" style="width: 100%; transition: width 5000ms ease 0s;"></div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
 
-<!-- slider-product-------------------------------->
+<div class="container-main">
+    <aside class="col-lg-9 col-md-9 col-xs-12 order-2 order-lg-2 pl">
+        <!-- slider-main--------------------------->
+        @if (Model.Sliders.Any())
+        {
+            <partial name="partial/_slider" model="Model.Sliders" />
+        }
+
+        <!-- BigTable------------------------->
+        @if (Model.MainPageData.BigTable.Any())
+        {
+            <div class="content-widget-amazing mt-4 cwa-p">
+                <section id="amazing-slider" class="carousel slide carousel-fade card" data-ride="carousel">
+                    <div class="row m-0">
+                        <div class="carousel-inner p-0 col-12 col-lg-11">
+                            <div class="carousel-item active">
+                                <div class="row m-0">
+                                    @foreach (var item in BigTable)
+                                    {
+                                        <div class="right-col col-5 d-flex align-items-center">
+                                            <a asp-page="Product" asp-route-slug="@item.Slug" class="w-100 text-center img-link-amazing">
+                                                <img src="@Directories.GetProductImage(item.ImageName)" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="carousel-content">
+                                                <h2 class="product-title">
+                                                    <a asp-page="Product" asp-route-slug="@item.Slug">@item.Title</a>
+                                                </h2>
+
+                                                @if (item.ProductNotExist == false)
+                                                {
+                                                    <div class="price text-center">
+                                                        @if (item.DiscountedPrice != null)
+                                                        {
+                                                            <del><span>@item.Price.ToString("n0")<span>تومان</span></span></del>
+                                                            <ins><span>@item.DiscountedPrice?.ToString("n0")<span>تومان</span></span></ins>
+                                                        }
+                                                        @if (item.DiscountedPrice == null)
+                                                        {
+                                                            <ins><span>@item.Price.ToString("n0")<span>تومان</span></span></ins>
+                                                        }
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="price text-center">
+                                                        <ins><span>ناموجود</span></ins>
+                                                    </div>
+                                                }
+
+                                                @if (@item.Storage != null && @item.Ram != null && @item.Cpu != null && @item.Screen != null)
+                                                {
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <i class="fa fa-check"></i>
+                                                            <span class="title">ظرفیت حافظه داخلی: </span>
+                                                            <span class="text">@item.Storage</span>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <i class="fa fa-check"></i>
+                                                            <span class="title">ظرفیت حافظه رم: </span>
+                                                            <span class="text">@item.Ram</span>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <i class="fa fa-check"></i>
+                                                            <span class="title">سری پردازنده: </span>
+                                                            <span class="text">@item.Cpu</span>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <i class="fa fa-check"></i>
+                                                            <span class="title">توضیحات صفحه نمایش: </span>
+                                                            <span class="text">@item.Screen</span>
+                                                        </li>
+                                                    </ul>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        }
+    </aside>
+</div>
+
+<!-- Slider_posters ------------------------------->
+<div class="container-main">
+    <aside class="col-lg-12 col-md-9 col-xs-12 order-2 order-lg-2 pl">
+        <div class="container-main">
+            <div class="d-block">
+                <div class="adplacement-container-row">
+                    @if (Model.CenterPoster != null)
+                    {
+                        <div class="col-12">
+                            <a href="@Model.CenterPoster.Link" class="adplacement-item mb-4">
+                                <div class="adplacement-sponsored_box">
+                                    <img src="@Directories.GetSliderPosterImage(Model.CenterPoster.Image)">
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row pr">
+                <div class="adplacement-container-row">
+                    @if (Model.SmallPoster != null)
+                    {
+                        @foreach (var item in Model.SmallPoster)
+                        {
+                            <div class="col-6 col-lg-3 pr">
+                                <a hhref="@item.Link" class="adplacement-item">
+                                    <div class="adplacement-sponsored_box">
+                                        <img src="@Directories.GetSliderPosterImage(item.Image)">
+                                    </div>
+                                </a>
+                            </div>
+                        }
+
+                    }
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!---product-------------------------------->
 <div class="col-lg-12 col-md-12 col-xs-12 pr order-1 d-block">
     <div class="slider-widget-products slider-content-tabs">
         <div class="widget widget-product card slider-content-tabs">
             <header class="card-header header-product">
-                <span class="title-one">لوازم خانگی</span>
+                <span class="title-one">آخرین محصولات</span>
                 <h3 class="card-title"></h3>
             </header>
             <div class="product-carousel owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
                 <div class="owl-stage-outer">
-                    <div class="owl-stage"
-                         style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2234px;">
-                        <div class="owl-item active tab-item" style="width: 309.083px; margin-left: 10px;">
-                            <div class="item">
-                                <a href="#" class="d-block hover-img-link" data-toggle="modal"
-                                   data-target="#exampleModal">
-                                    <img src="~/assets/images/slider-product/Stove-lopez.jpg" class="img-fluid" alt="">
-                                </a>
-                                <h2 class="post-title">
-                                    <a href="#">
-                                        اجاق گاز طرح فر لوپز مدل 10000S
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2234px;">
+                        @foreach (var product in Model.LastProduct)
+                        {
+                            <div class="owl-item active tab-item" style="width: 309.083px; margin-left: 10px;">
+                                <div class="item">
+                                    <a asp-page="Product" asp-route-slug="@product.Slug" class="d-block hover-img-link" data-toggle="modal" data-target="#exampleModal">
+                                        <img data-src="@Directories.GetProductImage(product.ImageName)" src="@Directories.GetProductImage(product.ImageName)" class="img-fluid" alt="">
                                     </a>
-                                </h2>
-                                <div class="price">
-                                    <del><span>۱۲,۰۰۰,۰۰۰<span>تومان</span></span></del>
-                                    <ins><span>۱۰,۵۰۰,۰۰۰<span>تومان</span></span></ins>
+                                    <h2 class="post-title">
+                                        <a asp-page="Product" asp-route-slug="@product.Slug">
+                                            <big>
+                                                @product.Title
+                                            </big>
+                                        </a>
+                                    </h2>
+                                    @if (product.ProductNotExist == false)
+                                    {
+                                        <div class="price">
+                                            @if (product.DiscountedPrice != null)
+                                            {
+                                                <ins><span>@product.DiscountedPrice?.ToString("n0")<span>تومان</span></span></ins>
+                                                <br />
+                                                <del><span>@product.Price.ToString("n0")<span>تومان</span></span></del>
+
+                                            }
+                                            @if (product.DiscountedPrice == null)
+                                            {
+                                                <ins><span>@product.Price.ToString("n0")<span>تومان</span></span></ins>
+
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="price">
+                                            <ins><span>ناموجود</span></ins>
+                                        </div>
+                                    }
                                 </div>
                             </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -63,46 +284,62 @@
 </div>
 
 
-<section class="section-slider amazing-section pt-3">
-    <div class="container-amazing col-12">
-        <div class="col-lg-3 display-md-none pull-right">
-            <div class="amazing-product text-center">
-                <a href="#">
-                    <img src="~/assets/images/slider-amazing/shopping-cart.svg" alt="">
-                </a>
-                <h3 class="amazing-heading-title amazing-size-default">محصولات شگفت انگیز</h3>
-                <a href="#" class="view-all-amazing-btn">
-                    مشاهده همه
-                    <i class="uil uil-angle-left"></i>
-                </a>
+@if (Model.MainPageData.DiscountedPrice.Any())
+{
+    <section class="section-slider amazing-section pt-3">
+        <div class="container-amazing col-12">
+            <div class="col-lg-3 display-md-none pull-right">
+                <div class="amazing-product text-center">
+                    <a href="#">
+                        <img src="assets/images/slider-amazing/shopping-cart.svg" alt="">
+                    </a>
+                    <h3 class="amazing-heading-title amazing-size-default">محصولات شگفت انگیز</h3>
+                    <a href="#" class="view-all-amazing-btn">
+                        مشاهده همه
+                        <i class="uil uil-angle-left"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-9 col-md-12 pull-left">
-            <div class="slider-widget-products mb-0">
-                <div class="widget widget-product card">
-                    <header class="card-header">
-                        <span class="title-one">محصولات شگفت انگیز</span>
-                        <h3 class="card-title">مشاهده همه</h3>
-                    </header>
-                    <div class="product-carousel owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2234px;">
-                                <div class="owl-item active" style="width: 309.083px; margin-left: 10px;">
-                                    <div class="item">
-                                        <a href="#" class="d-block hover-img-link" data-toggle="modal"
-                                           data-target="#exampleModal">
-                                            <img src="~/assets/images/slider-product/Stove-lopez.jpg" class="img-fluid" alt="">
-                                        </a>
-                                        <h2 class="post-title pt-4">
-                                            <a href="#">
-                                                اجاق گاز طرح فر لوپز مدل 10000S
-                                            </a>
-                                        </h2>
-                                        <div class="price">
-                                            <del><span>۱۲,۰۰۰,۰۰۰<span>تومان</span></span></del>
-                                            <ins><span>۱۰,۵۰۰,۰۰۰<span>تومان</span></span></ins>
-                                        </div>
-                                    </div>
+            <div class="col-lg-9 col-md-12 pull-left">
+                <div class="slider-widget-products mb-0">
+                    <div class="widget widget-product card">
+                        <header class="card-header">
+                            <span class="title-one">محصولات شگفت انگیز</span>
+                            <h3 class="card-title">مشاهده همه</h3>
+                        </header>
+                        <div class="product-carousel owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2234px;">
+
+                                    @foreach (var item in Model.MainPageData.DiscountedPrice)
+                                    {
+                                        @if (item.ProductNotExist == false)
+                                        {
+                                            <div class="owl-item active" style="width: 309.083px; margin-left: 10px;">
+                                                <div class="item">
+                                                    <a asp-page="product" asp-route-slug="@item.Slug" class="d-block hover-img-link" data-toggle="modal" data-target="#exampleModal">
+                                                        <img src="@Directories.GetProductImage(item.ImageName)" class="img-fluid">
+                                                    </a>
+                                                    <h2 class="post-title pt-4">
+                                                        <a asp-page="product" asp-route-slug="@item.Slug">
+                                                            @item.Title
+                                                        </a>
+                                                    </h2>
+                                                    <div class="price">
+                                                        @if (item.DiscountedPrice != null)
+                                                        {
+                                                            <del><span>@item.Price.ToString("n0")<span>تومان</span></span></del>
+                                                            <ins><span>@item.DiscountedPrice?.ToString("n0")<span>تومان</span></span></ins>
+                                                        }
+                                                        @if (item.DiscountedPrice == null)
+                                                        {
+                                                            <ins><span>@item.Price.ToString("n0")<span>تومان</span></span></ins>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -110,289 +347,132 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+}
 
-<!-- Mobile Phone Ads--------------------------------->
-<aside class="main-row-bg d-block d-md-block">
-    <div class="bg-cover"></div>
-    <div class="container-main">
-        <div class="d-block">
-            <section class="content-title section-title mt-5">
-                <div class="align-items-center">
-                    <div class="col-auto">
-                        <div class="title">
-                            <h2>جدید ترین های لپ تاپ</h2>
-                        </div>
-                        <div class="subtitle">
-                            <span>آخرین محصولات</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="mb-3">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/asus-laptop.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ ایسوس زِنبوک 14</h3>
-                                </a>
+<!---product-------------------------------->
+<div class="col-lg-12 col-md-12 col-xs-12 pr order-1 d-block">
+    <div class="slider-widget-products slider-content-tabs">
+        <div class="widget widget-product card slider-content-tabs">
+            <header class="card-header header-product">
+                <span class="title-one">محبوب ترین محصولات</span>
+                <h3 class="card-title"></h3>
+            </header>
+            <div class="product-carousel owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2234px;">
+                        @foreach (var product in Model.Popularproduct)
+                        {
+                            <div class="owl-item active tab-item" style="width: 309.083px; margin-left: 10px;">
+                                <div class="item">
+                                    <a asp-page="Product" asp-route-slug="@product.Slug" class="d-block hover-img-link" data-toggle="modal" data-target="#exampleModal">
+                                        <img data-src="@Directories.GetProductImage(product.ImageName)" src="@Directories.GetProductImage(product.ImageName)" class="img-fluid" alt="">
+                                    </a>
+                                    <h2 class="post-title">
+                                        <a asp-page="Product" asp-route-slug="@product.Slug">
+                                            <big>
+                                                @product.Title
+                                            </big>
+                                        </a>
+                                    </h2>
+                                    @if (product.ProductNotExist == false)
+                                    {
+                                        <div class="price">
+                                            @if (product.DiscountedPrice != null)
+                                            {
+                                                <ins><span>@product.DiscountedPrice?.ToString("n0")<span>تومان</span></span></ins>
+                                                <del><span>@product.Price.ToString("n0")<span>تومان</span></span></del>
+                                            }
+                                            @if (product.DiscountedPrice == null)
+                                            {
+                                                <ins><span>@product.Price.ToString("n0")<span>تومان</span></span></ins>
+
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="price">
+                                            <ins><span>ناموجود</span></ins>
+                                        </div>
+                                    }
+
+                                </div>
                             </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/mitbook.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>هواوای میت بوک X پرو 13.9 اینچ</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/SL1200_-300x300.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ چووی الترابوک 14 اینچ پرو</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/mitbook.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>هواوای میت بوک X پرو 13.9 اینچ</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/SL1200_-300x300.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ چووی الترابوک 14 اینچ پرو</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/asus-laptop.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ ایسوس زِنبوک 14</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/asus-laptop.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ ایسوس زِنبوک 14</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/mitbook.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>هواوای میت بوک X پرو 13.9 اینچ</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
-                    <div class="card-product-horizontal">
-                        <div class="card-product-horizontal-img">
-                            <a href="#" class="d-block">
-                                <img src="~/assets/images/slider-product/SL1200_-300x300.jpg">
-                            </a>
-                        </div>
-                        <div class="card-product-horizontal-content">
-                            <div class="card-product-horizontal-content-title">
-                                <a href="#">
-                                    <h3>لپ تاپ چووی الترابوک 14 اینچ پرو</h3>
-                                </a>
-                            </div>
-                            <div class="card-product-horizontal-content-price">
-                                <span class="amount">
-                                    ۴,۲۰۰,۰۰۰
-                                    <span>تومان</span>
-                                </span>
-                            </div>
-                            <div class="card-product-horizontal-content-rate">
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star active"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</aside>
+</div>
+
+<!-- AdminSuggestion--------------------------------->
+@if (Model.MainPageData.AdminSuggestion.Any())
+{
+    <aside class="main-row-bg d-block d-md-block">
+        <div class="bg-cover"></div>
+        <div class="container-main">
+            <div class="d-block">
+                <section class="content-title section-title mt-5">
+                    <div class="align-items-center">
+                        <div class="col-auto">
+                            <div class="title">
+                                <h2>
+                                    پیشنهاد های ادمین
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @foreach (var item in Model.MainPageData.AdminSuggestion)
+                {
+                    <div class="mb-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 pt-4 pr">
+                            <div class="card-product-horizontal">
+                                <div class="card-product-horizontal-img">
+                                    <a asp-page="Product" asp-route-slug="@item.Slug" class="d-block">
+                                        <img src="@Directories.GetProductImage(item.ImageName)">
+                                    </a>
+                                </div>
+                                <div class="card-product-horizontal-content">
+                                    <div class="card-product-horizontal-content-title">
+                                        <a asp-page="Product" asp-route-slug="@item.Slug">
+                                            <h3>@item.Title</h3>
+                                        </a>
+                                    </div>
+                                    @if (item.ProductNotExist == false)
+                                    {
+                                        <div class="card-product-horizontal-content-price">
+                                            <span class="amount">
+                                                @if (item.DiscountedPrice != null)
+                                                {
+                                                    @item.DiscountedPrice?.ToString("n0")
+                                                    <del>@item.Price.ToString("n0")</del>
+                                                    <span>تومان</span>
+                                                }
+                                                @if (item.DiscountedPrice == null)
+                                                {
+                                                    @item.Price.ToString("n0")
+                                                    <span>تومان</span>
+                                                }
+                                            </span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="card-product-horizontal-content-price">
+                                            <span class="amount">
+                                                <span>ناموجود</span>
+                                            </span>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </aside>
+} 

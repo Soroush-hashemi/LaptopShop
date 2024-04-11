@@ -5,7 +5,7 @@ using Common.Application;
 using MediatR;
 using Query.Users.DTOs;
 using Query.Users.GetById;
-using Query.Users.GetByPhoneNumber;
+using Query.Users.GetByUserName;
 using Query.Users.GetList;
 
 namespace PresentationFacade.Users;
@@ -27,7 +27,7 @@ public class UserFacade : IUserFacade
         return _mediator.Send(new DeleteUserCommand(Id));
     }
 
-    public Task<OperationResult> EditUser(EditUserCommand command)
+    public Task<OperationResult> Edit(EditUserCommand command)
     {
         return _mediator.Send(command);
     }
@@ -42,8 +42,8 @@ public class UserFacade : IUserFacade
         return _mediator.Send(new GetUserListQuery());
     }
 
-    public Task<UserDto> GetPhoneNumberById(string phoneNumber)
+    public Task<UserDto?> GetUserByUserName(string userName)
     {
-        return _mediator.Send(new GetUserByPhoneNumberQuery(phoneNumber));
+        return _mediator.Send(new GetUserByUserNameQuery(userName));
     }
 }

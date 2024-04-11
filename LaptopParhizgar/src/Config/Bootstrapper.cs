@@ -2,12 +2,14 @@
 using Application.Categories;
 using Application.Categories.Create;
 using Application.Products;
+using Application.Products.Create;
 using Application.Users;
 using Common.Application.FileUtil;
 using Domain.Carts.Service;
 using Domain.Category.Service;
 using Domain.Products.Service;
 using Domain.Users.Service;
+using FluentValidation;
 using Infrastructure;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +20,6 @@ using PresentationFacade.Categories;
 using PresentationFacade.MainPage;
 using PresentationFacade.Order;
 using PresentationFacade.Order.Service;
-using PresentationFacade.PaymentSetting;
 using PresentationFacade.PaymentSetting.Service;
 using PresentationFacade.ProductComment;
 using PresentationFacade.ProductComment.Service;
@@ -26,6 +27,7 @@ using PresentationFacade.Products;
 using PresentationFacade.Products.Serivce;
 using PresentationFacade.RequestPayment.Service;
 using PresentationFacade.SliderPosters;
+using PresentationFacade.SliderPosters.Service;
 using PresentationFacade.Sliders;
 using PresentationFacade.Users;
 using Query.Addresses.GetById;
@@ -65,6 +67,9 @@ public static class Bootstrapper
         services.AddTransient<IPaymentSettingService, PaymentSettingService>();
         services.AddTransient<ICommentService, CommentService>();
         services.AddTransient<IProductSerivce, ProductSerivce>();
+        services.AddTransient<ISlidersPostersService, SlidersPostersService>();
         services.AddTransient<IMainPageService, MainPageService>();
+
+        services.AddValidatorsFromAssembly(typeof(CreateProductCommandValidator).Assembly);
     }
 }

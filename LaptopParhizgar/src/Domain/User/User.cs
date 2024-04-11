@@ -22,7 +22,7 @@ public class User : BaseEntity
     public User(string userName, string fullName, PhoneNumber phoneNumber, string email,
     string password, IUserDomainService userDomainService)
     {
-        Guard(phoneNumber, email, userDomainService);
+        Guard(phoneNumber, email, userName, userDomainService);
         UserName = userName;
         FullName = fullName;
         PhoneNumber = phoneNumber;
@@ -34,14 +34,19 @@ public class User : BaseEntity
     public void Edit(string userName, string fullName, PhoneNumber phoneNumber,
         string email, IUserDomainService userDomainService)
     {
-        Guard(phoneNumber, email, userDomainService);
+        Guard(phoneNumber, email, userName, userDomainService);
         UserName = userName;
         FullName = fullName;
         PhoneNumber = phoneNumber;
         Email = email;
     }
 
-    public void Guard(PhoneNumber phoneNumber, string email, IUserDomainService userDomainService)
+    public void SetPassword(string password)
+    {
+        Password = password;
+    }
+
+    public void Guard(PhoneNumber phoneNumber, string email, string userName, IUserDomainService userDomainService)
     {
         if (phoneNumber.Value.Length > 13)
             throw new NullOrEmptyException("تلفن نامعتبر است");
@@ -49,9 +54,17 @@ public class User : BaseEntity
         if (phoneNumber.Value.Length < 9)
             throw new NullOrEmptyException("تلفن نامعتبر است");
 
-        var result = userDomainService.IsPhoneNumberExist(phoneNumber);
-        if (result.Status != Common.Application.OperationResultStatus.Success)
-            throw new NullOrEmptyException(result.Message);
+        var IsPhoneNumberExist = userDomainService.IsPhoneNumberExist(phoneNumber);
+        if (IsPhoneNumberExist.Status != Common.Application.OperationResultStatus.Success)
+            throw new NullOrEmptyException(IsPhoneNumberExist.Message);
+
+        var IsEmailExist = userDomainService.IsEmailExist(email);
+        if (IsEmailExist.Status != Common.Application.OperationResultStatus.Success)
+            throw new NullOrEmptyException(IsEmailExist.Message);
+
+        var IsUserNameExist = userDomainService.IsUserNameExist(userName);
+        if (IsUserNameExist.Status != Common.Application.OperationResultStatus.Success)
+            throw new NullOrEmptyException(IsUserNameExist.Message);
 
         if (!string.IsNullOrWhiteSpace(email))
             if (email.IsValidEmail() == false)

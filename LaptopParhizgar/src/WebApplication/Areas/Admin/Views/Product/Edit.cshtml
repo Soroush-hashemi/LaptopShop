@@ -55,166 +55,172 @@
                     <span asp-validation-for="SubCategoryId"></span>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label>قیمت به تومان</label>
-                @Html.EditorFor(m => m.Price)
-            </div>
-            <div class="col-md-6">
-                <label>قیمت بعد از تخفیف به تومان</label>
-                @Html.EditorFor(m => m.DiscountedPrice)
-            </div>
-
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageFile)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageFileSecond)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageFileThird)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageFileFourth)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ImageFileFifth)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Color)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.IsSpecial)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ProductNotExist)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.AdminSuggestion)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Brand)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Weight)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Dimensions)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.nonOriginal)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.IncludedItems)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Classification)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Situation)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.SpecialFeatures)
-            </div>
-            <br />
-
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.MetaTitle)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.MetaDescription)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.MetaKeyWords)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.Canonical)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.Schema)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.seoDataViewModel.IndexPage)
+            <div class="box-footer">
+                <div class="col-md-6">
+                    <label>قیمت به تومان</label>
+                    @Html.EditorFor(m => m.Price)
+                </div>
+                <div class="col-md-6">
+                    <label>قیمت بعد از تخفیف به تومان</label>
+                    @Html.EditorFor(m => m.DiscountedPrice)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ImageFile)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ImageFileSecond)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ImageFileThird)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ImageFileFourth)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ImageFileFifth)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Color)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.IsSpecial)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ProductNotExist)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.AdminSuggestion)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Brand)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Weight)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Dimensions)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.nonOriginal)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.IncludedItems)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Classification)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Situation)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.SpecialFeatures)
+                </div>
             </div>
 
-            <br />
+            <h3>سئو</h3>
+            <div class="box-footer">
 
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.BigTable)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Cpu)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ProcessorSpeed)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Ram)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.TypeOfRam)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Storage)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.TypeOfStorage)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Graphic)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.TypeOfGraphic)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ScreenSize)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.Screen)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.LapTopPorts)
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.MetaTitle)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.MetaDescription)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.MetaKeyWords)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.Canonical)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.Schema)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.seoDataViewModel.IndexPage)
+                </div>
             </div>
 
-            <br />
+            <h3>مشخصات لپ تاپ</h3>
+            <div class="box-footer">
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Cpu)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ProcessorSpeed)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.BigTable)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Ram)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.TypeOfRam)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Storage)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.TypeOfStorage)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Graphic)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.TypeOfGraphic)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ScreenSize)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.Screen)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.LapTopPorts)
+                </div>
+            </div>
 
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.CartridgeType)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PrintType)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PrintSize)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PrintingTechnology)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PaperSize)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PaperInputCapacity)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PrintResolution)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.PrinterMemory)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.CopySpeed)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.FaxResolution)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ScannerResolution)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.ScannerDepth)
-            </div>
-            <div class="col-md-6">
-                @Html.EditorFor(m => m.MonthlyWorkCapacity)
+            <h3>مشخصات پرینتر</h3>
+            <div class="box-footer">
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.CartridgeType)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PrintType)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PrintSize)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PrintingTechnology)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PaperSize)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PaperInputCapacity)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PrintResolution)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.PrinterMemory)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.CopySpeed)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.FaxResolution)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ScannerResolution)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.ScannerDepth)
+                </div>
+                <div class="col-md-6">
+                    @Html.EditorFor(m => m.MonthlyWorkCapacity)
+                </div>
             </div>
 
             <div class="col-md-6 ">

@@ -12,11 +12,6 @@ using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Persistence;
 public class LaptopParhizgerContext : DbContext
 {
-    public LaptopParhizgerContext()
-    {
-
-    }
-
     public LaptopParhizgerContext(DbContextOptions<LaptopParhizgerContext> options) : base(options)
     {
 

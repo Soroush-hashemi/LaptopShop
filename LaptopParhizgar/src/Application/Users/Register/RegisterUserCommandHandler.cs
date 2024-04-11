@@ -21,7 +21,8 @@ public class RegisterUserCommandHandler : IBaseCommandHandler<RegisterUserComman
         try
         {
             var password = Sha256Hasher.Hash(request.Password);
-            var user = new User(request.UserName, request.FullName, request.PhoneNumber, request.Email, password, _userDomainService);
+            var user = new User(request.UserName, request.FullName, request.PhoneNumber,
+                request.Email, password, _userDomainService);
 
             _userRepository.Add(user);
             await _userRepository.Save();

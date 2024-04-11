@@ -1,5 +1,6 @@
 using Common.Application;
 using Config;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
 
@@ -21,19 +22,19 @@ builder.Services.AddAuthorization(option =>
     });
 });
 
-//builder.Services.AddAuthentication(option =>
-//{
-//    option.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-//    option.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-//    option.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+builder.Services.AddAuthentication(option =>
+{
+    option.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    option.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    option.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 
-//}).AddCookie(option =>
-//{
-//    option.LoginPath = "/Authorize/Signin";
-//    option.LogoutPath = "/Authorize/Signout";
-//    option.ExpireTimeSpan = TimeSpan.FromDays(30);
-//    option.AccessDeniedPath = "/";
-//});
+}).AddCookie(option =>
+{
+    option.LoginPath = "/Authorize/Signin";
+    option.LogoutPath = "/Authorize/Signout";
+    option.ExpireTimeSpan = TimeSpan.FromDays(30);
+    option.AccessDeniedPath = "/";
+});
 
 var app = builder.Build();
 
@@ -45,7 +46,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-//app.UseErrorHandlingMiddleware();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

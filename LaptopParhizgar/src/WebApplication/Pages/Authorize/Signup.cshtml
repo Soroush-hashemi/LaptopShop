@@ -1,0 +1,78 @@
+﻿@page
+@model WebApplication.Pages.Authorize.SignupModel
+@{
+    Layout = "../Shared/_LoginLayout";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <section class="page-account-box">
+                <div class="col-lg-6 col-md-6 col-xs-12 mx-auto">
+                    <div class="ds-userlogin">
+                        <div class="account-box">
+                            <div class="account-box-headline">
+                                <a href="~/authorize/Signin" class="login-ds">
+                                    <span class="title">ورود</span>
+                                    <span class="sub-title">به فروشگاه لپ تاپ پرهیزگار</span>
+                                </a>
+                                <a href="~/authorize/Signup" class="register-ds active">
+                                    <span class="title">ثبت نام</span>
+                                    <span class="sub-title">در فروشگاه لپ تاپ پرهیزگار </span>
+                                </a>
+                            </div>
+                            <div class="Login-to-account mt-4">
+                                <div class="account-box-content">
+                                    <h4>ثبت نام </h4>
+                                    <form action="" method="post" class="form-account text-right">
+                                        <div class="form-account-title">
+                                            <label for="email-phone"> شماره موبایل</label>
+                                            <input type="number" asp-for="PhoneNumber" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="PhoneNumber" style="color: red"></span>
+                                        </div>
+
+                                        <div class="form-account-title">
+                                            <label for="name">نام کاربری</label>
+                                            <input type="text" asp-for="UserName" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="UserName" style="color: red"></span>
+                                        </div>
+
+                                        <div class="form-account-title">
+                                            <label for="name">نام و نام خانوادگی</label>
+                                            <input type="text" asp-for="FullName" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="FullName" style="color: red"></span>
+                                        </div>
+
+                                        <div class="form-account-title">
+                                            <label for="email">ایمیل</label>
+                                            <input type="email" asp-for="Email" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="Email" style="color: red"></span>
+                                        </div>
+
+                                        <div class="form-account-title">
+                                            <label for="password">رمز عبور</label>
+                                            <input type="password" asp-for="Password" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="Password" style="color: red"></span>
+                                        </div>
+
+                                        <div class="form-auth-row">
+                                            <label for="#" class="ui-checkbox mt-1">
+                                                <input type="checkbox" value="1" name="login" id="remember">
+                                                <span class="ui-checkbox-check"></span>
+                                            </label>
+                                            <label for="remember" class="remember-me mr-0">مرا به خاطر بسپار</label>
+                                        </div>
+
+                                        <div class="form-row-account">
+                                            <button type="submit" class="btn btn-primary btn-login">ثبت نام در فروشگاه لپ تاپ پرهیزگار </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

@@ -3,12 +3,9 @@ using Application.Sliders.DeleteSliderPoster;
 using Application.Sliders.EditSliderPoster;
 using Common.Application;
 using MediatR;
-using Query.SliderPosters.BigPoster;
-using Query.SliderPosters.CenterPoster;
 using Query.SliderPosters.DTO;
 using Query.SliderPosters.GetById;
 using Query.SliderPosters.GetList;
-using Query.SliderPosters.SmallPoster;
 
 namespace PresentationFacade.SliderPosters;
 public class SliderPostersFacade : ISlidersPostersFacade
@@ -34,28 +31,13 @@ public class SliderPostersFacade : ISlidersPostersFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<SliderPostersDto?> GetBigPoster()
-    {
-        return await _mediator.Send(new GetBigPosterQuery());
-    }
-
     public async Task<SliderPostersDto> GetById(long Id)
     {
         return await _mediator.Send(new GetSliderPosterByIdQuery(Id));
     }
 
-    public async Task<SliderPostersDto?> GetCenterPoster()
-    {
-        return await _mediator.Send(new GetCenterPosterQuery());
-    }
-
     public async Task<List<SliderPostersDto>> GetList()
     {
         return await _mediator.Send(new GetSliderPosterListQuery());
-    }
-
-    public async Task<SliderPostersDto?> GetSmallPoster()
-    {
-        return await _mediator.Send(new GetSmallPosterQuery());
     }
 }

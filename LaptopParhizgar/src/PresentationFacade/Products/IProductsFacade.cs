@@ -1,5 +1,4 @@
 ﻿using Application.Products.Create;
-using Application.Products.Delete;
 using Application.Products.Edit;
 using Common.Application;
 using Query.Products.DTOs;

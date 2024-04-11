@@ -56,9 +56,6 @@ public class ProductViewModel
     [Display(Name = "قیمت به تومان")]
     [Required(ErrorMessage = "وارد کردن {0} اجباری است")]
     public long Price { get; set; }
-
-    [Display(Name = "قیمت بعد از تخفیف به تومان")]
-    [Required(ErrorMessage = "وارد کردن {0} اجباری است")]
     public long? DiscountedPrice { get; set; }
 
     [Display(Name = "پیشنهاد ادمین ؟")]

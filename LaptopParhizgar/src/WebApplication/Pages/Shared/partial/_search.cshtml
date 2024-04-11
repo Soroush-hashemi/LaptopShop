@@ -39,7 +39,7 @@
                             <div class="dropdown-menu">
                                 <ul class="account-uls mb-0">
                                     <li class="account-item">
-                                        <a href="~/authorize/register" class="account-link"> ورود یا ثبت نام </a>
+                                        <a href="~/authorize/Signup" class="account-link"> ورود یا ثبت نام </a>
                                     </li>
                                     @if (User.Identity.IsAuthenticated)
                                     {
@@ -50,7 +50,7 @@
                                             <a href="~/UserPanel/Orders" class="account-link">سفارشات من</a>
                                         </li>
                                         <li class="account-item">
-                                            <a asp-controller="Authorize" asp-action="Logout" class="account-link">خروج</a>
+                                            <a href="~/Authorize/Signout" class="account-link">خروج</a>
                                         </li>
                                     }
 

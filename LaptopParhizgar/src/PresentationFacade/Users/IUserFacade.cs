@@ -8,10 +8,9 @@ public interface IUserFacade
 {
     Task<OperationResult> Delete(long Id);
     Task<OperationResult> Register(RegisterUserCommand command);
-    Task<OperationResult> EditUser(EditUserCommand command);
-
+    Task<OperationResult> Edit(EditUserCommand command);
 
     Task<UserDto> GetById(long Id);
-    Task<UserDto> GetPhoneNumberById(string phoneNumber);
+    Task<UserDto?> GetUserByUserName(string userName);
     Task<List<UserDto>> GetList();
 }
