@@ -1,12 +1,90 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|c:\\users\\hashe\\desktop\\laptopparhizgar\\laptopparhizgar_cleanarch\\laptopparhizgar\\src\\webapplication\\pages\\search.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|solutionrelative:src\\webapplication\\pages\\search.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|c:\\users\\hashe\\desktop\\laptopparhizgar\\laptopparhizgar_cleanarch\\laptopparhizgar\\src\\webapplication\\pages\\shared\\_searchview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|solutionrelative:src\\webapplication\\pages\\shared\\_searchview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|c:\\users\\hashe\\desktop\\laptopparhizgar\\laptopparhizgar_cleanarch\\laptopparhizgar\\src\\webapplication\\pages\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|solutionrelative:src\\webapplication\\pages\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|c:\\users\\hashe\\desktop\\laptopparhizgar\\laptopparhizgar_cleanarch\\laptopparhizgar\\src\\webapplication\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{59B4DFAA-411B-4C4E-985C-3FAD42808873}|src\\WebApplication\\WebApplication.csproj|solutionrelative:src\\webapplication\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 245,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Search.cshtml",
+              "RelativeDocumentMoniker": "src\\WebApplication\\Pages\\Search.cshtml",
+              "ToolTip": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Search.cshtml",
+              "RelativeToolTip": "src\\WebApplication\\Pages\\Search.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T17:21:00.402Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Search.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Search.cshtml.cs",
+              "RelativeDocumentMoniker": "src\\WebApplication\\Pages\\Search.cshtml.cs",
+              "ToolTip": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Search.cshtml.cs",
+              "RelativeToolTip": "src\\WebApplication\\Pages\\Search.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:26:14.738Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\WebApplication\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Index.cshtml",
+              "RelativeToolTip": "src\\WebApplication\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T17:49:11.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_SearchView.cshtml",
+              "DocumentMoniker": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Shared\\_SearchView.cshtml",
+              "RelativeDocumentMoniker": "src\\WebApplication\\Pages\\Shared\\_SearchView.cshtml",
+              "ToolTip": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\src\\WebApplication\\Pages\\Shared\\_SearchView.cshtml",
+              "RelativeToolTip": "src\\WebApplication\\Pages\\Shared\\_SearchView.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T17:43:35.398Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

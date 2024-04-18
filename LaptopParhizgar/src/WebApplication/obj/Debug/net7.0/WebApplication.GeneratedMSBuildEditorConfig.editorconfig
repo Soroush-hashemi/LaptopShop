@@ -166,6 +166,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/CheckUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXENoZWNrVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/Signin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXFNpZ25pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -176,6 +184,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/Components/Cart/Default.cshtml]
@@ -204,6 +220,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_SearchView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWFyY2hWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]

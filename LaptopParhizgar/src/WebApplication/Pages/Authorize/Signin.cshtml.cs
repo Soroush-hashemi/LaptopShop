@@ -27,7 +27,9 @@ public class SigninModel : PageModel
     public string UserName { get; set; }
 
     [BindProperty]
-    [Required(ErrorMessage = "کلمه عبور را وارد کنید")]
+    [Display(Name = "کلمه عبور")]
+    [Required(ErrorMessage = "{0} را وارد کنید")]
+    [MinLength(6, ErrorMessage = "{0} باید بیشتر از 5 کاراکتر باشد")]
     public string Password { get; set; }
     #endregion
 

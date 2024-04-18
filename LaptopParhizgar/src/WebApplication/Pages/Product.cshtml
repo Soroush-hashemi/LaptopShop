@@ -1,0 +1,837 @@
+﻿@page "{slug}"
+@using Common.Application
+@using Common.Application.FileUtil
+@model WebApplication.Pages.ProductModel
+@{
+    ViewData["Title"] = Model.Product.Title;
+    var imageUrl = @Directories.GetProductImage(Model.Product.ImageName);
+    var imageTwoUrl = @Directories.GetProductImage(Model.Product.ImageNameSecond);
+    var siteUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}";
+    var ProductUrl = $"{siteUrl}/Product/{Model.Product.Slug}";
+    var imageThreeUrl = @Directories.GetProductImage(Model.Product.ImageNameThird);
+    var imageFourUrl = @Directories.GetProductImage(Model.Product.ImageNameFourth);
+    var imageFiveUrl = @Directories.GetProductImage(Model.Product.ImageNameFifth);
+    var imageType = @System.IO.Path.GetExtension(Model.Product.ImageName).Replace(".", "");
+}
+
+@section MetaTags
+{
+
+}
+
+<!--Top header-------------------------------->
+<partial name="partial/_topHeader" />
+
+<!-- header-------------------------------->
+<partial name="partial/_header" model="Model.Categories" />
+
+<div class="container-main">
+    <div class="d-block">
+        <div class="page-content page-row">
+            <div class="main-row">
+                <div id="breadcrumb">
+                    <i class="mdi mdi-home"></i>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a asp-page="Index">خانه</a></li>
+                            <li class="breadcrumb-item"><a asp-page="Search" asp-route-categorySlug="@Model.Category.Slug" class="product-link product-cat-title">@Model.Category.Title </a></li>
+                            <li class="breadcrumb-item"><a asp-page="Search" asp-route-categorySlug="@Model.Child.Slug" class="product-link product-cat-title">@Model.Child.Title </a></li>
+                            <li class="breadcrumb-item active" aria-current="page">‌@Model.Product.Title</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg">
+                    <div class="product type-product">
+                        <div class="col-lg-5 col-xs-12 pr d-block" style="padding: 0;">
+                            <section class="product-gallery">
+                                <div class="gallery">
+                                    <div class="gallery-item">
+                                        <div>
+                                            <ul class="gallery-actions">
+                                                <li class="option-social">
+                                                    <a class="btn-option btn-option-social" data-toggle="modal" data-target="#option-social">
+                                                        <i class="mdi mdi-share"></i>
+                                                        <span>اشتراک</span>
+                                                    </a>
+                                                    <!-- Modal-option-social -->
+                                                    <div class="modal fade" id="option-social" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                                                                        اشتراک گذاری
+                                                                    </h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="title">با استفاده از روش‌های زیر می‌توانید این صفحه را با دوستان خود به اشتراک بگذارید.</div>
+                                                                    <div class="share-options">
+                                                                        <div class="share-social-buttons text-center">
+                                                                            <a href="https://t.me/share/url?url=@ProductUrl" class="share-social">
+
+                                                                                <i class="fa fa-telegram" style="font-size:48px;color:darkblue"></i>
+                                                                            </a>
+                                                                            <a href="https://wa.me?text=@ProductUrl" class="share-social">
+                                                                                <i class="fa fa-whatsapp" style="font-size:48px;color:lawngreen"></i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-share-col">
+                                                                        <label>لینک محصول</label>
+                                                                        <input class="ui-url-field" type="url" value="@ProductUrl" readonly="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="gallery-img">
+                                            <div id="gallery_01f" style="width:420px;float:right;">
+                                                <a href="@imageUrl">
+                                                    <img class="zoom-img" id="img-product-zoom" src="@imageUrl" data-zoom-image="@imageUrl" width="320" />
+                                                </a>
+                                                <ul class="gallery-items owl-carousel owl-theme" id="gallery-slider">
+                                                    <li class="item">
+                                                        <a href="@imageUrl" class="elevatezoom-gallery active" data-image="@imageUrl" data-zoom-image="@imageUrl">
+                                                            <img src="@imageUrl" width="100" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="@imageTwoUrl" class="elevatezoom-gallery active" data-image="@imageTwoUrl" data-zoom-image="@imageTwoUrl">
+                                                            <img src="@imageTwoUrl" width="100" />
+                                                        </a>
+                                                    </li>
+                                                    @if (imageThreeUrl != null && imageThreeUrl != "/images/Products/")
+                                                    {
+                                                        <li class="item">
+                                                            <a href="@imageThreeUrl" class="elevatezoom-gallery active" data-image="@imageThreeUrl" data-zoom-image="@imageThreeUrl">
+                                                                <img src="@imageThreeUrl" width="100" />
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                    @if (imageFourUrl != null && imageFourUrl != "/images/Products/")
+                                                    {
+                                                        <li class="item">
+                                                            <a href="@imageFourUrl" class="elevatezoom-gallery active" data-image="@imageFourUrl" data-zoom-image="@imageFourUrl">
+                                                                <img src="@imageFourUrl" width="100" />
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                    @if (imageFiveUrl != null && imageFiveUrl != "/images/Products/")
+                                                    {
+                                                        <li class="item">
+                                                            <a href="@imageFiveUrl" class="elevatezoom-gallery active" data-image="@imageFiveUrl" data-zoom-image="@imageFiveUrl">
+                                                                <img src="@imageFiveUrl" width="100" />
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-7 col-xs-12 pl mt-5 d-block">
+                            <section class="product-info">
+                                <div class="product-headline">
+                                    <h1 class="product-title">
+                                        @Model.Product.Title
+                                    </h1>
+                                    @if (Model.Product.nonOriginal == true)
+                                    {
+                                        <div class="product-guaranteed">
+                                            <span>غیراصل</span>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="product-attributes">
+                                    <div class="product-config">
+                                        <span class="product-title-en">
+                                            @Model.Product.Slug
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="product-config-wrapper">
+                                    <div class="product-directory">
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    <i class="fa fa-archive"></i> دسته:
+                                                </span>
+                                            <li class="breadcrumb-item">
+                                                <a asp-page="Search" asp-route-categorySlug="@Model.Category.Slug" class="product-link product-cat-title">@Model.Category.Title </a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                <a asp-page="Search" asp-route-categorySlug="@Model.Child.Slug" class="product-link product-cat-title">@Model.Child.Title </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col=lg-6 col-md-6 col-xs-12 pr">
+                                        <div class="product-variants">
+                                            <span>رنگ بندی: </span> @Model.Product.Color
+                                        </div>
+                                        <div class="product-variants">
+                                            <span> برند: </span> @Model.Product.Brand
+                                        </div>
+                                        <div class="product-params pt-3">
+                                            <ul data-title="ویژگی‌های محصول">
+                                                @if (@Model.Product.Cpu != null)
+                                                {
+                                                    <li>
+                                                        <span> پردازنده </span>
+                                                        <span> @Model.Product.Cpu </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.Ram != null)
+                                                {
+                                                    <li>
+                                                        <span>مقدار رم: </span>
+                                                        <span> @Model.Product.Ram </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.Screen != null)
+                                                {
+                                                    <li>
+                                                        <span> صفحه نمایش </span>
+                                                        <span> @Model.Product.Screen </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.ScreenSize != null)
+                                                {
+                                                    <li>
+                                                        <span> سایز صفحه نمایش </span>
+                                                        <span> @Model.Product.ScreenSize </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.CartridgeType != null)
+                                                {
+                                                    <li>
+                                                        <span>نوع کارتریج</span>
+                                                        <span> @Model.Product.CartridgeType </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.PrintType != null)
+                                                {
+                                                    <li>
+                                                        <span>نوع چاپ</span>
+                                                        <span> @Model.Product.PrintType </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.PrintResolution != null)
+                                                {
+                                                    <li>
+                                                        <span>رزولوشن چاپ</span>
+                                                        <span> @Model.Product.PrintResolution </span>
+                                                    </li>
+                                                }
+                                                @if (@Model.Product.Situation != null)
+                                                {
+                                                    <li>
+                                                        <span>وضعیت</span>
+                                                        <span> @Model.Product.Situation </span>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    @if (Model.Product.ProductNotExist == false)
+                                    {
+                                        <div class="col=lg-6 col-md-6 col-xs-12 pr">
+                                            <div class="product-seller-info">
+                                                <div class="seller-info-changable">
+                                                    <div class="product-seller-row vendor">
+                                                        <a href="https://www.laptopparhizgar.ir/ContactUs" style="color:dimgray" class="title">برای اطلاع از موجودی و نوسانات حتما تماس بگیرید</a>
+                                                    </div>
+                                                    <div class="product-seller-row price">
+                                                        <span class="title"> قیمت:</span>
+                                                        <a class="product-name">
+                                                            @if (Model.Product.DiscountedPrice != null)
+                                                            {
+                                                                <del>
+                                                                    <span class="amount" style="color:dimgray">
+                                                                        @Model.Product.Price.ToString("n0")
+                                                                        <span>تومان</span>
+                                                                    </span>
+                                                                </del>
+                                                                <br />
+                                                                <span class="amount">
+                                                                    @Model.Product.DiscountedPrice?.ToString("n0")
+                                                                    <span>تومان</span>
+                                                                </span>
+                                                            }
+                                                            @if (Model.Product.DiscountedPrice == null)
+                                                            {
+                                                                <span class="amount">
+                                                                    @Model.Product.Price.ToString("n0")
+                                                                    <span>تومان</span>
+                                                                </span>
+                                                            }
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-seller-row add-to-cart">
+                                                        <button class="btn-add-to-cart btn btn-primary" onclick="AddToCart('@Model.Product.Id')">
+                                                            <span class="btn-add-to-cart-txt">افزودن به سبد خرید</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="col=lg-6 col-md-6 col-xs-12 pr">
+                                            <div class="product-seller-info">
+                                                <div class="seller-info-changable">
+                                                    <div class="product-seller-row vendor">
+                                                        <span class="title"> فروشنده:</span>
+                                                        <a class="product-name">فروشگاه لپ‌تاپ پرهیزگار</a>
+                                                    </div>
+                                                    <div class="product-seller-row price">
+                                                        <span class="title"> قیمت:</span>
+                                                        <span class="product-name">
+                                                            <span class="unavailable">ناموجود</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tab-box">
+                    <ul class="tab nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Review-tab" data-toggle="tab" href="#Review" role="tab" aria-controls="Review" aria-selected="true">
+                                <i class="mdi mdi-glasses"></i> نقد و بررسی
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Specifications-tab" data-toggle="tab" href="#Specifications" role="tab" aria-controls="Specifications" aria-selected="false">
+                                <i class="mdi mdi-format-list-checks"></i> مشخصات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="question-and-answer-tab" data-toggle="tab"
+                               href="#question-and-answer" role="tab" aria-controls="question-and-answer"
+                               aria-selected="false">
+                                <i class="mdi mdi-comment-text-multiple-outline"></i>
+                                نظرات کاربران
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <div class="tabs-content">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Review" role="tabpanel" aria-labelledby="Review-tab">
+                                <h2 class="params-headline">نقد و بررسی اجمالی</h2>
+                                <section class="content-expert-summary">
+                                    <div class="mask pm-3">
+                                        <div class="mask-text">
+                                            <p>
+                                                @Html.Raw(Model.Product.Description.Substring(0, Math.Min(100, Model.Product.Description.Length)))...
+                                            </p>
+                                        </div>
+                                        <a href="#" class="mask-handler">
+                                            <span class="show-more">+ ادامه مطلب</span>
+                                            <span class="show-less">- بستن</span>
+                                        </a>
+                                        <div class="shadow-box"></div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="tab-pane fade" id="Specifications" role="tabpanel" aria-labelledby="Specifications-tab">
+                                <article>
+                                    <h2 class="params-headline">
+                                        مشخصات فنی
+                                        <span> @Model.Product.Slug </span>
+                                    </h2>
+                                    <section>
+                                        <ul class="params-list">
+                                            <li class="params-list-item">
+                                                <div class="params-list-key">
+                                                    <span class="block">ابعاد</span>
+                                                </div>
+                                                <div class="params-list-value">
+                                                    <span class="block">
+                                                        @Model.Product.Dimensions میلی‌متر
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="params-list-item">
+                                                <div class="params-list-key">
+                                                    <span class="block">وزن</span>
+                                                </div>
+                                                <div class="params-list-value">
+                                                    <span class="block">
+                                                        @Model.Product.Weight گرم
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <ul class="params-list">
+                                            @if (@Model.Product.Cpu != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">پردازنده</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Cpu
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.ProcessorSpeed != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">محدوده سرعت پردازنده</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.ProcessorSpeed
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Ram != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">مقدار رم</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Ram
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.TypeOfRam != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">نوع رم</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.TypeOfRam
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Storage != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">مقدار حافظه</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Storage
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.TypeOfStorage != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">نوع حافظه</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.TypeOfStorage
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Graphic != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">مقدار گرافیک</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Graphic
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.TypeOfGraphic != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">نوع گرافیک</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.TypeOfGraphic
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Screen != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">صفحه نمایش</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Screen
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.ScreenSize != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">صفحه نمایش سایز</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.ScreenSize
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.LapTopPorts != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">تعداد و نوع پورت ها</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.LapTopPorts
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.CartridgeType != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">نوع کارتریج </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.CartridgeType
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PrintType != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">نوع چاپ</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PrintType
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PrintSize != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">اندازه چاپ</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PrintSize
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PrintingTechnology != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">تکنولوژی چاپ </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PrintingTechnology
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PaperSize != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">سایز کاغذ</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PaperSize
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PaperInputCapacity != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">ظرفیت ورودی کاغذ</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PaperInputCapacity
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PrintResolution != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">رزولوشن چاپ </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PrintResolution
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.PrinterMemory != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">حافظه پرینتر </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.PrinterMemory
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.FaxResolution != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">رزولوشن فکس </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.FaxResolution
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.ScannerResolution != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">رزولوشن اسکنر </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.ScannerResolution
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.ScannerDepth != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">عمق اسکنر </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.ScannerDepth
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.MonthlyWorkCapacity != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">توان کار ماهانه </span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.MonthlyWorkCapacity
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.CopySpeed != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">سرعت کپی</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.CopySpeed
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Classification != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">طبقه‌بندی</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Classification
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.Situation != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">وضعیت</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.Situation
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                            @if (@Model.Product.SpecialFeatures != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">ویژگی های خاص</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.SpecialFeatures
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+
+                                            @if (@Model.Product.IncludedItems != null)
+                                            {
+                                                <li class="params-list-item">
+                                                    <div class="params-list-key">
+                                                        <span class="block">اقلام همراه</span>
+                                                    </div>
+                                                    <div class="params-list-value">
+                                                        <span class="block">
+                                                            @Model.Product.IncludedItems
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade" id="question-and-answer" role="tabpanel" aria-labelledby="question-and-answer-tab">
+                                <div class="faq">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <h2 class="params-headline">
+                                            نظرات کاربران
+                                            <span>شما هم می‌توانید در مورد این کالا نظر بدهید.</span>
+                                        </h2>
+                                        <form class="form-faq" method="post">
+                                            <div class="form-faq-row mt-4">
+                                                <div class="form-faq-col">
+                                                    <div class="ui-textarea">
+                                                        <textarea class="ui-textarea-field" asp-for="Text" rows="5"></textarea>
+                                                        <span asp-validation-for="Text"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-faq-row mt-4">
+                                                <div class="form-faq-col form-faq-col-submit">
+                                                    <button class="btn-tertiary btn btn-secondary" type="submit">
+                                                        ثبت نظر
+                                                    </button>
+                                                    <div class="form-faq-col-agreement d-inline-block mr-5">
+                                                        <div class="form-auth-row">
+                                                            <label for="#" class="ui-checkbox mt-1">
+                                                                <input type="hidden" asp-for="ProductId" value="@Model.Product.Id" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <div class="alert alert-danger">
+                                            برای ثبت نظر باید ثبت نام کنید
+                                        </div>
+                                    }
+                                    <div id="product-questions-list">
+                                        <div class="questions-list">
+                                            @foreach (var comment in Model.Comments)
+                                            {
+                                                <ul class="faq-list">
+                                                    <li class="is-question">
+                                                        <div class="section">
+                                                            <div class="faq-header">
+                                                                <p class="h5">
+                                                                    <span>@comment.UserFullName</span>
+                                                                </p>
+                                                            </div>
+                                                            <p>
+                                                                @comment.Text
+                                                            </p>
+                                                            <div class="faq-date">
+                                                                <em>@comment.CreationDate.ToPersianDate()</em>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        function AddToCart(ProductId) {
+            window.location.replace('/Cart/AddToCart/' + ProductId);
+        }
+    </script>
+}

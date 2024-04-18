@@ -28,11 +28,12 @@
                                         <div class="form-account-title">
                                             <label for="UserName">نام کاربری</label>
                                             <input type="text" asp-for="UserName" class="number-email-input" id="email-phone">
+                                            <span asp-validation-for="UserName" style="color: red"></span>
                                         </div>
                                         <div class="form-account-title">
                                             <label for="password">رمز عبور</label>
                                             <input type="password" asp-for="Password" class="number-email-input" id="email-phone">
-                                            @*<span asp-validation-for="UserName" style="color: red"></span>*@
+                                            <span asp-validation-for="Password" style="color: red"></span>
                                             <a href="~/authorize/CheckUser" class="account-link-password">رمز خود را فراموش کردم</a>
                                         </div>
                                         <div class="form-row-account">

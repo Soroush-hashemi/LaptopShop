@@ -8,6 +8,7 @@ using Query.Categories.DTOs;
 using Query.Categories.GetById;
 using Query.Categories.GetByParentId;
 using Query.Categories.GetBySlug;
+using Query.Categories.GetChildById;
 using Query.Categories.GetList;
 
 namespace PresentationFacade.Categories;
@@ -52,6 +53,11 @@ public class CategoryFacade : ICategoryFacade
     public async Task<CategoryDto> GetBySlug(string slug)
     {
         return await _mediator.Send(new GetCategoryBySlugQuery(slug));
+    }
+
+    public async Task<SubCategoryDto> GetChildById(long SubCategoryId)
+    {
+        return await _mediator.Send(new GetChildCategoryByIdQuery(SubCategoryId));
     }
 
     public async Task<List<CategoryDto>> GetList()

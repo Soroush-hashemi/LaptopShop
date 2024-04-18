@@ -14,6 +14,7 @@ public interface ICategoryFacade
 
     Task<CategoryDto> GetBySlug(string slug);
     Task<CategoryDto> GetById(long CategoryId);
+    Task<SubCategoryDto> GetChildById(long SubCategoryId);
     Task<List<SubCategoryDto>> GetByParentId(long ParentId);
     Task<List<CategoryDto>> GetList();
 }

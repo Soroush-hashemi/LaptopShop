@@ -46,6 +46,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+//app.UseErrorHandlingMiddleware();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

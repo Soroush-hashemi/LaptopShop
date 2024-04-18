@@ -19,6 +19,19 @@ internal static class CategoryMapper
         };
     }
 
+    public static SubCategoryDto SubMap(this Category? category)
+    {
+        return new SubCategoryDto()
+        {
+            Id = category.Id,
+            ParentId = (long)category.ParentId,
+            Title = category.Title,
+            Slug = category.Slug,
+            seoDataDto = category.SeoData.MapSeo(),
+            CreationDate = category.CreationDate,
+        };
+    }
+
     public static List<CategoryDto> MapList(this List<Category> categories)
     {
         var model = new List<CategoryDto>();

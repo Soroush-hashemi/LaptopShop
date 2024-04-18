@@ -56,7 +56,7 @@ public static class Bootstrapper
         services.AddTransient<ICategoryFacade, CategoryFacade>();
         services.AddTransient<IOrderFacade, OrderFacade>();
         services.AddTransient<IProductCommentFacade, ProductCommentFacade>();
-        services.AddTransient<IProductsFacade, ProductsFacade>();
+        services.AddTransient<IProductFacade, ProductFacade>();
         services.AddTransient<ISliderFacade, SliderFacade>();
         services.AddTransient<IUserFacade, UserFacade>();
         services.AddTransient<ISlidersPostersFacade, SliderPostersFacade>();

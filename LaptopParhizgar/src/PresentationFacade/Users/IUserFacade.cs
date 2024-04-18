@@ -13,4 +13,6 @@ public interface IUserFacade
     Task<UserDto> GetById(long Id);
     Task<UserDto?> GetUserByUserName(string userName);
     Task<List<UserDto>> GetList();
+    Task<OperationResult> CheckUser(string UserName, string PhoneNumber);
+    Task<OperationResult> ChangePassword(string UserName, string phoneNumber, string Password);
 }

@@ -1,0 +1,94 @@
+﻿@using Common.Application.FileUtil
+@using Query.Products.DTOs
+@model ProductFilterDto
+
+<div class="col-lg-12 col-md- col-xs-12 pl">
+    <div class="shop-archive-content mt-3 d-block">
+        <div class="product-items">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="Most-visited" role="tabpanel" aria-labelledby="Most-visited-tab">
+                    <div class="row">
+                        @foreach (var item in Model.Product)
+                        {
+                            <div class="col-lg-3 col-md-3 col-xs-12 order-1 pr d-block mb-3">
+                                <section class="product-box product product-type-simple">
+                                    <div class="thumb">
+                                        <a asp-page="Product" asp-route-slug="@item.Slug" class="d-block">
+                                            @if (item.DiscountedPrice != null && item.ProductNotExist == false)
+                                            {
+                                                <div class="promotion-badge">فروش ویژه</div>
+                                                <div class="discount-d">
+                                                </div>
+                                            }
+                                            <img src="@Directories.GetProductImage(item.ImageName)">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a asp-page="Product" asp-route-slug="@item.Slug">@item.Title</a>
+                                    </div>
+                                    <div class="price">
+                                        @if (item.ProductNotExist == false)
+                                        {
+                                            @if (item.DiscountedPrice != null)
+                                            {
+                                                <span>@item.DiscountedPrice?.ToString("n0")</span>
+                                                <span>تومان</span>
+                                                <br />
+                                                <del style="color:dimgray"><span>@item.Price.ToString("n0")</span></del>
+                                                <span>تومان</span>
+                                            }
+                                            @if (item.DiscountedPrice == null)
+                                            {
+                                                @item.Price.ToString("n0")
+
+                                                <span>تومان</span>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <span>ناموجود</span>
+                                        }
+                                    </div>
+                                </section>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @if (Model.PageCount > 1)
+    {
+        <div class="pagination-product">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    @for (var i = 1; i <= Model.PageCount; i++)
+                    {
+                        if (i == Model.FilterParams.PageId)
+                        {
+                            <li class="page-item">
+                                <a class="page-link active" href="?pageId=@i">@i</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="page-item">
+                                <a class="page-link active" onclick="ajaxPagination(@i)" href="?pageId=@i">@i</a>
+                            </li>
+                        }
+                    }
+                    <li class="page-item">
+                        @if (Model.PageCount > Model.FilterParams.PageId)
+                        {
+                            <a class="page-link" href="#" onclick="ajaxPagination(@(@Model.FilterParams.PageId + 1))" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        }
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    }
+</div>

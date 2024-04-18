@@ -3,7 +3,9 @@ using Application.Users.Edit;
 using Application.Users.Register;
 using Common.Application;
 using MediatR;
+using Query.Users.CheckUser;
 using Query.Users.DTOs;
+using Query.Users.ChangePassword;
 using Query.Users.GetById;
 using Query.Users.GetByUserName;
 using Query.Users.GetList;
@@ -17,33 +19,43 @@ public class UserFacade : IUserFacade
         _mediator = mediator;
     }
 
-    public Task<OperationResult> Register(RegisterUserCommand command)
+    public async Task<OperationResult> Register(RegisterUserCommand command)
     {
-        return _mediator.Send(command);
+        return await _mediator.Send(command);
     }
 
-    public Task<OperationResult> Delete(long Id)
+    public async Task<OperationResult> Delete(long Id)
     {
-        return _mediator.Send(new DeleteUserCommand(Id));
+        return await _mediator.Send(new DeleteUserCommand(Id));
     }
 
-    public Task<OperationResult> Edit(EditUserCommand command)
+    public async Task<OperationResult> Edit(EditUserCommand command)
     {
-        return _mediator.Send(command);
+        return await _mediator.Send(command);
     }
 
-    public Task<UserDto> GetById(long Id)
+    public async Task<UserDto> GetById(long Id)
     {
-        return _mediator.Send(new GetUserByIdQuery(Id));
+        return await _mediator.Send(new GetUserByIdQuery(Id));
     }
 
-    public Task<List<UserDto>> GetList()
+    public async Task<List<UserDto>> GetList()
     {
-        return _mediator.Send(new GetUserListQuery());
+        return await _mediator.Send(new GetUserListQuery());
     }
 
-    public Task<UserDto?> GetUserByUserName(string userName)
+    public async Task<UserDto?> GetUserByUserName(string userName)
     {
-        return _mediator.Send(new GetUserByUserNameQuery(userName));
+        return await _mediator.Send(new GetUserByUserNameQuery(userName));
+    }
+
+    public async Task<OperationResult> CheckUser(string UserName, string PhoneNumber)
+    {
+        return await _mediator.Send(new CheckUserQuery(UserName, PhoneNumber));
+    }
+
+    public async Task<OperationResult> ChangePassword(string UserName,string phoneNumber, string Password)
+    {
+        return await _mediator.Send(new ChangePasswordQuery(UserName, phoneNumber, Password));
     }
 }

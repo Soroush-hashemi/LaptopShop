@@ -1,0 +1,86 @@
+﻿@page "{handler?}"
+@using PresentationFacade.Categories
+@using Query.Categories.DTOs
+@model WebApplication.Pages.SearchModel
+@inject ICategoryFacade _categoryFacade;
+@{
+    var Categories = await _categoryFacade.GetList();
+    CategoryDto category = null;
+    var search = "";
+    var slug = Model.Filter.FilterParams.CategorySlug;
+    if (slug != null)
+    {
+        category = await _categoryFacade.GetBySlug(slug);
+        if (category != null)
+        {
+            search = category.Title;
+        }
+    }
+    else
+    {
+        search = Model.Filter.FilterParams.Title ?? "محصولات";
+    }
+    ViewData["Title"] = search;
+}
+
+@section MetaTags
+{
+    @if (category != null)
+    {
+        <meta name="description" content="@category.seoDataDto.MetaDescription">
+        <meta name="keywords" content="@category.seoDataDto.MetaKeyWords">
+    }
+}
+
+<!--Top header-------------------------------->
+<partial name="partial/_topHeader" />
+
+<!-- header-------------------------------->
+<partial name="partial/_header" model="Categories" />
+
+
+<div class="container-main">
+    <div class="d-block">
+        <div class="page-content page-row">
+            <div class="main-row">
+                <div id="breadcrumb">
+                    <i class="mdi mdi-home"></i>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a>@search</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="page-content page-row">
+                    <div class="main-row" id="ajaxSearch">
+                        <partial name="Shared/_SearchView" model="Model.Filter" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+@section Scripts {
+    <script>
+        function ajaxPagination(pageId) {
+            const params = new URLSearchParams(window.location.search);
+            var categorySlug = '';
+            var q = '';
+            if (params.has('categorySlug')) {
+                categorySlug = params.get("categorySlug");
+            }
+            if (params.has('q')) {
+                q = params.get("q");
+            }
+            $.ajax({
+                url: `/search/Pagination?pageId=${pageId}&q=${q}&categorySlug=${categorySlug}`,
+                type: "get",
+
+            }).done(function (data) {
+                $("#ajaxSearch").html(data);
+            });
+        }
+    </script>
+}

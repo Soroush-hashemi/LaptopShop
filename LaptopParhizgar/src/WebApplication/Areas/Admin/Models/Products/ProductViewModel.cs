@@ -78,11 +78,11 @@ public class ProductViewModel
     [Required(ErrorMessage = "وارد کردن {0} اجباری است")]
     public string Brand { get; set; }
 
-    [Display(Name = "وزن")]
+    [Display(Name = "وزن به گرم")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
     public string Weight { get; set; }
 
-    [Display(Name = "ابعاد")]
+    [Display(Name = "ابعاد به میلی‌متر")]
     [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
     public string Dimensions { get; set; }
 

@@ -39,12 +39,6 @@
 	  <None Include="wwwroot\Admin\plugins\input-mask\.DS_Store" />
 	  <None Include="wwwroot\assets\fonts\fontawesome-webfont.svg" />
 	  <None Include="wwwroot\assets\fonts\fontawesome-webfont.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb_Black.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb_Bold.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb_Light.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb_Medium.woff2" />
-	  <None Include="wwwroot\assets\fonts\IRANSans\woff2\IRANSansWeb_UltraLight.woff2" />
 	  <None Include="wwwroot\assets\fonts\lightgallery\lg.svg" />
 	  <None Include="wwwroot\assets\fonts\materialdesignicons-webfont.woff2" />
 	  <None Include="wwwroot\assets\images\footer\features\24-hours-support.svg" />

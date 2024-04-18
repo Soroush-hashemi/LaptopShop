@@ -9,8 +9,8 @@ namespace WebApplication.Areas.Admin.Controllers;
 public class ProductController : AdminControllerBase
 {
     private readonly IProductSerivce _service;
-    private readonly IProductsFacade _productsFacade;
-    public ProductController(IProductSerivce service, IProductsFacade productsFacade)
+    private readonly IProductFacade _productsFacade;
+    public ProductController(IProductSerivce service, IProductFacade productsFacade)
     {
         _service = service;
         _productsFacade = productsFacade;
@@ -39,7 +39,20 @@ public class ProductController : AdminControllerBase
     [HttpPost("/Admin/Product/Create")]
     public async Task<IActionResult> Create(ProductViewModel createViewModel)
     {
+        if (createViewModel.SubCategoryId == 0)
+        {
+            ErrorAlert("زیرگروه دسته بندی نمیتواند خالی باشد");
+            return RedirectToAction();
+        }
+
+        if (createViewModel.CategoryId == 0)
+        {
+            ErrorAlert("دسته بندی نمیتواند خالی باشد");
+            return RedirectToAction();
+        }
+
         var productCommand = createViewModel.MapToCreate();
+
         var result = await _productsFacade.Create(productCommand);
 
         if (result.Status != Common.Application.OperationResultStatus.Success)
@@ -65,6 +78,19 @@ public class ProductController : AdminControllerBase
     public async Task<IActionResult> Edit(long Id, ProductViewModel ViewModel)
     {
         ViewModel.Id = Id;
+        if (ViewModel.SubCategoryId == 0)
+        {
+            ErrorAlert("زیرگروه دسته بندی نمیتواند خالی باشد");
+            return RedirectToAction();
+        }
+
+        if (ViewModel.CategoryId == 0)
+        {
+            ErrorAlert("دسته بندی نمیتواند خالی باشد");
+            return RedirectToAction();
+
+        }
+
         var productCommand = ViewModel.MapToEdit();
         var result = await _productsFacade.Edit(productCommand);
 

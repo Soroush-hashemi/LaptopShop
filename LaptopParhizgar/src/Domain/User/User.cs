@@ -41,7 +41,7 @@ public class User : BaseEntity
         Email = email;
     }
 
-    public void SetPassword(string password)
+    public void ChangePassword(string password)
     {
         Password = password;
     }

@@ -50,12 +50,15 @@
                 <div class="form-group">
                     <label asp-for="SubCategoryId"></label>
                     <select asp-for="SubCategoryId" class="form-control">
-                        <option value="0">انتخاب کنید</option>
+                        <option value="null">انتخاب کنید</option>
+                        @foreach (var item in categories.Where(c => c.ParentId == Model.CategoryId))
+                        {
+                            <option value="@item.Id">@item.Title</option>
+                        }
                     </select>
                     <span asp-validation-for="SubCategoryId"></span>
                 </div>
-            </div>
-            <div class="box-footer">
+            </div>            <div class="box-footer">
                 <div class="col-md-6">
                     <label>قیمت به تومان</label>
                     @Html.EditorFor(m => m.Price)
