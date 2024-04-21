@@ -1,8 +1,11 @@
-﻿@* @model List<CartItemDto>
+﻿@using Common.Application.FileUtil
+@using Query.Cart.DTOs
+@model List<CartItemDto>
 @{
-    
+    long TotalPrice;
+    long SumAmount = Model.Sum(p => p.Price * p.Count);
+    TotalPrice = SumAmount;
 }
-
 
 <li class="divider-space-card d-block">
     <div class="header-cart-basket">
@@ -72,4 +75,4 @@
             </div>
         }
     </div>
-</li> *@
+</li>

@@ -14,13 +14,13 @@ public class GetMyCartItemByCartQueryHandler : IQueryHandler<GetMyCartItemByCart
 
     public async Task<List<CartItemDto>> Handle(GetMyCartItemByCartQuery request, CancellationToken cancellationToken)
     {
-        var cart = await _context.Carts.Where(c => c.UserId == request.cartDto.UserId && c.IsFinaly == false).FirstOrDefaultAsync();
+        var cart = _context.Carts.Where(c => c.UserId == request.UserId && c.IsFinaly == false).FirstOrDefault();
 
         List<CartItemDto> CartItemDto = new List<CartItemDto>();
 
         if (cart != null)
         {
-            var Cartitem = await _context.CartItem.Where(p => p.CartId == cart.Id).ToListAsync();
+            var Cartitem = _context.CartItem.Where(p => p.CartId == cart.Id).ToList();
             foreach (var item in Cartitem)
             {
                 var product = _context.Products.FirstOrDefault(p => p.Id == item.ProductId);

@@ -1,0 +1,173 @@
+﻿@page
+@using Common.Application.FileUtil
+@model WebApplication.Pages.Cart.IndexModel
+@{
+}
+
+<div class="container-main">
+    <div class="d-block">
+        <div class="main-row">
+            <div id="breadcrumb">
+                <i class="mdi mdi-home"></i>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="~/">خانه</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">سبد خرید</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="cart-home">
+                @if (Model.CartItem.Count == 0)
+                {
+                    <div class="cart-form">
+                        <div class="cart-empty text-center d-block">
+                            <div class="cart-empty-img mb-4 mt-4">
+                                <img src="~/assets/images/shopping-cart.png">
+                            </div>
+                            <p class="cart-empty-title">سبد خرید شما در حال حاضر خالی است</p>
+                            <div class="return-to-shop">
+                                <a href="~/" class="backward btn btn-secondary">بازگشت به صفحه اصلی</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="post-item-cart d-block order-2">
+                        <div class="content-page">
+                            <div class="cart-form">
+                                <form action="" class="c-form">
+                                    <table class="table-cart cart table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="product-cart-name">نام محصول</th>
+                                                <th scope="col" class="product-cart-price">قیمت</th>
+                                                <th scope="col" class="product-cart-quantity">تعداد مورد نیاز</th>
+                                                <th scope="col" class="product-cart-Total">مجموع</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            @foreach (var item in Model.CartItem)
+                                            {
+                                                <tr>
+                                                    <th scope="row" class="product-cart-name">
+                                                        <div class="product-thumbnail-img">
+                                                            <a>
+                                                                <img src="@Directories.GetProductImage(item.Images)">
+                                                            </a>
+                                                            <div class="product-remove">
+                                                                <a href="~/Cart/RemoveFromCart/@item.ProductId" class="remove">
+                                                                    <i class="mdi mdi-close"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-title">
+                                                            <a href="~/Product/@item.ProductSlug">
+                                                                @item.ProductName
+                                                            </a>
+                                                            <div class="variation">
+                                                                <div class="variant-color">
+                                                                    <span class="variant-color-title">@item.Color</span>
+                                                                </div>
+                                                                <div class="seller">
+                                                                    <i class="mdi mdi-storefront"></i>
+                                                                    فروشنده :
+                                                                    <span>فروشگاه لپ‌تاپ پرهیزگار</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <td class="product-cart-price">
+                                                        <span class="amount">
+                                                            @item.Price.ToString("n0")
+                                                            <span>تومان</span>
+                                                        </span>
+                                                    </td>
+                                                    <td class="product-cart-quantity">
+                                                        <div class="required-number before">
+                                                            <div class="quantity">
+                                                                <input type="number" min="1" max="100" step="1" value="@item.Count">
+                                                                <div class="quantity-nav">
+                                                                    <div class="quantity-button quantity-up" onclick="AddCount('@item.Id')">+</div>
+                                                                    <div class="quantity-button quantity-down" onclick="lowCount('@item.Id')">-</div>
+                                                                    <span asp-validation-for="TotalPrice" style="color: red"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-cart-Total">
+                                                        <span class="amount">
+                                                            @item.Sum.ToString("n0")
+                                                            <span>تومان</span>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div class="cart-collaterals">
+                                    <div class="totals d-block">
+                                        <h3 class="Total-cart-total">مجموع کل سبد خرید</h3>
+                                        <div class="checkout-summary">
+                                            <ul class="checkout-summary-summary">
+                                                <li class="shipping-totals">
+                                                    <span class="amount">حمل و نقل</span>
+                                                    <div class="shipping-totals-item">
+                                                        <div class="shipping-totals-outline">
+                                                            <label for="#" class="outline-radio">
+                                                                <input type="radio" name="payment_method" id="payment-option-online">
+                                                                <span class="outline-radio-check"></span>
+                                                            </label>
+                                                            <label for="#" class="shipping-totals-title-row">
+                                                                <div class="shipping-totals-title">
+                                                                    هزینه‌ی حمل و نقل:
+                                                                    پرداخت درب منزل
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="order-total">
+                                                    <span class="amount"> مجموع</span>
+                                                    <span> @Model.TotalPrice.ToString("n0") تومان</span>
+                                                </li>
+                                                <li class="discount-code">
+                                                    <div class="align-items-center">
+                                                        <div class="col-md-2 pl mt-5">
+                                                            <div class="proceed-to-checkout">
+                                                                <a href="~/RequestPay/checkout" class="checkout-button d-block">
+                                                                    ‌ادامه خرید
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </section>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+
+        function AddCount(Id) {
+            window.location.replace('/cart/Increase/' + Id);
+        }
+
+        function lowCount(Id) {
+            window.location.replace('/cart/Decrease/' + Id);
+        }
+
+    </script>
+}

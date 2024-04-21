@@ -16,9 +16,9 @@ public class CartFacade : ICartFacade
         _mediator = mediator;
     }
 
-    public async Task<OperationResult> Add(AddToCartCommand command)
+    public async Task<OperationResult> Add(long ProductId, long UserId)
     {
-        return await _mediator.Send(command);
+        return await _mediator.Send(new AddToCartCommand(ProductId, UserId));
     }
 
     public async Task<OperationResult> Decrease(DecreaseProductCountCommand command)
@@ -36,9 +36,9 @@ public class CartFacade : ICartFacade
         return await _mediator.Send(command);
     }
 
-    public async Task<List<CartItemDto>> GetMyCart(GetMyCartItemByCartQuery query)
+    public async Task<List<CartItemDto>> GetMyCart(long UserId)
     {
-        return await _mediator.Send(query);
+        return await _mediator.Send(new GetMyCartItemByCartQuery(UserId));
     }
 
 }

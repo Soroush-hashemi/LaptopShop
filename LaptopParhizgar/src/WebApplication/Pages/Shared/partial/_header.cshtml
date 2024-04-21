@@ -41,12 +41,11 @@
                                     دیدن تمام محصولات
                                 </a>
                             </li>
-@*                             @if (User.Identity.IsAuthenticated)
+                             @if (User.Identity.IsAuthenticated)
                             {
                                 @await Component.InvokeAsync("Cart")
                             }
- *@                        </ul>
-
+                         </ul>
                     </div>
                 </div>
             </nav>

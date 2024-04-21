@@ -11,18 +11,14 @@ public class CartService : ICartService
     public CartService(LaptopParhizgerContext context, IMediator mediator)
     {
         _context = context;
+        _mediator = mediator;
     }
 
     public async Task<long> GetTotalPrice(long userId)
     {
         var cart = _context.Carts.Where(u => u.UserId == userId).FirstOrDefault();
-        var carddto = new CartDto()
-        {
-            UserId = cart.UserId,
-            IsFinaly = cart.IsFinaly,
-        };
 
-        var CartItems = await _mediator.Send(new GetMyCartItemByCartQuery(carddto));
+        var CartItems = await _mediator.Send(new GetMyCartItemByCartQuery(cart.UserId));
         long SumAmount = CartItems.Sum(p => p.Price * p.Count);
 
         if (SumAmount == 0)

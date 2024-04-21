@@ -115,6 +115,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Pages\Views\" />
 	  <Folder Include="wwwroot\assets\images\menu-main\card\" />
 	  <Folder Include="wwwroot\images\" />
 	</ItemGroup>
