@@ -12,7 +12,7 @@ public class CartItem : BaseEntity
 
     private CartItem()
     {
-        
+
     }
 
     public CartItem(long cartId, long productId, int count, long price)

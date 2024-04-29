@@ -4,6 +4,12 @@
 @{
 }
 
+<!--Top header-------------------------------->
+<partial name="partial/_topHeader" />
+
+<!-- header-------------------------------->
+<partial name="partial/_header" model="Model.Categories" />
+
 <div class="container-main">
     <div class="d-block">
         <div class="main-row">
@@ -57,7 +63,7 @@
                                                                 <img src="@Directories.GetProductImage(item.Images)">
                                                             </a>
                                                             <div class="product-remove">
-                                                                <a href="~/Cart/RemoveFromCart/@item.ProductId" class="remove">
+                                                                <a href="~/Cart/RemoveFromCart/@item.Id" class="remove">
                                                                     <i class="mdi mdi-close"></i>
                                                                 </a>
                                                             </div>
@@ -89,8 +95,8 @@
                                                             <div class="quantity">
                                                                 <input type="number" min="1" max="100" step="1" value="@item.Count">
                                                                 <div class="quantity-nav">
-                                                                    <div class="quantity-button quantity-up" onclick="AddCount('@item.Id')">+</div>
-                                                                    <div class="quantity-button quantity-down" onclick="lowCount('@item.Id')">-</div>
+                                                                    <div class="quantity-button quantity-up" onclick="Increase('@item.Id')">+</div>
+                                                                    <div class="quantity-button quantity-down" onclick="Decrease('@item.Id')">-</div>
                                                                     <span asp-validation-for="TotalPrice" style="color: red"></span>
                                                                 </div>
                                                             </div>
@@ -116,11 +122,7 @@
                                                     <span class="amount">حمل و نقل</span>
                                                     <div class="shipping-totals-item">
                                                         <div class="shipping-totals-outline">
-                                                            <label for="#" class="outline-radio">
-                                                                <input type="radio" name="payment_method" id="payment-option-online">
-                                                                <span class="outline-radio-check"></span>
-                                                            </label>
-                                                            <label for="#" class="shipping-totals-title-row">
+                                                            <label class="shipping-totals-title-row">
                                                                 <div class="shipping-totals-title">
                                                                     هزینه‌ی حمل و نقل:
                                                                     پرداخت درب منزل
@@ -161,11 +163,11 @@
 {
     <script>
 
-        function AddCount(Id) {
+        function Increase(Id) {
             window.location.replace('/cart/Increase/' + Id);
         }
 
-        function lowCount(Id) {
+        function Decrease(Id) {
             window.location.replace('/cart/Decrease/' + Id);
         }
 

@@ -7129,18 +7129,18 @@ span.show-less {
     border-radius: 20px;
 }
 
-.tabs .tabs-content ul.params-list li.params-list-item span.block {
-    display: block;
-    background: #fbfbfb;
-    padding: 14px 18px 12px;
-    font-size: 13px;
-    line-height: 1.692;
-    color: #999999;
-    letter-spacing: -0.3px;
-    min-height: 47px;
-    position: relative;
-    border-radius: 30px;
-}
+    .tabs .tabs-content ul.params-list li.params-list-item span.block {
+        display: block;
+        background: #fbfbfb;
+        padding: 14px 18px 12px;
+        font-size: 13px;
+        line-height: 1.692;
+        color: #999999;
+        letter-spacing: -0.3px;
+        min-height: 47px;
+        position: relative;
+        border-radius: 30px;
+    }
 
 .tabs .tabs-content ul.params-list li.params-list-item .params-list-value {
     position: relative;

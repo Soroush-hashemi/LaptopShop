@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jCaMjQACTZGRn+ZhlNhaHMsdCSsvrkuVTkHiif7jP54ENPpvIIrz9vDEbBGFLGkPBWNV86p19UaVMLN3NX6dVQ==",
+  "dgSpecHash": "WdES6ZbhTCXu0gprBcA3LTXAtkQ9kecXJhP0PWUyUs9fGu2m31mQTwMl0WQBja/BDHOdmBOYV4R4EMFEGuSnwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hashe\\Desktop\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\common\\Common.Domain\\Common.Domain.csproj",
+  "projectFilePath": "C:\\Users\\soroush\\Desktop\\CODE\\laptopparhizgar\\LaptopParhizgar_CleanArch\\LaptopParhizgar\\common\\Common.Domain\\Common.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hashe\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
-    "C:\\Users\\hashe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
+    "C:\\Users\\soroush\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\soroush\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

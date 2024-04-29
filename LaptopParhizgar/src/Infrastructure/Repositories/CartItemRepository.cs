@@ -13,12 +13,14 @@ public class CartItemRepository : BaseRepository<CartItem>, ICartItemRepository
     public CartItem FindByProductIdandCartId(long ProductId, long cartId)
     {
         var cartItem = _context.CartItem.Where(p => p.ProductId == ProductId && p.CartId == cartId).FirstOrDefault();
+        if (cartItem == null)
+            return null;
+
         return cartItem;
     }
 
-    public void Remove(long cartItemId)
+    public void Remove(CartItem cartItem)
     {
-        var orderItem = _context.CartItem.FirstOrDefault(o => o.Id == cartItemId);
-        _context.Remove(orderItem);
+        _context.CartItem.Remove(cartItem);
     }
 }

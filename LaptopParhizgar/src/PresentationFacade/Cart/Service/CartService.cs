@@ -21,20 +21,6 @@ public class CartService : ICartService
         var CartItems = await _mediator.Send(new GetMyCartItemByCartQuery(cart.UserId));
         long SumAmount = CartItems.Sum(p => p.Price * p.Count);
 
-        if (SumAmount == 0)
-        {
-            return SumAmount;
-        }
-        if (SumAmount >= 500000)
-        {
-            return SumAmount;
-        }
-        if (SumAmount < 500000)
-        {
-            return SumAmount + 30000;
-        }
-
         return SumAmount;
-
     }
 }

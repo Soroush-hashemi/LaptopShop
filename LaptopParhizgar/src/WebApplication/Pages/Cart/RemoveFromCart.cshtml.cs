@@ -15,9 +15,9 @@ public class RemoveFromCartModel : PageModel
         _cartFacade = cartFacade;
     }
 
-    public async Task<IActionResult> OnGet(long ProductId)
+    public async Task<IActionResult> OnGet(long Id)
     {
-        await _cartFacade.RemoveItemFromCart(new RemoveItemFromCartCommand(ProductId));
+        await _cartFacade.RemoveItemFromCart(new RemoveItemFromCartCommand(Id));
         return Redirect("../Index");
     }
 }

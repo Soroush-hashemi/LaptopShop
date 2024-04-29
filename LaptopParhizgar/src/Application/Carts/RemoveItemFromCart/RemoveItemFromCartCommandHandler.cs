@@ -16,7 +16,7 @@ public class RemoveItemFromCartCommandHandler : IBaseCommandHandler<RemoveItemFr
         if (cartItem == null)
             return OperationResult.Error();
 
-        _repository.Remove(request.CartItemId);
+        _repository.Remove(cartItem);
         await _repository.Save();
         return OperationResult.Success();
     }

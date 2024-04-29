@@ -7,7 +7,7 @@ public class CreateCommentCommandValidator : AbstractValidator<CreateCommentComm
     public CreateCommentCommandValidator()
     {
         RuleFor(v => v.text).NotNull().WithMessage(ValidationMessages.Required);
-        RuleFor(v => v.text).MinimumLength(10).WithMessage(ValidationMessages.minLength("text", 10));
-        RuleFor(v => v.text).MaximumLength(500).WithMessage(ValidationMessages.maxLength("text", 500));
+        RuleFor(v => v.text).MinimumLength(10).WithMessage(ValidationMessages.minLength("متن", 10));
+        RuleFor(v => v.text).MaximumLength(500).WithMessage(ValidationMessages.maxLength("متن", 500));
     }
 }

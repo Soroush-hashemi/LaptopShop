@@ -18,19 +18,19 @@ public class InfrastructureBootstrapper
 {
     public static void Init(IServiceCollection services, string connectionString)
     {
-        services.AddTransient<ICategoryRepository, CategoryRepository>();
-        services.AddTransient<IOrderRepository, OrderRepository>();
-        services.AddTransient<IAddressRepository, AddressRepository>();
-        services.AddTransient<ICartsRepository, CartsRepository>();
-        services.AddTransient<ICartItemRepository, CartItemRepository>();
-        services.AddTransient<IPaymentSettingsRepository, PaymentSettingsRepository>();
-        services.AddTransient<IProductRepository, ProductRepository>();
-        services.AddTransient<IProductCommentRepository, ProductCommentRepository>();
-        services.AddTransient<IOrderDetailRepository, OrderDetailRepository>();
-        services.AddTransient<ISliderPostersRepository, SliderPostersRepository>();
-        services.AddTransient<ISliderRepository, SliderRepository>();
-        services.AddTransient<IUserRepository, UserRepository>();
-        services.AddTransient<IFileService, FileService>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IOrderRepository, OrderRepository>();
+        services.AddScoped<IAddressRepository, AddressRepository>();
+        services.AddScoped<ICartsRepository, CartsRepository>();
+        services.AddScoped<ICartItemRepository, CartItemRepository>();
+        services.AddScoped<IPaymentSettingsRepository, PaymentSettingsRepository>();
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<IProductCommentRepository, ProductCommentRepository>();
+        services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+        services.AddScoped<ISliderPostersRepository, SliderPostersRepository>();
+        services.AddScoped<ISliderRepository, SliderRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IFileService, FileService>();
 
         services.AddDbContext<LaptopParhizgerContext>(options =>
         {

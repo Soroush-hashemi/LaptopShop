@@ -9,299 +9,303 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication
 build_property.RootNamespace = WebApplication
-build_property.ProjectDir = C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\
+build_property.ProjectDir = C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hashe\Desktop\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication
+build_property.MSBuildProjectDirectory = C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\src\WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/AddChild.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/AddChild.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQWRkQ2hpbGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Create.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Comment/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Comment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Home/Add.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Home/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Order/Details.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Order/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/PaymentSetting/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/PaymentSetting/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGF5bWVudFNldHRpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Create.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/RequestPayment/Check.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/RequestPayment/Check.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVxdWVzdFBheW1lbnRcQ2hlY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/RequestPayment/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/RequestPayment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVxdWVzdFBheW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Boolean.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Boolean.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xCb29sZWFuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Ckeditor4.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Ckeditor4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xDa2VkaXRvcjQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/EmailAddress.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/EmailAddress.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xFbWFpbEFkZHJlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/IFormFile.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/IFormFile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xJRm9ybUZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Int32.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/Int32.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xJbnQzMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/MultilineText.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/MultilineText.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xNdWx0aWxpbmVUZXh0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/String.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/EditorTemplates/String.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVkaXRvclRlbXBsYXRlc1xTdHJpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_AsideBar.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_AsideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Bc2lkZUJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_Header.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_Pagination.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_Pagination.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdpbmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_SideBar.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Add.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyUG9zdGVyc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyUG9zdGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/SliderPosters/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyUG9zdGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Create.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/User/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/ChangePassword.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/CheckUser.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/CheckUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXENoZWNrVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/Signin.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/Signin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXFNpZ25pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/Signup.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Authorize/Signup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yaXplXFNpZ251cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/AddToCart.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/AddToCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxBZGRUb0NhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Decrease.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Decrease.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxEZWNyZWFzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Increase.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Increase.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxJbmNyZWFzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/RemoveFromCart.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Cart/RemoveFromCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydFxSZW1vdmVGcm9tQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Product.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Checkout.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFBheVxDaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFBheVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Payment.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFBheVxQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Verify.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/RequestPay/Verify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFBheVxWZXJpZnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Search.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/Components/Cart/Default.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/Components/Cart/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_footer.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXHBhcnRpYWxcX2Zvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_header.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXHBhcnRpYWxcX2hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_search.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXHBhcnRpYWxcX3NlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_slider.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_slider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXHBhcnRpYWxcX3NsaWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_topHeader.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/partial/_topHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXHBhcnRpYWxcX3RvcEhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_LoginLayout.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_SearchView.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_SearchView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9TZWFyY2hWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Add.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXEFkZHJlc3Nlc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXEFkZHJlc3Nlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Addresses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXEFkZHJlc3Nlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Edit.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Orders/Detail.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Orders/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXE9yZGVyc1xEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Orders/Index.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/UserPanel/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhbmVsXE9yZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/_ViewImports.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/_ViewStart.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hashe/Desktop/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_Layout.cshtml]
+[C:/Users/soroush/Desktop/CODE/laptopparhizgar/LaptopParhizgar_CleanArch/LaptopParhizgar/src/WebApplication/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yx06id817f

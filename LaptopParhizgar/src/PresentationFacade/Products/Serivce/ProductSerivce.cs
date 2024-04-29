@@ -47,7 +47,10 @@ public class ProductSerivce : IProductSerivce
         }
         else
         {
-            var post = _context.Products.OrderByDescending(d => d.CreationDate).ToList();
+            var post = _context.Products.OrderByDescending(d => d.CreationDate).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(filterParams.Title))
+                post = post.Where(r => r.Title.Contains(filterParams.Title));
 
             var skip = (filterParams.PageId - 1) * filterParams.Take;
             var model = new ProductFilterDto()
