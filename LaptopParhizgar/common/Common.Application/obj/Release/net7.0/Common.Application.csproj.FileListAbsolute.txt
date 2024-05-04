@@ -1,0 +1,13 @@
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\bin\Release\net7.0\Common.Application.deps.json
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\bin\Release\net7.0\Common.Application.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\bin\Release\net7.0\Common.Application.pdb
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.csproj.AssemblyReference.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.AssemblyInfoInputs.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.AssemblyInfo.cs
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.csproj.CoreCompileInputs.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.sourcelink.json
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\refint\Common.Application.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\Common.Application.pdb
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Application\obj\Release\net7.0\ref\Common.Application.dll

@@ -1,16 +1,13 @@
 ﻿using Common.Application;
 using Common.Domain.Exceptions;
 using Domain.Users.Repository;
-using Domain.Users.Service;
 
 namespace Application.Users.Edit;
 public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
 {
     private readonly IUserRepository _userRepository;
-    private readonly IUserDomainService _domainService;
-    public EditUserCommandHandler(IUserDomainService domainService, IUserRepository userRepository)
+    public EditUserCommandHandler(IUserRepository userRepository)
     {
-        _domainService = domainService;
         _userRepository = userRepository;
     }
 
@@ -22,7 +19,7 @@ public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
             if (user == null)
                 return OperationResult.NotFound();
 
-            user.Edit(request.UserName, request.FullName, request.PhoneNumber, request.Email, _domainService);
+            user.Edit(request.FullName);
 
             await _userRepository.Save();
             return OperationResult.Success();

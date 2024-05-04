@@ -1,5 +1,4 @@
-using Newtonsoft.Json.Linq;
-using System.Net;
+﻿using System.Net;
 
 namespace WebApplication.Pages;
 public class ErrorHandling
@@ -21,9 +20,8 @@ public class ErrorHandling
         catch (Exception ex)
         {
             string urlEncodedValue = WebUtility.UrlEncode(ex.Message);
-
             _logger.LogError(ex, "");
-            context.Response.Redirect($"../Error/{urlEncodedValue}/");
+            context.Response.Redirect($"../ExceptionError/{urlEncodedValue}/");
         }
     }
 }

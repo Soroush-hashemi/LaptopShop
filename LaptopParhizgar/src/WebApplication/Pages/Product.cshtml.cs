@@ -1,4 +1,4 @@
-using Application.ProductComment.Create;
+﻿using Application.ProductComment.Create;
 using Common.Application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -42,6 +42,7 @@ public class ProductModel : PageModel
     public int ProductId { get; set; }
     [Required]
     [BindProperty]
+    [MaxLength(ErrorMessage = "باید کمتر از 500 حرف باشد")]
     public string Text { get; set; }
     public List<ProductCommentDto> Comments { get; set; }
     #endregion

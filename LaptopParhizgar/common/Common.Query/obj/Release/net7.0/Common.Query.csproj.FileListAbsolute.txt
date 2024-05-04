@@ -1,0 +1,13 @@
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Release\net7.0\Common.Query.deps.json
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Release\net7.0\Common.Query.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\bin\Release\net7.0\Common.Query.pdb
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.csproj.AssemblyReference.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.AssemblyInfoInputs.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.AssemblyInfo.cs
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.csproj.CoreCompileInputs.cache
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.sourcelink.json
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\refint\Common.Query.dll
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\Common.Query.pdb
+C:\Users\soroush\Desktop\CODE\laptopparhizgar\LaptopParhizgar_CleanArch\LaptopParhizgar\common\Common.Query\obj\Release\net7.0\ref\Common.Query.dll

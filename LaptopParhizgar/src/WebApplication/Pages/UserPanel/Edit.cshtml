@@ -2,3 +2,36 @@
 @model WebApplication.Pages.UserPanel.EditModel
 @{
 }
+
+<div class="container-main">
+    <div class="d-block">
+        <section class="profile-home">
+            <div class="col-lg">
+                <div class="post-item-profile order-1 d-block">
+                    <partial name="Shared/_UserPanelView" />
+                    <div class="col-lg-9 col-md-9 col-xs-12 pl">
+                        <div class="profile-content">
+                            <div class="profile-stats">
+                                <div class="profile-address">
+                                    <div class="middle-container">
+                                        <form action="" method="post" class="form-checkout">
+                                            <div class="form-checkout-row">
+                                                <label for="name">نام و نام‌خانوادگی  <abbr class="required" title="ضروری" style="color:red;">*</abbr></label>
+                                                <input type="text" asp-for="FullName" class="input-name-checkout form-control">
+                                                <span asp-validation-for="FullName" class="text-danger"></span>
+
+                                                <div class="AR-CR">
+                                                    <button type="submit" class="btn-registrar"> ویرایش </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

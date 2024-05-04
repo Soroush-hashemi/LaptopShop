@@ -31,14 +31,9 @@ public class User : BaseEntity
         Roles = UserRole.user;
     }
 
-    public void Edit(string userName, string fullName, PhoneNumber phoneNumber,
-        string email, IUserDomainService userDomainService)
+    public void Edit(string fullName)
     {
-        Guard(phoneNumber, email, userName, userDomainService);
-        UserName = userName;
         FullName = fullName;
-        PhoneNumber = phoneNumber;
-        Email = email;
     }
 
     public void ChangePassword(string password)

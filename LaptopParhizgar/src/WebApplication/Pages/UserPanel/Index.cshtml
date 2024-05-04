@@ -1,4 +1,90 @@
 ﻿@page
+@using Common.Application
 @model WebApplication.Pages.UserPanel.IndexModel
 @{
 }
+
+<div class="container-main">
+    <div class="d-block">
+        <section class="profile-home">
+            <div class="col-lg">
+                <div class="post-item-profile order-1 d-block">
+                    <partial name="Shared/_UserPanelView" />
+                    <div class="col-lg-9 col-md-9 col-xs-12 pl">
+                        <div class="profile-content">
+                            <div class="profile-stats">
+                                <table class="table table-profile">
+                                    <tbody>
+                                        <tr>
+                                            @if (Model.UserDTO.FullName != null)
+                                            {
+                                                <td class="w-50">
+                                                    <div class="title">نام و نام خانوادگی:</div>
+                                                    <div class="value">@Model.UserDTO.FullName</div>
+                                                </td>
+                                            }
+                                            @if (Model.UserDTO.Email != null)
+                                            {
+
+                                                <td>
+                                                    <div class="title">پست الکترونیک :</div>
+                                                    <div class="value">@Model.UserDTO.Email</div>
+                                                </td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            @if (Model.UserDTO.PhoneNumber.Value != null)
+                                            {
+                                                <td>
+                                                    <div class="title">شماره تلفن همراه:</div>
+                                                    <div class="value">@Model.UserDTO.PhoneNumber.Value</div>
+                                                </td>
+                                            }
+                                            <td>
+                                                <div class="title">تاریخ عضویت:</div>
+
+                                                <div class="value">@Model.UserDTO.CreationDate.ToPersianDate()</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="profile-edit-action">
+                                    <div class="profile">
+                                        <ul class="mb-0">
+                                            @if (Model.UserDTO.FullName != null)
+                                            {
+                                                <li class="profile-item">
+                                                    <div class="title">نام و نام خانوادگی:</div>
+                                                    <div class="value">@Model.UserDTO.FullName</div>
+                                                </li>
+                                            }
+                                            @if (Model.UserDTO.Email != null)
+                                            {
+                                                <li class="profile-item">
+                                                    <div class="title">پست الکترونیک :</div>
+                                                    <div class="value">@Model.UserDTO.Email</div>
+                                                </li>
+                                            }
+                                            @if (Model.UserDTO.PhoneNumber.Value != null)
+                                            {
+                                                <li class="profile-item">
+                                                    <div class="title">شماره تلفن همراه:</div>
+                                                    <div class="value">@Model.UserDTO.PhoneNumber.Value</div>
+                                                </li>
+                                            }
+                                            <li class="profile-item">
+                                                <div class="title">تاریخ عضویت:</div>
+                                                <div class="value">@Model.UserDTO.CreationDate.ToPersianDate()</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="~/UserPanel/Edit" class="link-spoiler-edit btn btn-secondary">ویرایش اطلاعات</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

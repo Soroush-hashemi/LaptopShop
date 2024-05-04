@@ -28,7 +28,6 @@ builder.Services.AddAuthentication(option =>
     option.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     option.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     option.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-
 }).AddCookie(option =>
 {
     option.LoginPath = "/Authorize/Signin";
@@ -39,17 +38,15 @@ builder.Services.AddAuthentication(option =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
+    app.UseExceptionHandler("/ErrorHandler/404");
     app.UseHsts();
 }
 
 app.UseErrorHandlingMiddleware();
+app.UseStatusCodePagesWithReExecute("/ErrorHandler/{0}");
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

@@ -4,7 +4,7 @@ using Common.Query;
 using Infrastructure.Persistence;
 
 namespace Query.Users.GetById;
-public class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDto?>
+public class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDto>
 {
     private readonly LaptopParhizgerContext _context;
     public GetUserByIdQueryHandler(LaptopParhizgerContext context)
@@ -12,7 +12,7 @@ public class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDto?>
         _context = context;
     }
 
-    public async Task<UserDto?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+    public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
     {
         var user = await _context.Users.FirstOrDefaultAsync(f => f.Id == request.UserId, cancellationToken);
         if (user == null)
